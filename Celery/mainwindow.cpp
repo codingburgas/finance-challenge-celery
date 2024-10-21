@@ -7,7 +7,7 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    QPixmap pix("C:/Users/nikir/Documents/Celery/images/mainWindow.png");
+    QPixmap pix(":/images/mainWindow.png");
     ui->label_pic->setPixmap(pix);
     ui->startNowbtn->setStyleSheet(
         "QPushButton {"
