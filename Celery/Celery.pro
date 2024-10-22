@@ -10,13 +10,16 @@ CONFIG += c++17
 
 SOURCES += \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    register.cpp
 
 HEADERS += \
-    mainwindow.h
+    mainwindow.h \
+    register.h
 
 FORMS += \
-    mainwindow.ui
+    mainwindow.ui \
+    register.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
@@ -26,4 +29,5 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 DISTFILES +=
 
 RESOURCES += \
-    images/mainWindow.qrc
+    images/mainWindow.qrc \
+    images/register.qrc
