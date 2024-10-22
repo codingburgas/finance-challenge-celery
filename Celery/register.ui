@@ -13,53 +13,79 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <widget class="QLabel" name="label">
+  <property name="styleSheet">
+   <string notr="true">color: rgb(178, 215, 138);
+font-size: 28px;
+font: bold;</string>
+  </property>
+  <widget class="QLabel" name="welcome">
    <property name="geometry">
     <rect>
-     <x>310</x>
-     <y>110</y>
-     <width>121</width>
-     <height>51</height>
+     <x>180</x>
+     <y>100</y>
+     <width>311</width>
+     <height>61</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(182, 253, 51);
+font: bold;
+font-size: 64px;
+</string>
    </property>
    <property name="text">
     <string>Welcome!</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_2">
+  <widget class="QLabel" name="username_create">
    <property name="geometry">
     <rect>
-     <x>260</x>
+     <x>220</x>
      <y>180</y>
-     <width>71</width>
-     <height>20</height>
+     <width>141</width>
+     <height>31</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(178, 215, 138);
+font-size: 28px;
+font: bold;</string>
    </property>
    <property name="text">
     <string>Username:</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_3">
+  <widget class="QLabel" name="addEmail">
    <property name="geometry">
     <rect>
-     <x>260</x>
-     <y>230</y>
-     <width>63</width>
-     <height>20</height>
+     <x>220</x>
+     <y>260</y>
+     <width>81</width>
+     <height>41</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(178, 215, 138);
+font-size:28px;
+font: bold;</string>
    </property>
    <property name="text">
     <string>Email:</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_4">
+  <widget class="QLabel" name="password">
    <property name="geometry">
     <rect>
-     <x>260</x>
-     <y>280</y>
-     <width>63</width>
-     <height>20</height>
+     <x>220</x>
+     <y>340</y>
+     <width>141</width>
+     <height>31</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(178, 215, 138);
+font-size: 28px;
+font:bold;</string>
    </property>
    <property name="text">
     <string>Password:</string>
@@ -68,79 +94,84 @@
   <widget class="QLineEdit" name="lineEdit">
    <property name="geometry">
     <rect>
-     <x>370</x>
-     <y>180</y>
-     <width>113</width>
-     <height>26</height>
+     <x>220</x>
+     <y>220</y>
+     <width>231</width>
+     <height>31</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(193, 222, 161);
+border-radius: 9px;
+</string>
    </property>
   </widget>
   <widget class="QLineEdit" name="lineEdit_2">
    <property name="geometry">
     <rect>
-     <x>370</x>
-     <y>230</y>
-     <width>113</width>
-     <height>26</height>
+     <x>220</x>
+     <y>300</y>
+     <width>231</width>
+     <height>31</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(193, 222, 161);
+border-radius: 9px;</string>
    </property>
   </widget>
   <widget class="QLineEdit" name="lineEdit_3">
    <property name="geometry">
     <rect>
-     <x>370</x>
-     <y>280</y>
-     <width>113</width>
-     <height>26</height>
+     <x>220</x>
+     <y>380</y>
+     <width>231</width>
+     <height>31</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(193, 222, 161);
+border-radius: 9px;</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton">
+  <widget class="QLabel" name="haveAccount">
    <property name="geometry">
     <rect>
-     <x>310</x>
-     <y>330</y>
-     <width>93</width>
-     <height>29</height>
+     <x>590</x>
+     <y>110</y>
+     <width>491</width>
+     <height>41</height>
     </rect>
    </property>
-   <property name="text">
-    <string>Confirm</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_5">
-   <property name="geometry">
-    <rect>
-     <x>600</x>
-     <y>120</y>
-     <width>171</width>
-     <height>20</height>
-    </rect>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(182, 253, 51);
+font-size: 40px;
+font: bold;</string>
    </property>
    <property name="text">
     <string>Already have an account?</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_6">
+  <widget class="QLabel" name="username_logIn">
    <property name="geometry">
     <rect>
-     <x>570</x>
+     <x>620</x>
      <y>180</y>
-     <width>71</width>
-     <height>20</height>
+     <width>161</width>
+     <height>31</height>
     </rect>
    </property>
    <property name="text">
     <string>Username:</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_7">
+  <widget class="QLabel" name="password_logIn">
    <property name="geometry">
     <rect>
-     <x>570</x>
-     <y>220</y>
-     <width>63</width>
-     <height>20</height>
+     <x>620</x>
+     <y>260</y>
+     <width>151</width>
+     <height>31</height>
     </rect>
    </property>
    <property name="text">
@@ -150,31 +181,78 @@
   <widget class="QLineEdit" name="lineEdit_4">
    <property name="geometry">
     <rect>
-     <x>670</x>
-     <y>180</y>
-     <width>113</width>
-     <height>26</height>
+     <x>620</x>
+     <y>220</y>
+     <width>231</width>
+     <height>31</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(193, 222, 161);
+border-radius: 9px;</string>
    </property>
   </widget>
   <widget class="QLineEdit" name="lineEdit_5">
    <property name="geometry">
     <rect>
-     <x>670</x>
-     <y>220</y>
-     <width>113</width>
-     <height>26</height>
+     <x>620</x>
+     <y>300</y>
+     <width>231</width>
+     <height>31</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(193, 222, 161);
+border-radius: 9px;</string>
+   </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_2">
+  <widget class="QLabel" name="signInbtn">
    <property name="geometry">
     <rect>
-     <x>630</x>
-     <y>330</y>
-     <width>93</width>
-     <height>29</height>
+     <x>270</x>
+     <y>440</y>
+     <width>154</width>
+     <height>48</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>-1</pointsize>
+     <italic>false</italic>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(236, 250, 226);
+font_size: 30px;
+</string>
+   </property>
+   <property name="text">
+    <string>Confirm</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="signInbtn_2">
+   <property name="geometry">
+    <rect>
+     <x>680</x>
+     <y>430</y>
+     <width>154</width>
+     <height>48</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>-1</pointsize>
+     <italic>false</italic>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(236, 250, 226);
+font_size: 30px;
+</string>
    </property>
    <property name="text">
     <string>Log in</string>

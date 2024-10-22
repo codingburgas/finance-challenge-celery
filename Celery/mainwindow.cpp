@@ -1,5 +1,7 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
+#include "register.h"
+#include "ui_register.h"
 #include<QPixmap>
 #include<QFrame>
 MainWindow::MainWindow(QWidget *parent)
@@ -21,6 +23,7 @@ MainWindow::MainWindow(QWidget *parent)
         );
     ui->signInbtn->setStyleSheet("color:#6F6F6F");
     ui->heading->setStyleSheet("color: white");
+    connect(ui->startNowbtn, &QPushButton::clicked, this, &MainWindow::on_startNowbtn_clicked);
 }
 
 MainWindow::~MainWindow()
@@ -28,3 +31,11 @@ MainWindow::~MainWindow()
     delete ui;
 
 }
+
+void MainWindow::on_startNowbtn_clicked()
+{
+    Register *registerWindow = new Register();
+    registerWindow->show();
+    this->close();
+}
+
