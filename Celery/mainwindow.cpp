@@ -21,9 +21,9 @@ MainWindow::MainWindow(QWidget *parent)
         "   background-color: #97D02C;"
         "}"
         );
-    ui->signInbtn->setStyleSheet("color:#6F6F6F");
     ui->heading->setStyleSheet("color: white");
     connect(ui->startNowbtn, &QPushButton::clicked, this, &MainWindow::on_startNowbtn_clicked);
+    connect(ui->signIn, &QPushButton::clicked, this, &MainWindow::on_signIn_clicked);
 }
 
 MainWindow::~MainWindow()
@@ -33,6 +33,13 @@ MainWindow::~MainWindow()
 }
 
 void MainWindow::on_startNowbtn_clicked()
+{
+    Register *registerWindow = new Register();
+    registerWindow->show();
+    this->close();
+}
+
+void MainWindow::on_signIn_clicked()
 {
     Register *registerWindow = new Register();
     registerWindow->show();

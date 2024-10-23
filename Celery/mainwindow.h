@@ -20,5 +20,6 @@ public:
 private:
     Ui::MainWindow *ui;
     void on_startNowbtn_clicked();
+    void on_signIn_clicked();
 };
 #endif // MAINWINDOW_H

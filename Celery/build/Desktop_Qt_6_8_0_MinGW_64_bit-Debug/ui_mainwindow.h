@@ -24,8 +24,8 @@ public:
     QWidget *centralwidget;
     QLabel *label_pic;
     QPushButton *startNowbtn;
-    QLabel *signInbtn;
     QLabel *heading;
+    QPushButton *signIn;
 
     void setupUi(QMainWindow *MainWindow)
     {
@@ -45,21 +45,20 @@ public:
         font.setPointSize(40);
         startNowbtn->setFont(font);
         startNowbtn->setCursor(QCursor(Qt::CursorShape::ArrowCursor));
-        signInbtn = new QLabel(centralwidget);
-        signInbtn->setObjectName("signInbtn");
-        signInbtn->setGeometry(QRect(269, 779, 154, 48));
-        QFont font1;
-        font1.setFamilies({QString::fromUtf8("Arial")});
-        font1.setPointSize(22);
-        signInbtn->setFont(font1);
         heading = new QLabel(centralwidget);
         heading->setObjectName("heading");
         heading->setGeometry(QRect(89, 181, 771, 282));
-        QFont font2;
-        font2.setFamilies({QString::fromUtf8("Arial")});
-        font2.setPointSize(50);
-        font2.setBold(true);
-        heading->setFont(font2);
+        QFont font1;
+        font1.setFamilies({QString::fromUtf8("Arial")});
+        font1.setPointSize(50);
+        font1.setBold(true);
+        heading->setFont(font1);
+        signIn = new QPushButton(centralwidget);
+        signIn->setObjectName("signIn");
+        signIn->setGeometry(QRect(250, 770, 131, 31));
+        signIn->setStyleSheet(QString::fromUtf8("background-color: rgb(51, 51, 51);\n"
+"border-radius: 9px;\n"
+"color: rgb(111, 111, 111);"));
         MainWindow->setCentralWidget(centralwidget);
 
         retranslateUi(MainWindow);
@@ -72,10 +71,10 @@ public:
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "MainWindow", nullptr));
         label_pic->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
         startNowbtn->setText(QCoreApplication::translate("MainWindow", "Start now", nullptr));
-        signInbtn->setText(QCoreApplication::translate("MainWindow", "Or Sign in", nullptr));
         heading->setText(QCoreApplication::translate("MainWindow", "Lorem ipsum dolor sit \n"
 " amet consectetur \n"
 " adipiscing?", nullptr));
+        signIn->setText(QCoreApplication::translate("MainWindow", "Or Sign in", nullptr));
     } // retranslateUi
 
 };
