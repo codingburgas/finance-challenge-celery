@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/">
+        <file>questionnaire.png</file>
+    </qresource>
+</RCC>

@@ -33,4 +33,5 @@ DISTFILES +=
 
 RESOURCES += \
     images/mainWindow.qrc \
+    images/questionnaire.qrc \
     images/register.qrc

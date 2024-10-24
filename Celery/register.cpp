@@ -11,7 +11,7 @@ Register::Register(QWidget *parent)
 
 {
     ui->setupUi(this);
-    QPixmap pix(":/register/register (2).png");
+    QPixmap pix("://questionnaire.png");
     ui->backgroundd->setPixmap(pix);
     ui->loginButton->setStyleSheet(
         "QPushButton {"
