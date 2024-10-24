@@ -1,8 +1,8 @@
 #include "register.h"
 #include "ui_register.h"
 #include<QPixmap>
-#include "dashboard.h"
-#include "ui_dashboard.h"
+#include "firstquestion.h".h"
+#include "ui_firstquestion.h"
 
 Register::Register(QWidget *parent)
     : QDialog(parent)
@@ -11,7 +11,7 @@ Register::Register(QWidget *parent)
 
 {
     ui->setupUi(this);
-    QPixmap pix("://questionnaire.png");
+    QPixmap pix(":/register/register (2).png");
     ui->backgroundd->setPixmap(pix);
     ui->loginButton->setStyleSheet(
         "QPushButton {"
@@ -41,16 +41,16 @@ Register::~Register()
 
 void Register::on_loginButton_clicked()
 {
-    Dashboard *dashboardWindow = new Dashboard();
-    dashboardWindow->show();
+    firstQuestion *questionWindow = new firstQuestion();
+    questionWindow->show();
     this->close();
 }
 
 
 void Register::on_confirmButton_clicked()
 {
-    Dashboard *dashboardWindow = new Dashboard();
-    dashboardWindow->show();
+    firstQuestion *questionWindow = new firstQuestion();
+    questionWindow->show();
     this->close();
 }
 

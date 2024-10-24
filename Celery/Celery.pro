@@ -10,17 +10,20 @@ CONFIG += c++17
 
 SOURCES += \
     dashboard.cpp \
+    firstquestion.cpp \
     main.cpp \
     mainwindow.cpp \
     register.cpp
 
 HEADERS += \
     dashboard.h \
+    firstquestion.h \
     mainwindow.h \
     register.h
 
 FORMS += \
     dashboard.ui \
+    firstquestion.ui \
     mainwindow.ui \
     register.ui
 
