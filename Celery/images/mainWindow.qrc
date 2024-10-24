@@ -1,5 +1,6 @@
 <RCC>
     <qresource prefix="/images">
         <file>mainWindow.png</file>
+        <file>register.qrc</file>
     </qresource>
 </RCC>
