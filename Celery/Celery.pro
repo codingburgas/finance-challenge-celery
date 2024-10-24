@@ -13,19 +13,22 @@ SOURCES += \
     firstquestion.cpp \
     main.cpp \
     mainwindow.cpp \
-    register.cpp
+    register.cpp \
+    secondquestion.cpp
 
 HEADERS += \
     dashboard.h \
     firstquestion.h \
     mainwindow.h \
-    register.h
+    register.h \
+    secondquestion.h
 
 FORMS += \
     dashboard.ui \
     firstquestion.ui \
     mainwindow.ui \
-    register.ui
+    register.ui \
+    secondquestion.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

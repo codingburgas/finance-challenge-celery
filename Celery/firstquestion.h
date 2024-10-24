@@ -15,6 +15,9 @@ public:
     explicit firstQuestion(QWidget *parent = nullptr);
     ~firstQuestion();
 
+private slots:
+    void on_okButton_clicked();
+
 private:
     Ui::firstQuestion *ui;
 };
