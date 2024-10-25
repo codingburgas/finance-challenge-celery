@@ -14,7 +14,7 @@ MainWindow::MainWindow(QWidget *parent)
     ui->startNowbtn->setStyleSheet(
         "QPushButton {"
         "   background-color: #B6FD33;"
-        "   border-radius: 70px;"
+        "   border-radius: 70rem;"
         "   font: bold;"
         "}"
         "QPushButton:hover {"

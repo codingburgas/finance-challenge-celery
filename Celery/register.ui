@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1920</width>
-    <height>1080</height>
+    <width>1500</width>
+    <height>775</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -21,16 +21,23 @@ font: bold;</string>
   <widget class="QLabel" name="welcome">
    <property name="geometry">
     <rect>
-     <x>500</x>
-     <y>282</y>
+     <x>423</x>
+     <y>193</y>
      <width>311</width>
      <height>61</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <pointsize>-1</pointsize>
+     <italic>false</italic>
+     <bold>true</bold>
+    </font>
+   </property>
    <property name="styleSheet">
     <string notr="true">color: rgb(182, 253, 51);
 font: bold;
-font-size: 64px;
+font-size:46px;
 </string>
    </property>
    <property name="text">
@@ -40,16 +47,16 @@ font-size: 64px;
   <widget class="QLabel" name="username_create">
    <property name="geometry">
     <rect>
-     <x>508</x>
-     <y>373</y>
+     <x>428</x>
+     <y>270</y>
      <width>141</width>
      <height>31</height>
     </rect>
    </property>
    <property name="styleSheet">
     <string notr="true">color: rgb(178, 215, 138);
-font-size: 28px;
-font: bold;</string>
+font-size: 20px;
+</string>
    </property>
    <property name="text">
     <string>Username:</string>
@@ -58,16 +65,16 @@ font: bold;</string>
   <widget class="QLabel" name="addEmail">
    <property name="geometry">
     <rect>
-     <x>508</x>
-     <y>502</y>
+     <x>428</x>
+     <y>353</y>
      <width>81</width>
      <height>41</height>
     </rect>
    </property>
    <property name="styleSheet">
     <string notr="true">color: rgb(178, 215, 138);
-font-size:28px;
-font: bold;</string>
+font-size:20px;
+</string>
    </property>
    <property name="text">
     <string>Email:</string>
@@ -76,16 +83,16 @@ font: bold;</string>
   <widget class="QLabel" name="password">
    <property name="geometry">
     <rect>
-     <x>508</x>
-     <y>628</y>
+     <x>428</x>
+     <y>444</y>
      <width>141</width>
      <height>31</height>
     </rect>
    </property>
    <property name="styleSheet">
     <string notr="true">color: rgb(178, 215, 138);
-font-size: 28px;
-font:bold;</string>
+font-size: 20px;
+</string>
    </property>
    <property name="text">
     <string>Password:</string>
@@ -94,10 +101,10 @@ font:bold;</string>
   <widget class="QLineEdit" name="lineEdit">
    <property name="geometry">
     <rect>
-     <x>510</x>
-     <y>417</y>
-     <width>401</width>
-     <height>70</height>
+     <x>429</x>
+     <y>302</y>
+     <width>292</width>
+     <height>51</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -110,10 +117,10 @@ color: white;</string>
   <widget class="QLineEdit" name="lineEdit_2">
    <property name="geometry">
     <rect>
-     <x>510</x>
-     <y>687</y>
-     <width>401</width>
-     <height>70</height>
+     <x>429</x>
+     <y>487</y>
+     <width>292</width>
+     <height>51</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -126,10 +133,10 @@ color: white;</string>
   <widget class="QLineEdit" name="lineEdit_3">
    <property name="geometry">
     <rect>
-     <x>510</x>
-     <y>543</y>
-     <width>401</width>
-     <height>70</height>
+     <x>429</x>
+     <y>387</y>
+     <width>292</width>
+     <height>51</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -221,8 +228,8 @@ color: white;</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1920</width>
-     <height>1080</height>
+     <width>1500</width>
+     <height>775</height>
     </rect>
    </property>
    <property name="text">
@@ -259,8 +266,8 @@ color: white;</string>
   <widget class="QPushButton" name="confirmButton">
    <property name="geometry">
     <rect>
-     <x>510</x>
-     <y>787</y>
+     <x>429</x>
+     <y>561</y>
      <width>120</width>
      <height>45</height>
     </rect>
