@@ -272,10 +272,12 @@ Makefile: ../../Celery.pro C:/Qt/6.8.0/mingw_64/mkspecs/win32-g++/qmake.conf C:/
 		../../Celery.pro \
 		C:/Qt/6.8.0/mingw_64/lib/Qt6Widgets.prl \
 		C:/Qt/6.8.0/mingw_64/lib/Qt6Gui.prl \
+		C:/Qt/6.8.0/mingw_64/lib/Qt6Sql.prl \
 		C:/Qt/6.8.0/mingw_64/lib/Qt6Core.prl \
 		C:/Qt/6.8.0/mingw_64/lib/Qt6EntryPoint.prl \
 		C:/Qt/6.8.0/mingw_64/mkspecs/features/build_pass.prf \
 		../../images/mainWindow.qrc \
+		../../images/questionnaire.qrc \
 		../../images/register.qrc
 	$(QMAKE) -o Makefile ..\..\Celery.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug"
 C:/Qt/6.8.0/mingw_64/mkspecs/features/spec_pre.prf:
@@ -480,10 +482,12 @@ C:/Qt/6.8.0/mingw_64/mkspecs/features/lex.prf:
 ../../Celery.pro:
 C:/Qt/6.8.0/mingw_64/lib/Qt6Widgets.prl:
 C:/Qt/6.8.0/mingw_64/lib/Qt6Gui.prl:
+C:/Qt/6.8.0/mingw_64/lib/Qt6Sql.prl:
 C:/Qt/6.8.0/mingw_64/lib/Qt6Core.prl:
 C:/Qt/6.8.0/mingw_64/lib/Qt6EntryPoint.prl:
 C:/Qt/6.8.0/mingw_64/mkspecs/features/build_pass.prf:
 ../../images/mainWindow.qrc:
+../../images/questionnaire.qrc:
 ../../images/register.qrc:
 qmake: FORCE
 	@$(QMAKE) -o Makefile ..\..\Celery.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug"

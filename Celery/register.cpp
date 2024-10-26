@@ -1,7 +1,7 @@
 #include "register.h"
 #include "ui_register.h"
 #include<QPixmap>
-#include "firstquestion.h".h"
+#include "firstquestion.h"
 #include "ui_firstquestion.h"
 
 Register::Register(QWidget *parent)
