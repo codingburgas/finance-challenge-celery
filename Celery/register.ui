@@ -149,16 +149,24 @@ color: white;</string>
   <widget class="QLabel" name="haveAccount">
    <property name="geometry">
     <rect>
-     <x>1090</x>
-     <y>267</y>
+     <x>834</x>
+     <y>185</y>
      <width>491</width>
      <height>91</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <pointsize>-1</pointsize>
+     <italic>false</italic>
+     <bold>true</bold>
+    </font>
+   </property>
    <property name="styleSheet">
     <string notr="true">color: rgb(182, 253, 51);
-font-size: 40px;
-font: bold;</string>
+font-size: 35px;
+font: bold;
+line-height: 10px;</string>
    </property>
    <property name="text">
     <string>Already have an 
@@ -168,11 +176,14 @@ account?</string>
   <widget class="QLabel" name="username_logIn">
    <property name="geometry">
     <rect>
-     <x>1090</x>
-     <y>373</y>
+     <x>832</x>
+     <y>270</y>
      <width>161</width>
      <height>31</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-size:20px;</string>
    </property>
    <property name="text">
     <string>Username:</string>
@@ -181,11 +192,14 @@ account?</string>
   <widget class="QLabel" name="password_logIn">
    <property name="geometry">
     <rect>
-     <x>1090</x>
-     <y>502</y>
+     <x>834</x>
+     <y>364</y>
      <width>151</width>
      <height>31</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-size:20px;</string>
    </property>
    <property name="text">
     <string>Password:</string>
@@ -194,10 +208,10 @@ account?</string>
   <widget class="QLineEdit" name="lineEdit_4">
    <property name="geometry">
     <rect>
-     <x>1090</x>
-     <y>417</y>
-     <width>401</width>
-     <height>70</height>
+     <x>833</x>
+     <y>302</y>
+     <width>292</width>
+     <height>51</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -210,10 +224,10 @@ color: white;</string>
   <widget class="QLineEdit" name="lineEdit_5">
    <property name="geometry">
     <rect>
-     <x>1090</x>
-     <y>546</y>
-     <width>401</width>
-     <height>70</height>
+     <x>833</x>
+     <y>396</y>
+     <width>292</width>
+     <height>51</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -239,8 +253,8 @@ color: white;</string>
   <widget class="QPushButton" name="loginButton">
    <property name="geometry">
     <rect>
-     <x>1100</x>
-     <y>787</y>
+     <x>899</x>
+     <y>561</y>
      <width>104</width>
      <height>42</height>
     </rect>

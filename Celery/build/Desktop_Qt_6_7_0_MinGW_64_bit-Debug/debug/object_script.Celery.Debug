@@ -4,6 +4,7 @@ debug/main.o
 debug/mainwindow.o
 debug/register.o
 debug/secondquestion.o
+debug/thirdquestion.o
 debug/qrc_mainWindow.o
 debug/qrc_questionnaire.o
 debug/qrc_register.o
@@ -12,3 +13,4 @@ debug/moc_firstquestion.o
 debug/moc_mainwindow.o
 debug/moc_register.o
 debug/moc_secondquestion.o
+debug/moc_thirdquestion.o

@@ -4,6 +4,7 @@ release/main.o
 release/mainwindow.o
 release/register.o
 release/secondquestion.o
+release/thirdquestion.o
 release/qrc_mainWindow.o
 release/qrc_questionnaire.o
 release/qrc_register.o
@@ -12,3 +13,4 @@ release/moc_firstquestion.o
 release/moc_mainwindow.o
 release/moc_register.o
 release/moc_secondquestion.o
+release/moc_thirdquestion.o

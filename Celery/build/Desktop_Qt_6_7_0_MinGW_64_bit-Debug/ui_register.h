@@ -97,26 +97,30 @@ public:
 "color: white;"));
         haveAccount = new QLabel(Register);
         haveAccount->setObjectName("haveAccount");
-        haveAccount->setGeometry(QRect(1090, 267, 491, 91));
+        haveAccount->setGeometry(QRect(834, 185, 491, 91));
+        haveAccount->setFont(font);
         haveAccount->setStyleSheet(QString::fromUtf8("color: rgb(182, 253, 51);\n"
-"font-size: 40px;\n"
-"font: bold;"));
+"font-size: 35px;\n"
+"font: bold;\n"
+"line-height: 10px;"));
         username_logIn = new QLabel(Register);
         username_logIn->setObjectName("username_logIn");
-        username_logIn->setGeometry(QRect(1090, 373, 161, 31));
+        username_logIn->setGeometry(QRect(832, 270, 161, 31));
+        username_logIn->setStyleSheet(QString::fromUtf8("font-size:20px;"));
         password_logIn = new QLabel(Register);
         password_logIn->setObjectName("password_logIn");
-        password_logIn->setGeometry(QRect(1090, 502, 151, 31));
+        password_logIn->setGeometry(QRect(834, 364, 151, 31));
+        password_logIn->setStyleSheet(QString::fromUtf8("font-size:20px;"));
         lineEdit_4 = new QLineEdit(Register);
         lineEdit_4->setObjectName("lineEdit_4");
-        lineEdit_4->setGeometry(QRect(1090, 417, 401, 70));
+        lineEdit_4->setGeometry(QRect(833, 302, 292, 51));
         lineEdit_4->setStyleSheet(QString::fromUtf8("background-color: rgb(193, 222, 161);\n"
 "border-radius: 9px;\n"
 " padding: 10px;\n"
 "color: white;"));
         lineEdit_5 = new QLineEdit(Register);
         lineEdit_5->setObjectName("lineEdit_5");
-        lineEdit_5->setGeometry(QRect(1090, 546, 401, 70));
+        lineEdit_5->setGeometry(QRect(833, 396, 292, 51));
         lineEdit_5->setStyleSheet(QString::fromUtf8("background-color: rgb(193, 222, 161);\n"
 "border-radius: 9px;\n"
 " padding: 10px;\n"
@@ -126,7 +130,7 @@ public:
         backgroundd->setGeometry(QRect(0, 0, 1500, 775));
         loginButton = new QPushButton(Register);
         loginButton->setObjectName("loginButton");
-        loginButton->setGeometry(QRect(1100, 787, 104, 42));
+        loginButton->setGeometry(QRect(899, 561, 104, 42));
         QFont font1;
         font1.setFamilies({QString::fromUtf8("Arial")});
         font1.setBold(true);
