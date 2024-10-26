@@ -14,62 +14,83 @@
 #include <QtWidgets/QDialog>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QLineEdit>
+#include <QtWidgets/QPushButton>
 
 QT_BEGIN_NAMESPACE
 
 class Ui_thirdQuestion
 {
 public:
-    QLabel *label;
-    QLabel *label_2;
-    QLabel *label_3;
-    QLineEdit *lineEdit;
-    QLineEdit *lineEdit_2;
-    QLabel *label_4;
+    QLabel *question;
+    QLabel *nameTxt;
+    QLabel *totalTxt;
+    QLineEdit *nameAnswer;
+    QLineEdit *amountAnswer;
     QLabel *backgroundd;
+    QPushButton *okButton;
 
     void setupUi(QDialog *thirdQuestion)
     {
         if (thirdQuestion->objectName().isEmpty())
             thirdQuestion->setObjectName("thirdQuestion");
-        thirdQuestion->resize(1920, 1080);
-        label = new QLabel(thirdQuestion);
-        label->setObjectName("label");
-        label->setGeometry(QRect(260, 50, 681, 91));
-        label->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
-"font-size: 64px;\n"
+        thirdQuestion->resize(1500, 800);
+        question = new QLabel(thirdQuestion);
+        question->setObjectName("question");
+        question->setGeometry(QRect(556, 220, 381, 91));
+        QFont font;
+        font.setBold(true);
+        font.setItalic(false);
+        question->setFont(font);
+        question->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
+"font-size: 38px;\n"
 "font: bold;"));
-        label_2 = new QLabel(thirdQuestion);
-        label_2->setObjectName("label_2");
-        label_2->setGeometry(QRect(350, 180, 111, 41));
-        label_2->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
+        nameTxt = new QLabel(thirdQuestion);
+        nameTxt->setObjectName("nameTxt");
+        nameTxt->setGeometry(QRect(373, 382, 111, 41));
+        nameTxt->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
 "font-size: 30px;\n"
 "font: bold;"));
-        label_3 = new QLabel(thirdQuestion);
-        label_3->setObjectName("label_3");
-        label_3->setGeometry(QRect(350, 240, 211, 31));
-        label_3->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
+        totalTxt = new QLabel(thirdQuestion);
+        totalTxt->setObjectName("totalTxt");
+        totalTxt->setGeometry(QRect(245, 487, 211, 31));
+        totalTxt->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
 "font-size: 30px;\n"
 "font: bold;"));
-        lineEdit = new QLineEdit(thirdQuestion);
-        lineEdit->setObjectName("lineEdit");
-        lineEdit->setGeometry(QRect(470, 190, 291, 26));
-        lineEdit->setStyleSheet(QString::fromUtf8("background-color: rgb(51, 51, 51);\n"
+        nameAnswer = new QLineEdit(thirdQuestion);
+        nameAnswer->setObjectName("nameAnswer");
+        nameAnswer->setGeometry(QRect(478, 359, 573, 82));
+        nameAnswer->setStyleSheet(QString::fromUtf8("background-color: rgb(51, 51, 51);\n"
 "border-radius: 11px;"));
-        lineEdit_2 = new QLineEdit(thirdQuestion);
-        lineEdit_2->setObjectName("lineEdit_2");
-        lineEdit_2->setGeometry(QRect(560, 240, 201, 26));
-        lineEdit_2->setStyleSheet(QString::fromUtf8("background-color: rgb(51, 51, 51);\n"
+        amountAnswer = new QLineEdit(thirdQuestion);
+        amountAnswer->setObjectName("amountAnswer");
+        amountAnswer->setGeometry(QRect(478, 463, 573, 82));
+        amountAnswer->setStyleSheet(QString::fromUtf8("background-color: rgb(51, 51, 51);\n"
 "border-radius: 11px;"));
-        label_4 = new QLabel(thirdQuestion);
-        label_4->setObjectName("label_4");
-        label_4->setGeometry(QRect(530, 320, 63, 20));
-        label_4->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
-"font-size: 20px;\n"
-"font: bold;"));
         backgroundd = new QLabel(thirdQuestion);
         backgroundd->setObjectName("backgroundd");
-        backgroundd->setGeometry(QRect(0, 0, 61, 41));
+        backgroundd->setGeometry(QRect(0, 0, 1500, 800));
+        okButton = new QPushButton(thirdQuestion);
+        okButton->setObjectName("okButton");
+        okButton->setGeometry(QRect(720, 598, 64, 66));
+        QFont font1;
+        font1.setFamilies({QString::fromUtf8("Arial")});
+        font1.setPointSize(16);
+        font1.setBold(true);
+        font1.setItalic(false);
+        okButton->setFont(font1);
+        okButton->setCursor(QCursor(Qt::ArrowCursor));
+        okButton->setAutoFillBackground(false);
+        okButton->setStyleSheet(QString::fromUtf8("background-color:transparent;\n"
+"font-weight:bold;\n"
+"color:white;\n"
+""));
+        backgroundd->raise();
+        question->raise();
+        nameTxt->raise();
+        totalTxt->raise();
+        nameAnswer->raise();
+        amountAnswer->raise();
+        okButton->raise();
 
         retranslateUi(thirdQuestion);
 
@@ -79,11 +100,11 @@ public:
     void retranslateUi(QDialog *thirdQuestion)
     {
         thirdQuestion->setWindowTitle(QCoreApplication::translate("thirdQuestion", "Dialog", nullptr));
-        label->setText(QCoreApplication::translate("thirdQuestion", "What is your budget?", nullptr));
-        label_2->setText(QCoreApplication::translate("thirdQuestion", "Name:", nullptr));
-        label_3->setText(QCoreApplication::translate("thirdQuestion", "Total amount:", nullptr));
-        label_4->setText(QCoreApplication::translate("thirdQuestion", "OK", nullptr));
-        backgroundd->setText(QCoreApplication::translate("thirdQuestion", "TextLabel", nullptr));
+        question->setText(QCoreApplication::translate("thirdQuestion", "What is your budget?", nullptr));
+        nameTxt->setText(QCoreApplication::translate("thirdQuestion", "Name:", nullptr));
+        totalTxt->setText(QCoreApplication::translate("thirdQuestion", "Total amount:", nullptr));
+        backgroundd->setText(QCoreApplication::translate("thirdQuestion", "zz", nullptr));
+        okButton->setText(QCoreApplication::translate("thirdQuestion", "OK", nullptr));
     } // retranslateUi
 
 };

@@ -111,7 +111,8 @@ font-size: 20px;
     <string notr="true">background-color: rgb(193, 222, 161);
 border-radius: 9px;
  padding: 10px;
-color: white;</string>
+color: white;
+font-size:20px;</string>
    </property>
   </widget>
   <widget class="QLineEdit" name="lineEdit_2">
@@ -127,7 +128,8 @@ color: white;</string>
     <string notr="true">background-color: rgb(193, 222, 161);
 border-radius: 9px;
  padding: 10px;
-color: white;</string>
+color: white;
+font-size:20px;</string>
    </property>
   </widget>
   <widget class="QLineEdit" name="lineEdit_3">
@@ -143,7 +145,8 @@ color: white;</string>
     <string notr="true">background-color: rgb(193, 222, 161);
 border-radius: 9px;
  padding: 10px;
-color: white;</string>
+color: white;
+font-size:20px;</string>
    </property>
   </widget>
   <widget class="QLabel" name="haveAccount">
@@ -214,11 +217,20 @@ account?</string>
      <height>51</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <pointsize>-1</pointsize>
+     <italic>false</italic>
+     <bold>true</bold>
+    </font>
+   </property>
    <property name="styleSheet">
     <string notr="true">background-color: rgb(193, 222, 161);
 border-radius: 9px;
  padding: 10px;
-color: white;</string>
+color: white;
+font-size:20px;
+</string>
    </property>
   </widget>
   <widget class="QLineEdit" name="lineEdit_5">
@@ -234,7 +246,8 @@ color: white;</string>
     <string notr="true">background-color: rgb(193, 222, 161);
 border-radius: 9px;
  padding: 10px;
-color: white;</string>
+color: white;
+font-size:20px;</string>
    </property>
   </widget>
   <widget class="QLabel" name="backgroundd">
@@ -253,7 +266,7 @@ color: white;</string>
   <widget class="QPushButton" name="loginButton">
    <property name="geometry">
     <rect>
-     <x>899</x>
+     <x>833</x>
      <y>561</y>
      <width>104</width>
      <height>42</height>

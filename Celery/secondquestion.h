@@ -15,6 +15,9 @@ public:
     explicit secondQuestion(QWidget *parent = nullptr);
     ~secondQuestion();
 
+private slots:
+    void on_okButton_clicked();
+
 private:
     Ui::secondQuestion *ui;
 };

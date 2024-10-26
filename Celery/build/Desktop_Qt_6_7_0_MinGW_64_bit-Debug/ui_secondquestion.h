@@ -14,70 +14,92 @@
 #include <QtWidgets/QDialog>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QLineEdit>
+#include <QtWidgets/QPushButton>
 
 QT_BEGIN_NAMESPACE
 
 class Ui_secondQuestion
 {
 public:
-    QLabel *label;
-    QLabel *label_2;
-    QLabel *label_3;
-    QLineEdit *lineEdit;
-    QLineEdit *lineEdit_2;
-    QLabel *label_4;
+    QLabel *question;
+    QLabel *nameText;
+    QLabel *targetText;
+    QLineEdit *targetInput;
+    QLineEdit *nameInput;
     QLabel *backgroundd;
+    QPushButton *okButton;
 
     void setupUi(QDialog *secondQuestion)
     {
         if (secondQuestion->objectName().isEmpty())
             secondQuestion->setObjectName("secondQuestion");
-        secondQuestion->resize(1920, 1080);
-        label = new QLabel(secondQuestion);
-        label->setObjectName("label");
-        label->setGeometry(QRect(320, 50, 551, 91));
-        label->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
-"font-size: 64px;\n"
+        secondQuestion->resize(1500, 775);
+        question = new QLabel(secondQuestion);
+        question->setObjectName("question");
+        question->setGeometry(QRect(610, 243, 311, 74));
+        QFont font;
+        font.setBold(true);
+        font.setItalic(false);
+        question->setFont(font);
+        question->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
+"font-size: 38px;\n"
 "font: bold;"));
-        label_2 = new QLabel(secondQuestion);
-        label_2->setObjectName("label_2");
-        label_2->setGeometry(QRect(350, 200, 121, 31));
-        label_2->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
+        nameText = new QLabel(secondQuestion);
+        nameText->setObjectName("nameText");
+        nameText->setGeometry(QRect(362, 386, 121, 31));
+        nameText->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
 "font-size: 30px;\n"
 "font: bold;"));
-        label_3 = new QLabel(secondQuestion);
-        label_3->setObjectName("label_3");
-        label_3->setGeometry(QRect(350, 250, 131, 41));
-        label_3->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
+        targetText = new QLabel(secondQuestion);
+        targetText->setObjectName("targetText");
+        targetText->setGeometry(QRect(357, 492, 131, 41));
+        targetText->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
 "font-size: 30px;\n"
 "font: bold;"));
-        lineEdit = new QLineEdit(secondQuestion);
-        lineEdit->setObjectName("lineEdit");
-        lineEdit->setGeometry(QRect(490, 210, 261, 26));
-        lineEdit->setStyleSheet(QString::fromUtf8("background-color: rgb(51, 51, 51);\n"
+        targetInput = new QLineEdit(secondQuestion);
+        targetInput->setObjectName("targetInput");
+        targetInput->setGeometry(QRect(469, 473, 573, 82));
+        targetInput->setStyleSheet(QString::fromUtf8("background-color: rgb(51, 51, 51);\n"
 "border-radius: 11px;\n"
+" padding: 10px ;\n"
+"color: white;\n"
+"font-size: 50px;\n"
+"font-weight: bold;\n"
 ""));
-        lineEdit_2 = new QLineEdit(secondQuestion);
-        lineEdit_2->setObjectName("lineEdit_2");
-        lineEdit_2->setGeometry(QRect(490, 260, 261, 26));
-        lineEdit_2->setStyleSheet(QString::fromUtf8("background-color: rgb(51, 51, 51);\n"
-"border-radius: 11px;"));
-        label_4 = new QLabel(secondQuestion);
-        label_4->setObjectName("label_4");
-        label_4->setGeometry(QRect(540, 350, 63, 20));
-        label_4->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
-"font: bold;\n"
-"font-size: 20px;"));
+        nameInput = new QLineEdit(secondQuestion);
+        nameInput->setObjectName("nameInput");
+        nameInput->setGeometry(QRect(469, 359, 573, 82));
+        nameInput->setStyleSheet(QString::fromUtf8("background-color: rgb(51, 51, 51);\n"
+"border-radius: 11px;\n"
+" padding: 10px ;\n"
+"color: white;\n"
+"font-size: 50px;\n"
+"font-weight: bold;"));
         backgroundd = new QLabel(secondQuestion);
         backgroundd->setObjectName("backgroundd");
-        backgroundd->setGeometry(QRect(0, 0, 1921, 1081));
+        backgroundd->setGeometry(QRect(0, 0, 1500, 775));
+        okButton = new QPushButton(secondQuestion);
+        okButton->setObjectName("okButton");
+        okButton->setGeometry(QRect(723, 600, 64, 66));
+        QFont font1;
+        font1.setFamilies({QString::fromUtf8("Arial")});
+        font1.setPointSize(16);
+        font1.setBold(true);
+        font1.setItalic(false);
+        okButton->setFont(font1);
+        okButton->setCursor(QCursor(Qt::ArrowCursor));
+        okButton->setAutoFillBackground(false);
+        okButton->setStyleSheet(QString::fromUtf8("background-color:transparent;\n"
+"font-weight:bold;\n"
+"color:white;\n"
+""));
         backgroundd->raise();
-        label->raise();
-        label_2->raise();
-        label_3->raise();
-        lineEdit->raise();
-        lineEdit_2->raise();
-        label_4->raise();
+        question->raise();
+        nameText->raise();
+        targetText->raise();
+        targetInput->raise();
+        nameInput->raise();
+        okButton->raise();
 
         retranslateUi(secondQuestion);
 
@@ -87,11 +109,11 @@ public:
     void retranslateUi(QDialog *secondQuestion)
     {
         secondQuestion->setWindowTitle(QCoreApplication::translate("secondQuestion", "Dialog", nullptr));
-        label->setText(QCoreApplication::translate("secondQuestion", "Set a saving goal", nullptr));
-        label_2->setText(QCoreApplication::translate("secondQuestion", "Name:", nullptr));
-        label_3->setText(QCoreApplication::translate("secondQuestion", "Target:", nullptr));
-        label_4->setText(QCoreApplication::translate("secondQuestion", "OK", nullptr));
+        question->setText(QCoreApplication::translate("secondQuestion", "Set a saving goal", nullptr));
+        nameText->setText(QCoreApplication::translate("secondQuestion", "Name:", nullptr));
+        targetText->setText(QCoreApplication::translate("secondQuestion", "Target:", nullptr));
         backgroundd->setText(QCoreApplication::translate("secondQuestion", "TextLabel", nullptr));
+        okButton->setText(QCoreApplication::translate("secondQuestion", "OK", nullptr));
     } // retranslateUi
 
 };

@@ -30,25 +30,25 @@ public:
     {
         if (firstQuestion->objectName().isEmpty())
             firstQuestion->setObjectName("firstQuestion");
-        firstQuestion->resize(1920, 1080);
+        firstQuestion->resize(1500, 775);
         question = new QLabel(firstQuestion);
         question->setObjectName("question");
-        question->setGeometry(QRect(525, 322, 869, 108));
+        question->setGeometry(QRect(499, 221, 547, 74));
         QFont font;
         font.setFamilies({QString::fromUtf8("Arial")});
-        font.setPointSize(42);
+        font.setPointSize(23);
         font.setBold(true);
         question->setFont(font);
         question->setStyleSheet(QString::fromUtf8("color: white;"));
         backgroundd = new QLabel(firstQuestion);
         backgroundd->setObjectName("backgroundd");
-        backgroundd->setGeometry(QRect(0, 0, 1920, 1080));
+        backgroundd->setGeometry(QRect(0, 0, 1500, 775));
         answer = new QLineEdit(firstQuestion);
         answer->setObjectName("answer");
-        answer->setGeometry(QRect(600, 480, 635, 120));
+        answer->setGeometry(QRect(442, 359, 573, 82));
         answer->setStyleSheet(QString::fromUtf8("background-color: #333333;\n"
 "border-radius: 9px;\n"
-" padding: 10px 240px ;\n"
+" padding: 10px 200px ;\n"
 "color: white;\n"
 "font-size: 50px;\n"
 "font-weight: bold;\n"
@@ -56,10 +56,10 @@ public:
 ""));
         okButton = new QPushButton(firstQuestion);
         okButton->setObjectName("okButton");
-        okButton->setGeometry(QRect(865, 808, 80, 96));
+        okButton->setGeometry(QRect(700, 567, 64, 66));
         QFont font1;
         font1.setFamilies({QString::fromUtf8("Arial")});
-        font1.setPointSize(31);
+        font1.setPointSize(16);
         font1.setBold(true);
         font1.setItalic(false);
         okButton->setFont(font1);
