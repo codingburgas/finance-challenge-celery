@@ -12,18 +12,23 @@
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QDialog>
+#include <QtWidgets/QLabel>
 
 QT_BEGIN_NAMESPACE
 
 class Ui_Dashboard
 {
 public:
+    QLabel *backgroundd;
 
     void setupUi(QDialog *Dashboard)
     {
         if (Dashboard->objectName().isEmpty())
             Dashboard->setObjectName("Dashboard");
-        Dashboard->resize(1920, 1080);
+        Dashboard->resize(1500, 800);
+        backgroundd = new QLabel(Dashboard);
+        backgroundd->setObjectName("backgroundd");
+        backgroundd->setGeometry(QRect(0, 0, 1500, 800));
 
         retranslateUi(Dashboard);
 
@@ -33,6 +38,7 @@ public:
     void retranslateUi(QDialog *Dashboard)
     {
         Dashboard->setWindowTitle(QCoreApplication::translate("Dashboard", "Dialog", nullptr));
+        backgroundd->setText(QCoreApplication::translate("Dashboard", "TextLabel", nullptr));
     } // retranslateUi
 
 };

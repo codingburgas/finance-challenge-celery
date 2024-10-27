@@ -2,6 +2,7 @@
 #include "ui_secondquestion.h"
 #include "thirdquestion.h"
 #include "ui_thirdquestion.h"
+#include <QDebug>
 secondQuestion::secondQuestion(QWidget *parent)
     : QDialog(parent)
     , ui(new Ui::secondQuestion)
@@ -18,6 +19,10 @@ secondQuestion::~secondQuestion()
 
 void secondQuestion::on_okButton_clicked()
 {
+    QString savingGoalName = ui->nameInput->text();
+    qDebug() <<savingGoalName;
+    QString savingGoalAmount = ui->targetInput->text();
+    qDebug() <<savingGoalAmount;
     thirdQuestion *questionWindow = new thirdQuestion();
     questionWindow->show();
     this->close();

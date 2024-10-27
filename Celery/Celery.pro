@@ -41,6 +41,7 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 DISTFILES +=
 
 RESOURCES += \
+    images/dashboard.qrc \
     images/mainWindow.qrc \
     images/questionnaire.qrc \
     images/register.qrc

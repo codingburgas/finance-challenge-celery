@@ -5,6 +5,7 @@ release/mainwindow.o
 release/register.o
 release/secondquestion.o
 release/thirdquestion.o
+release/qrc_dashboard.o
 release/qrc_mainWindow.o
 release/qrc_questionnaire.o
 release/qrc_register.o

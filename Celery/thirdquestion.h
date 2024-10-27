@@ -15,6 +15,9 @@ public:
     explicit thirdQuestion(QWidget *parent = nullptr);
     ~thirdQuestion();
 
+private slots:
+    void on_okButton_clicked();
+
 private:
     Ui::thirdQuestion *ui;
 };

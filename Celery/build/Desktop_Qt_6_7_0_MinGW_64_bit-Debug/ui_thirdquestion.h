@@ -60,12 +60,20 @@ public:
         nameAnswer->setObjectName("nameAnswer");
         nameAnswer->setGeometry(QRect(478, 359, 573, 82));
         nameAnswer->setStyleSheet(QString::fromUtf8("background-color: rgb(51, 51, 51);\n"
-"border-radius: 11px;"));
+"border-radius: 11px;\n"
+" padding: 10px ;\n"
+"color: white;\n"
+"font-size: 50px;\n"
+"font-weight: bold;"));
         amountAnswer = new QLineEdit(thirdQuestion);
         amountAnswer->setObjectName("amountAnswer");
         amountAnswer->setGeometry(QRect(478, 463, 573, 82));
         amountAnswer->setStyleSheet(QString::fromUtf8("background-color: rgb(51, 51, 51);\n"
-"border-radius: 11px;"));
+"border-radius: 11px;\n"
+" padding: 10px ;\n"
+"color: white;\n"
+"font-size: 50px;\n"
+"font-weight: bold;"));
         backgroundd = new QLabel(thirdQuestion);
         backgroundd->setObjectName("backgroundd");
         backgroundd->setGeometry(QRect(0, 0, 1500, 800));

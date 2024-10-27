@@ -5,6 +5,7 @@ debug/mainwindow.o
 debug/register.o
 debug/secondquestion.o
 debug/thirdquestion.o
+debug/qrc_dashboard.o
 debug/qrc_mainWindow.o
 debug/qrc_questionnaire.o
 debug/qrc_register.o
