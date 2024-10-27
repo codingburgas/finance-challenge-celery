@@ -25,10 +25,10 @@ public:
     {
         if (Dashboard->objectName().isEmpty())
             Dashboard->setObjectName("Dashboard");
-        Dashboard->resize(1500, 800);
+        Dashboard->resize(1500, 775);
         backgroundd = new QLabel(Dashboard);
         backgroundd->setObjectName("backgroundd");
-        backgroundd->setGeometry(QRect(0, 0, 1500, 800));
+        backgroundd->setGeometry(QRect(0, 0, 1500, 775));
 
         retranslateUi(Dashboard);
 

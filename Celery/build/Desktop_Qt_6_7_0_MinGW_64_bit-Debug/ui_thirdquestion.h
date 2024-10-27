@@ -33,7 +33,7 @@ public:
     {
         if (thirdQuestion->objectName().isEmpty())
             thirdQuestion->setObjectName("thirdQuestion");
-        thirdQuestion->resize(1500, 800);
+        thirdQuestion->resize(1500, 775);
         question = new QLabel(thirdQuestion);
         question->setObjectName("question");
         question->setGeometry(QRect(556, 220, 381, 91));
@@ -76,7 +76,7 @@ public:
 "font-weight: bold;"));
         backgroundd = new QLabel(thirdQuestion);
         backgroundd->setObjectName("backgroundd");
-        backgroundd->setGeometry(QRect(0, 0, 1500, 800));
+        backgroundd->setGeometry(QRect(0, 0, 1500, 775));
         okButton = new QPushButton(thirdQuestion);
         okButton->setObjectName("okButton");
         okButton->setGeometry(QRect(720, 598, 64, 66));
