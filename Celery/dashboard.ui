@@ -26,6 +26,78 @@
     <string>TextLabel</string>
    </property>
   </widget>
+  <widget class="QPushButton" name="editDetails">
+   <property name="geometry">
+    <rect>
+     <x>472</x>
+     <y>498</y>
+     <width>171</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(51, 51, 51);
+border-radius: 11px;
+font-size: 28px;
+font: bold;
+color: rgb(182, 253, 51);</string>
+   </property>
+   <property name="text">
+    <string>Edit details</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="currentBalance">
+   <property name="geometry">
+    <rect>
+     <x>820</x>
+     <y>180</y>
+     <width>131</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Current balance</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="savingGoals">
+   <property name="geometry">
+    <rect>
+     <x>820</x>
+     <y>240</y>
+     <width>131</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Saving goals</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="spendings">
+   <property name="geometry">
+    <rect>
+     <x>820</x>
+     <y>300</y>
+     <width>131</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Spendings</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="budget">
+   <property name="geometry">
+    <rect>
+     <x>820</x>
+     <y>360</y>
+     <width>131</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Budget</string>
+   </property>
+  </widget>
  </widget>
  <resources/>
  <connections/>

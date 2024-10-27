@@ -10,6 +10,7 @@ CONFIG += c++17
 
 SOURCES += \
     dashboard.cpp \
+    dashboard_spendings.cpp \
     firstquestion.cpp \
     main.cpp \
     mainwindow.cpp \
@@ -19,6 +20,7 @@ SOURCES += \
 
 HEADERS += \
     dashboard.h \
+    dashboard_spendings.h \
     firstquestion.h \
     mainwindow.h \
     register.h \
@@ -27,6 +29,7 @@ HEADERS += \
 
 FORMS += \
     dashboard.ui \
+    dashboard_spendings.ui \
     firstquestion.ui \
     mainwindow.ui \
     register.ui \
@@ -41,6 +44,7 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 DISTFILES +=
 
 RESOURCES += \
+    images/dashboard-spendings.qrc \
     images/dashboard.qrc \
     images/mainWindow.qrc \
     images/questionnaire.qrc \
