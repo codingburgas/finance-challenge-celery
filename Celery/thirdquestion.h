@@ -20,6 +20,7 @@ private slots:
 
 private:
     Ui::thirdQuestion *ui;
+       QString balance;
 };
 
 #endif // THIRDQUESTION_H

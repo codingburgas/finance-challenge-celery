@@ -295,6 +295,7 @@ Makefile: ../../Celery.pro C:/Qt/6.7.0/mingw_64/mkspecs/win32-g++/qmake.conf C:/
 		C:/Qt/6.7.0/mingw_64/lib/Qt6Core.prl \
 		C:/Qt/6.7.0/mingw_64/lib/Qt6EntryPoint.prl \
 		C:/Qt/6.7.0/mingw_64/mkspecs/features/build_pass.prf \
+		../../images/dashboard-spendings.qrc \
 		../../images/dashboard.qrc \
 		../../images/mainWindow.qrc \
 		../../images/questionnaire.qrc \
@@ -525,6 +526,7 @@ C:/Qt/6.7.0/mingw_64/lib/Qt6Sql.prl:
 C:/Qt/6.7.0/mingw_64/lib/Qt6Core.prl:
 C:/Qt/6.7.0/mingw_64/lib/Qt6EntryPoint.prl:
 C:/Qt/6.7.0/mingw_64/mkspecs/features/build_pass.prf:
+../../images/dashboard-spendings.qrc:
 ../../images/dashboard.qrc:
 ../../images/mainWindow.qrc:
 ../../images/questionnaire.qrc:

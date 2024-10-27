@@ -6,6 +6,7 @@
 thirdQuestion::thirdQuestion(QWidget *parent)
     : QDialog(parent)
     , ui(new Ui::thirdQuestion)
+ , balance(balance)
 {
     ui->setupUi(this);
     QPixmap pix("://questionnaire.png");
@@ -23,7 +24,7 @@ void thirdQuestion::on_okButton_clicked()
     qDebug() <<budgetName;
     QString budgetAmount = ui->amountAnswer->text();
     qDebug() <<budgetAmount;
-    Dashboard *dashboardWindow = new Dashboard();
+    Dashboard *dashboardWindow = new Dashboard(balance);
     dashboardWindow->show();
     this->close();
 }

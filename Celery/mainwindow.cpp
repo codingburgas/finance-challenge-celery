@@ -34,18 +34,9 @@ MainWindow::MainWindow(QWidget *parent)
 
     QPixmap pix(":/images/mainWindow.png");
     ui->label_pic->setPixmap(pix);
-    ui->startNowbtn->setStyleSheet(
-        "QPushButton {"
-        "   background-color: #B6FD33;"
-        "   border-radius: 70rem;"
-        "   font: bold;"
-        "}"
-        "QPushButton:hover {"
-        "   background-color: #97D02C;"
-        "}"
-        );
+
     ui->heading->setStyleSheet("color: white");
-    connect(ui->startNowbtn, &QPushButton::clicked, this, &MainWindow::on_startNowbtn_clicked);
+    connect(ui->pushButton, &QPushButton::clicked, this, &MainWindow::on_startNowbtn_clicked);
     connect(ui->signIn, &QPushButton::clicked, this, &MainWindow::on_signIn_clicked);
 }
 
@@ -67,5 +58,11 @@ void MainWindow::on_signIn_clicked()
     Register *registerWindow = new Register();
     registerWindow->show();
     this->close();
+}
+
+
+void MainWindow::on_pushButton_clicked()
+{
+
 }
 

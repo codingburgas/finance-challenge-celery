@@ -27,28 +27,6 @@
      <string>TextLabel</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="startNowbtn">
-    <property name="geometry">
-     <rect>
-      <x>172</x>
-      <y>491</y>
-      <width>317</width>
-      <height>112</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Arial</family>
-      <pointsize>30</pointsize>
-     </font>
-    </property>
-    <property name="cursor">
-     <cursorShape>ArrowCursor</cursorShape>
-    </property>
-    <property name="text">
-     <string>Start now</string>
-    </property>
-   </widget>
    <widget class="QLabel" name="heading">
     <property name="geometry">
      <rect>
@@ -87,6 +65,26 @@ color: rgb(111, 111, 111);</string>
     </property>
     <property name="text">
      <string>Or Sign in</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>172</x>
+      <y>491</y>
+      <width>317</width>
+      <height>112</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #B6FD33;
+border-radius: 50px;
+font-size:40px;
+font-weight:bold;
+</string>
+    </property>
+    <property name="text">
+     <string>Start now</string>
     </property>
    </widget>
   </widget>

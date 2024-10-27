@@ -22,6 +22,11 @@
      <height>775</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <bold>true</bold>
+    </font>
+   </property>
    <property name="text">
     <string>TextLabel</string>
    </property>
@@ -29,18 +34,18 @@
   <widget class="QPushButton" name="editDetails">
    <property name="geometry">
     <rect>
-     <x>472</x>
-     <y>498</y>
-     <width>171</width>
-     <height>41</height>
+     <x>589</x>
+     <y>623</y>
+     <width>322</width>
+     <height>86</height>
     </rect>
    </property>
    <property name="styleSheet">
     <string notr="true">background-color: rgb(51, 51, 51);
-border-radius: 11px;
 font-size: 28px;
 font: bold;
-color: rgb(182, 253, 51);</string>
+color: rgb(182, 253, 51);
+border-radius: 40px;</string>
    </property>
    <property name="text">
     <string>Edit details</string>
@@ -49,11 +54,19 @@ color: rgb(182, 253, 51);</string>
   <widget class="QPushButton" name="currentBalance">
    <property name="geometry">
     <rect>
-     <x>820</x>
-     <y>180</y>
-     <width>131</width>
-     <height>29</height>
+     <x>1068</x>
+     <y>210</y>
+     <width>328</width>
+     <height>43</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:white;</string>
    </property>
    <property name="text">
     <string>Current balance</string>
@@ -62,11 +75,19 @@ color: rgb(182, 253, 51);</string>
   <widget class="QPushButton" name="savingGoals">
    <property name="geometry">
     <rect>
-     <x>820</x>
-     <y>240</y>
-     <width>131</width>
-     <height>29</height>
+     <x>1085</x>
+     <y>278</y>
+     <width>258</width>
+     <height>44</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:white;</string>
    </property>
    <property name="text">
     <string>Saving goals</string>
@@ -75,11 +96,19 @@ color: rgb(182, 253, 51);</string>
   <widget class="QPushButton" name="spendings">
    <property name="geometry">
     <rect>
-     <x>820</x>
-     <y>300</y>
-     <width>131</width>
-     <height>31</height>
+     <x>1074</x>
+     <y>345</y>
+     <width>258</width>
+     <height>43</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:white;</string>
    </property>
    <property name="text">
     <string>Spendings</string>
@@ -88,14 +117,62 @@ color: rgb(182, 253, 51);</string>
   <widget class="QPushButton" name="budget">
    <property name="geometry">
     <rect>
-     <x>820</x>
-     <y>360</y>
-     <width>131</width>
-     <height>29</height>
+     <x>1058</x>
+     <y>410</y>
+     <width>258</width>
+     <height>44</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:white;</string>
    </property>
    <property name="text">
     <string>Budget</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="heading">
+   <property name="geometry">
+    <rect>
+     <x>568</x>
+     <y>176</y>
+     <width>258</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>21</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:white;
+</string>
+   </property>
+   <property name="text">
+    <string>Budget</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="input">
+   <property name="geometry">
+    <rect>
+     <x>630</x>
+     <y>290</y>
+     <width>200</width>
+     <height>200</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>22</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
    </property>
   </widget>
  </widget>
