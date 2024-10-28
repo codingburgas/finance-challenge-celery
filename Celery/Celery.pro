@@ -11,6 +11,7 @@ CONFIG += c++17
 SOURCES += \
     dashboard.cpp \
     dashboard_budget.cpp \
+    dashboard_newbalance.cpp \
     dashboard_newbudget.cpp \
     dashboard_spendings.cpp \
     firstquestion.cpp \
@@ -23,6 +24,7 @@ SOURCES += \
 HEADERS += \
     dashboard.h \
     dashboard_budget.h \
+    dashboard_newbalance.h \
     dashboard_newbudget.h \
     dashboard_spendings.h \
     firstquestion.h \
@@ -34,6 +36,7 @@ HEADERS += \
 FORMS += \
     dashboard.ui \
     dashboard_budget.ui \
+    dashboard_newbalance.ui \
     dashboard_newbudget.ui \
     dashboard_spendings.ui \
     firstquestion.ui \
