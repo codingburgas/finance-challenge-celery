@@ -43,6 +43,7 @@ void Dashboard::on_budget_clicked()
 
 void Dashboard::on_spendings_clicked()
 {
+
     Dashboard_spendings *spendingsWindow = new Dashboard_spendings();
     spendingsWindow->show();
     this->close();

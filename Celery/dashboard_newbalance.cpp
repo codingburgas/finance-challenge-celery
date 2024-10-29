@@ -27,7 +27,10 @@ void dashboard_newBalance::on_doneButton_clicked()
 
         if(subtractAmount < 0){
 
-                 vector<transaction> spendings;
+            transaction temp;
+            temp.name = purpose.toStdString();
+            temp.spent = subtractAmount;
+            currentUser.spendings.push_back(temp);
 
             }
     }

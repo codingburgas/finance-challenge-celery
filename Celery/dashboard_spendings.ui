@@ -81,6 +81,24 @@ font-size: 20px;</string>
     <string>Recent activities:</string>
    </property>
   </widget>
+  <widget class="QLabel" name="amountPerGiven">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>200</y>
+     <width>211</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>26</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
  </widget>
  <resources/>
  <connections/>

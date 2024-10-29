@@ -8,6 +8,8 @@ Dashboard_spendings::Dashboard_spendings(QWidget *parent)
     ui->setupUi(this);
     QPixmap pix(":/images/dashboard-spendings.png");
     ui->backgroundd->setPixmap(pix);
+    transaction temp;
+    ui->amountPerGiven->setText(QString::number(currentUser.spendings.rbegin()->spent));
 }
 
 Dashboard_spendings::~Dashboard_spendings()

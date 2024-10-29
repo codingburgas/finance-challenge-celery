@@ -1,6 +1,6 @@
 #ifndef DASHBOARD_SPENDINGS_H
 #define DASHBOARD_SPENDINGS_H
-
+#include "models/user.h"
 #include <QDialog>
 
 namespace Ui {
