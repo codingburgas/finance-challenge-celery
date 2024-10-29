@@ -10,7 +10,6 @@ CONFIG += c++17
 
 SOURCES += \
     dashboard.cpp \
-    dashboard_budget.cpp \
     dashboard_newbalance.cpp \
     dashboard_newbudget.cpp \
     dashboard_spendings.cpp \
@@ -28,7 +27,6 @@ SOURCES += \
 
 HEADERS += \
     dashboard.h \
-    dashboard_budget.h \
     dashboard_newbalance.h \
     dashboard_newbudget.h \
     dashboard_spendings.h \
@@ -45,7 +43,6 @@ HEADERS += \
 
 FORMS += \
     dashboard.ui \
-    dashboard_budget.ui \
     dashboard_newbalance.ui \
     dashboard_newbudget.ui \
     dashboard_spendings.ui \
@@ -65,6 +62,7 @@ DISTFILES +=
 RESOURCES += \
     dashboard-balance.qrc \
     dashboard-spendings.qrc \
+    dashboard_newbudget.qrc \
     images/dashboard.qrc \
     images/mainWindow.qrc \
     images/questionnaire.qrc \
