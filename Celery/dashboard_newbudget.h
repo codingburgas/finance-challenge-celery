@@ -15,6 +15,9 @@ public:
     explicit dashboard_newBudget(QWidget *parent = nullptr);
     ~dashboard_newBudget();
 
+private slots:
+    void on_doneButton_clicked();
+
 private:
     Ui::dashboard_newBudget *ui;
 };

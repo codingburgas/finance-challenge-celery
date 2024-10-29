@@ -20,20 +20,18 @@ QT_BEGIN_NAMESPACE
 class Ui_Dashboard_spendings
 {
 public:
-    QLabel *backgroundd;
     QLabel *spendingsText;
     QPushButton *doneButton;
     QLabel *recent_activities;
     QLabel *amountPerGiven;
+    QLabel *purposeOfAmount;
+    QLabel *backgroundd;
 
     void setupUi(QDialog *Dashboard_spendings)
     {
         if (Dashboard_spendings->objectName().isEmpty())
             Dashboard_spendings->setObjectName("Dashboard_spendings");
         Dashboard_spendings->resize(1500, 775);
-        backgroundd = new QLabel(Dashboard_spendings);
-        backgroundd->setObjectName("backgroundd");
-        backgroundd->setGeometry(QRect(0, 0, 63, 20));
         spendingsText = new QLabel(Dashboard_spendings);
         spendingsText->setObjectName("spendingsText");
         spendingsText->setGeometry(QRect(190, 90, 141, 41));
@@ -42,9 +40,9 @@ public:
 "font-size: 28px;"));
         doneButton = new QPushButton(Dashboard_spendings);
         doneButton->setObjectName("doneButton");
-        doneButton->setGeometry(QRect(550, 500, 171, 41));
+        doneButton->setGeometry(QRect(589, 623, 322, 86));
         doneButton->setStyleSheet(QString::fromUtf8("background-color: rgb(51, 51, 51);\n"
-"border-radius: 11px;\n"
+"border-radius: 40px;\n"
 "font-size: 28px;\n"
 "font: bold;\n"
 "color: rgb(182, 253, 51);"));
@@ -55,10 +53,25 @@ public:
 "font-size: 20px;"));
         amountPerGiven = new QLabel(Dashboard_spendings);
         amountPerGiven->setObjectName("amountPerGiven");
-        amountPerGiven->setGeometry(QRect(340, 200, 211, 91));
+        amountPerGiven->setGeometry(QRect(380, 280, 171, 91));
         QFont font;
-        font.setPointSize(26);
+        font.setPointSize(16);
         amountPerGiven->setFont(font);
+        amountPerGiven->setStyleSheet(QString::fromUtf8("color:white;"));
+        purposeOfAmount = new QLabel(Dashboard_spendings);
+        purposeOfAmount->setObjectName("purposeOfAmount");
+        purposeOfAmount->setGeometry(QRect(218, 280, 141, 91));
+        purposeOfAmount->setFont(font);
+        purposeOfAmount->setStyleSheet(QString::fromUtf8("color:white;"));
+        backgroundd = new QLabel(Dashboard_spendings);
+        backgroundd->setObjectName("backgroundd");
+        backgroundd->setGeometry(QRect(0, 0, 1500, 775));
+        backgroundd->raise();
+        spendingsText->raise();
+        doneButton->raise();
+        recent_activities->raise();
+        amountPerGiven->raise();
+        purposeOfAmount->raise();
 
         retranslateUi(Dashboard_spendings);
 
@@ -68,11 +81,12 @@ public:
     void retranslateUi(QDialog *Dashboard_spendings)
     {
         Dashboard_spendings->setWindowTitle(QCoreApplication::translate("Dashboard_spendings", "Dialog", nullptr));
-        backgroundd->setText(QCoreApplication::translate("Dashboard_spendings", "TextLabel", nullptr));
         spendingsText->setText(QCoreApplication::translate("Dashboard_spendings", "Spendings", nullptr));
         doneButton->setText(QCoreApplication::translate("Dashboard_spendings", "Done", nullptr));
         recent_activities->setText(QCoreApplication::translate("Dashboard_spendings", "Recent activities:", nullptr));
         amountPerGiven->setText(QString());
+        purposeOfAmount->setText(QString());
+        backgroundd->setText(QCoreApplication::translate("Dashboard_spendings", "TextLabel", nullptr));
     } // retranslateUi
 
 };

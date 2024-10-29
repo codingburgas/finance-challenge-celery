@@ -13,19 +13,6 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <widget class="QLabel" name="backgroundd">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>63</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>TextLabel</string>
-   </property>
-  </widget>
   <widget class="QLabel" name="spendingsText">
    <property name="geometry">
     <rect>
@@ -47,15 +34,15 @@ font-size: 28px;</string>
   <widget class="QPushButton" name="doneButton">
    <property name="geometry">
     <rect>
-     <x>550</x>
-     <y>500</y>
-     <width>171</width>
-     <height>41</height>
+     <x>589</x>
+     <y>623</y>
+     <width>322</width>
+     <height>86</height>
     </rect>
    </property>
    <property name="styleSheet">
     <string notr="true">background-color: rgb(51, 51, 51);
-border-radius: 11px;
+border-radius: 40px;
 font-size: 28px;
 font: bold;
 color: rgb(182, 253, 51);</string>
@@ -84,21 +71,64 @@ font-size: 20px;</string>
   <widget class="QLabel" name="amountPerGiven">
    <property name="geometry">
     <rect>
-     <x>340</x>
-     <y>200</y>
-     <width>211</width>
+     <x>380</x>
+     <y>280</y>
+     <width>171</width>
      <height>91</height>
     </rect>
    </property>
    <property name="font">
     <font>
-     <pointsize>26</pointsize>
+     <pointsize>16</pointsize>
     </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:white;</string>
    </property>
    <property name="text">
     <string/>
    </property>
   </widget>
+  <widget class="QLabel" name="purposeOfAmount">
+   <property name="geometry">
+    <rect>
+     <x>218</x>
+     <y>280</y>
+     <width>141</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:white;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="backgroundd">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1500</width>
+     <height>775</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+  <zorder>backgroundd</zorder>
+  <zorder>spendingsText</zorder>
+  <zorder>doneButton</zorder>
+  <zorder>recent_activities</zorder>
+  <zorder>amountPerGiven</zorder>
+  <zorder>purposeOfAmount</zorder>
  </widget>
  <resources/>
  <connections/>

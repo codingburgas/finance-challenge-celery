@@ -2,6 +2,8 @@
 #include "ui_dashboard.h"
 #include "dashboard_spendings.h"
 #include "dashboard_newbalance.h"
+#include "dashboard_newbudget.h"
+
 #include <QPixmap>
 Dashboard::Dashboard( QWidget *parent)
     : QDialog(parent)
@@ -57,5 +59,12 @@ void Dashboard::on_editDetails_clicked()
         balanceWindow->show();
         this->close();
     }
+}
+
+void Dashboard::on_plus_dashboard_clicked()
+{
+    dashboard_newBudget *newBudget = new dashboard_newBudget();
+    newBudget->show();
+    this->close();
 }
 

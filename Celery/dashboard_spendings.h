@@ -15,6 +15,9 @@ public:
     explicit Dashboard_spendings(QWidget *parent = nullptr);
     ~Dashboard_spendings();
 
+private slots:
+    void on_doneButton_clicked();
+
 private:
     Ui::Dashboard_spendings *ui;
 };

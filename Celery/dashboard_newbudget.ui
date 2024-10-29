@@ -97,8 +97,7 @@ weight: 300;</string>
    <property name="styleSheet">
     <string notr="true">background-color: rgb(32, 32, 32);
 border-radius: 20px;
-
-</string>
+padding: 0 20;</string>
    </property>
   </widget>
   <widget class="QLineEdit" name="writeAmount">
@@ -112,14 +111,15 @@ border-radius: 20px;
    </property>
    <property name="styleSheet">
     <string notr="true">background-color: rgb(32, 32, 32);
-border-radius: 20px;</string>
+border-radius: 20px;
+padding: 0 20;</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_4">
    <property name="geometry">
     <rect>
-     <x>589</x>
-     <y>100</y>
+     <x>610</x>
+     <y>90</y>
      <width>258</width>
      <height>51</height>
     </rect>
@@ -136,8 +136,8 @@ weight: 500;</string>
   <widget class="QLabel" name="currentBudgetText">
    <property name="geometry">
     <rect>
-     <x>589</x>
-     <y>225</y>
+     <x>610</x>
+     <y>220</y>
      <width>241</width>
      <height>36</height>
     </rect>
@@ -155,7 +155,7 @@ weight: 300;
   <widget class="QLineEdit" name="writeCurrentBudget">
    <property name="geometry">
     <rect>
-     <x>590</x>
+     <x>610</x>
      <y>270</y>
      <width>285</width>
      <height>67</height>
@@ -163,13 +163,14 @@ weight: 300;
    </property>
    <property name="styleSheet">
     <string notr="true">background-color: rgb(32, 32, 32);
-border-radius: 20px;</string>
+border-radius: 20px;
+padding: 0 20;</string>
    </property>
   </widget>
   <widget class="QLabel" name="howmuchText">
    <property name="geometry">
     <rect>
-     <x>600</x>
+     <x>610</x>
      <y>350</y>
      <width>225</width>
      <height>29</height>
@@ -187,7 +188,7 @@ weight: 300;</string>
   <widget class="QLineEdit" name="writeHowMuchSpent">
    <property name="geometry">
     <rect>
-     <x>590</x>
+     <x>610</x>
      <y>400</y>
      <width>285</width>
      <height>67</height>
@@ -195,7 +196,8 @@ weight: 300;</string>
    </property>
    <property name="styleSheet">
     <string notr="true">background-color: rgb(32, 32, 32);
-border-radius: 20px;</string>
+border-radius: 20px;
+padding: 0 20;</string>
    </property>
   </widget>
   <widget class="QLabel" name="budgetName1">
@@ -253,8 +255,8 @@ border-radius: 20px;</string>
   <widget class="QPushButton" name="doneButton">
    <property name="geometry">
     <rect>
-     <x>589</x>
-     <y>623</y>
+     <x>620</x>
+     <y>620</y>
      <width>322</width>
      <height>86</height>
     </rect>
