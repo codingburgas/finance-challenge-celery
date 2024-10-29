@@ -63,7 +63,8 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 DISTFILES +=
 
 RESOURCES += \
-    images/dashboard-spendings.qrc \
+    dashboard-balance.qrc \
+    dashboard-spendings.qrc \
     images/dashboard.qrc \
     images/mainWindow.qrc \
     images/questionnaire.qrc \

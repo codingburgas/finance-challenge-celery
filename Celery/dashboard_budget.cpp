@@ -6,6 +6,7 @@ dashboard_budget::dashboard_budget(QWidget *parent)
     , ui(new Ui::dashboard_budget)
 {
     ui->setupUi(this);
+
     ui->currentBalance->setStyleSheet(
         "QPushButton {"
         "   background-color: transparent;"

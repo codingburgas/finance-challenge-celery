@@ -13,6 +13,7 @@ release/user.o
 release/register.o
 release/secondquestion.o
 release/thirdquestion.o
+release/qrc_dashboard-balance.o
 release/qrc_dashboard-spendings.o
 release/qrc_dashboard.o
 release/qrc_mainWindow.o

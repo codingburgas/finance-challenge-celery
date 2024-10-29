@@ -13,6 +13,7 @@ debug/user.o
 debug/register.o
 debug/secondquestion.o
 debug/thirdquestion.o
+debug/qrc_dashboard-balance.o
 debug/qrc_dashboard-spendings.o
 debug/qrc_dashboard.o
 debug/qrc_mainWindow.o

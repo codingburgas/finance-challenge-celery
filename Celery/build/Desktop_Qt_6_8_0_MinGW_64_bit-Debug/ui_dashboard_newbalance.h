@@ -26,12 +26,15 @@ public:
     QLineEdit *newBalanceEdit;
     QLabel *textOr;
     QLabel *textSubract;
-    QLineEdit *subtractFromBalance;
+    QLineEdit *addOrSubAmount;
     QPushButton *doneButton;
     QPushButton *currentBalance;
     QPushButton *savingGoals;
     QPushButton *spendings;
     QPushButton *budget;
+    QLabel *textSubract_2;
+    QLineEdit *addOrSubPurpose;
+    QLabel *textSubract_3;
 
     void setupUi(QDialog *dashboard_newBalance)
     {
@@ -59,14 +62,14 @@ public:
 "font-size: 18px;"));
         textSubract = new QLabel(dashboard_newBalance);
         textSubract->setObjectName("textSubract");
-        textSubract->setGeometry(QRect(490, 230, 191, 51));
+        textSubract->setGeometry(QRect(490, 230, 261, 51));
         textSubract->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
 "font-size: 20px;\n"
 "font: bold;"));
-        subtractFromBalance = new QLineEdit(dashboard_newBalance);
-        subtractFromBalance->setObjectName("subtractFromBalance");
-        subtractFromBalance->setGeometry(QRect(520, 290, 131, 26));
-        subtractFromBalance->setStyleSheet(QString::fromUtf8("background-color: rgb(32, 32, 32);\n"
+        addOrSubAmount = new QLineEdit(dashboard_newBalance);
+        addOrSubAmount->setObjectName("addOrSubAmount");
+        addOrSubAmount->setGeometry(QRect(520, 290, 131, 26));
+        addOrSubAmount->setStyleSheet(QString::fromUtf8("background-color: rgb(32, 32, 32);\n"
 "border-radius: 11px;"));
         doneButton = new QPushButton(dashboard_newBalance);
         doneButton->setObjectName("doneButton");
@@ -88,6 +91,23 @@ public:
         budget = new QPushButton(dashboard_newBalance);
         budget->setObjectName("budget");
         budget->setGeometry(QRect(920, 328, 211, 31));
+        textSubract_2 = new QLabel(dashboard_newBalance);
+        textSubract_2->setObjectName("textSubract_2");
+        textSubract_2->setGeometry(QRect(420, 280, 91, 41));
+        textSubract_2->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
+"font-size: 20px;\n"
+"font: bold;"));
+        addOrSubPurpose = new QLineEdit(dashboard_newBalance);
+        addOrSubPurpose->setObjectName("addOrSubPurpose");
+        addOrSubPurpose->setGeometry(QRect(520, 330, 131, 26));
+        addOrSubPurpose->setStyleSheet(QString::fromUtf8("background-color: rgb(32, 32, 32);\n"
+"border-radius: 11px;"));
+        textSubract_3 = new QLabel(dashboard_newBalance);
+        textSubract_3->setObjectName("textSubract_3");
+        textSubract_3->setGeometry(QRect(420, 320, 91, 41));
+        textSubract_3->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
+"font-size: 20px;\n"
+"font: bold;"));
 
         retranslateUi(dashboard_newBalance);
 
@@ -100,13 +120,15 @@ public:
         backgroundd->setText(QCoreApplication::translate("dashboard_newBalance", "TextLabel", nullptr));
         textNewBalance->setText(QCoreApplication::translate("dashboard_newBalance", "Set your new balance:", nullptr));
         textOr->setText(QCoreApplication::translate("dashboard_newBalance", "Or", nullptr));
-        textSubract->setText(QCoreApplication::translate("dashboard_newBalance", "Subtract from your\n"
+        textSubract->setText(QCoreApplication::translate("dashboard_newBalance", "Add or subtract from your\n"
 "current balance:", nullptr));
         doneButton->setText(QCoreApplication::translate("dashboard_newBalance", "Done", nullptr));
         currentBalance->setText(QCoreApplication::translate("dashboard_newBalance", "Current Balance", nullptr));
         savingGoals->setText(QCoreApplication::translate("dashboard_newBalance", "Saving Goals", nullptr));
         spendings->setText(QCoreApplication::translate("dashboard_newBalance", "Spendings", nullptr));
         budget->setText(QCoreApplication::translate("dashboard_newBalance", "Budget", nullptr));
+        textSubract_2->setText(QCoreApplication::translate("dashboard_newBalance", "Amount:", nullptr));
+        textSubract_3->setText(QCoreApplication::translate("dashboard_newBalance", "Purpose:", nullptr));
     } // retranslateUi
 
 };

@@ -80,7 +80,7 @@ font-size: 18px;</string>
     <rect>
      <x>490</x>
      <y>230</y>
-     <width>191</width>
+     <width>261</width>
      <height>51</height>
     </rect>
    </property>
@@ -90,11 +90,11 @@ font-size: 20px;
 font: bold;</string>
    </property>
    <property name="text">
-    <string>Subtract from your
+    <string>Add or subtract from your
 current balance:</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="subtractFromBalance">
+  <widget class="QLineEdit" name="addOrSubAmount">
    <property name="geometry">
     <rect>
      <x>520</x>
@@ -178,6 +178,56 @@ color: rgb(182, 253, 51);</string>
    </property>
    <property name="text">
     <string>Budget</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="textSubract_2">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>280</y>
+     <width>91</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+font-size: 20px;
+font: bold;</string>
+   </property>
+   <property name="text">
+    <string>Amount:</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="addOrSubPurpose">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>330</y>
+     <width>131</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(32, 32, 32);
+border-radius: 11px;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="textSubract_3">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>320</y>
+     <width>91</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+font-size: 20px;
+font: bold;</string>
+   </property>
+   <property name="text">
+    <string>Purpose:</string>
    </property>
   </widget>
  </widget>
