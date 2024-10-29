@@ -23,42 +23,42 @@ class Ui_MainWindow
 public:
     QWidget *centralwidget;
     QLabel *label_pic;
-    QPushButton *startNowbtn;
     QLabel *heading;
     QPushButton *signIn;
+    QPushButton *pushButtonn;
 
     void setupUi(QMainWindow *MainWindow)
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName("MainWindow");
-        MainWindow->resize(1920, 1080);
+        MainWindow->resize(1500, 775);
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName("centralwidget");
         label_pic = new QLabel(centralwidget);
         label_pic->setObjectName("label_pic");
-        label_pic->setGeometry(QRect(0, 0, 1920, 1080));
-        startNowbtn = new QPushButton(centralwidget);
-        startNowbtn->setObjectName("startNowbtn");
-        startNowbtn->setGeometry(QRect(244, 598, 437, 153));
-        QFont font;
-        font.setFamilies({QString::fromUtf8("Arial")});
-        font.setPointSize(40);
-        startNowbtn->setFont(font);
-        startNowbtn->setCursor(QCursor(Qt::CursorShape::ArrowCursor));
+        label_pic->setGeometry(QRect(0, 0, 1500, 775));
         heading = new QLabel(centralwidget);
         heading->setObjectName("heading");
-        heading->setGeometry(QRect(89, 181, 771, 282));
-        QFont font1;
-        font1.setFamilies({QString::fromUtf8("Arial")});
-        font1.setPointSize(50);
-        font1.setBold(true);
-        heading->setFont(font1);
+        heading->setGeometry(QRect(89, 181, 851, 282));
+        QFont font;
+        font.setFamilies({QString::fromUtf8("Arial")});
+        font.setPointSize(50);
+        font.setBold(true);
+        heading->setFont(font);
         signIn = new QPushButton(centralwidget);
         signIn->setObjectName("signIn");
-        signIn->setGeometry(QRect(250, 770, 131, 31));
+        signIn->setGeometry(QRect(192, 626, 131, 31));
         signIn->setStyleSheet(QString::fromUtf8("background-color: rgb(51, 51, 51);\n"
 "border-radius: 9px;\n"
 "color: rgb(111, 111, 111);"));
+        pushButtonn = new QPushButton(centralwidget);
+        pushButtonn->setObjectName("pushButtonn");
+        pushButtonn->setGeometry(QRect(172, 491, 317, 112));
+        pushButtonn->setStyleSheet(QString::fromUtf8("background-color: #B6FD33;\n"
+"border-radius: 50px;\n"
+"font-size:40px;\n"
+"font-weight:bold;\n"
+""));
         MainWindow->setCentralWidget(centralwidget);
 
         retranslateUi(MainWindow);
@@ -70,11 +70,11 @@ public:
     {
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "MainWindow", nullptr));
         label_pic->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
-        startNowbtn->setText(QCoreApplication::translate("MainWindow", "Start now", nullptr));
-        heading->setText(QCoreApplication::translate("MainWindow", "Lorem ipsum dolor sit \n"
-" amet consectetur \n"
-" adipiscing?", nullptr));
+        heading->setText(QCoreApplication::translate("MainWindow", "Boost Your Income, \n"
+"Manage Your Budget,\n"
+"and Grow.", nullptr));
         signIn->setText(QCoreApplication::translate("MainWindow", "Or Sign in", nullptr));
+        pushButtonn->setText(QCoreApplication::translate("MainWindow", "Start now", nullptr));
     } // retranslateUi
 
 };

@@ -1,10 +1,6 @@
 #include "firstquestion.h"
 #include "ui_firstquestion.h"
 #include "secondquestion.h"
-#include "ui_secondquestion.h"
-#include "dashboard.h"
-#include "ui_dashboard.h"
-
 #include<QPixmap>
 #include<QDebug>
 firstQuestion::firstQuestion(QWidget *parent)
@@ -24,9 +20,8 @@ firstQuestion::~firstQuestion()
 
 void firstQuestion::on_okButton_clicked()
 {
-    QString balance = ui->answer->text();
-    qDebug() <<balance;
-    Dashboard *dashboardWindow = new Dashboard(balance);
+    currentUser.balance = ui->answer->text().toInt();
+
     secondQuestion *questionWindow = new secondQuestion();
     questionWindow->show();
     this->close();

@@ -36,7 +36,7 @@ MainWindow::MainWindow(QWidget *parent)
     ui->label_pic->setPixmap(pix);
 
     ui->heading->setStyleSheet("color: white");
-    connect(ui->pushButton, &QPushButton::clicked, this, &MainWindow::on_startNowbtn_clicked);
+    connect(ui->pushButtonn, &QPushButton::clicked, this, &MainWindow::on_startNowbtn_clicked);
     connect(ui->signIn, &QPushButton::clicked, this, &MainWindow::on_signIn_clicked);
 }
 

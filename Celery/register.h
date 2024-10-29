@@ -1,6 +1,6 @@
 #ifndef REGISTER_H
 #define REGISTER_H
-
+#include "models/user.h"
 #include <QDialog>
 
 namespace Ui {

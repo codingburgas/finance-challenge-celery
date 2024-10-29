@@ -26,13 +26,13 @@
     <string>TextLabel</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label">
+  <widget class="QLabel" name="textNewBalance">
    <property name="geometry">
     <rect>
      <x>480</x>
      <y>100</y>
      <width>221</width>
-     <height>20</height>
+     <height>31</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -44,7 +44,7 @@ font: bold;</string>
     <string>Set your new balance:</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit">
+  <widget class="QLineEdit" name="newBalanceEdit">
    <property name="geometry">
     <rect>
      <x>520</x>
@@ -58,7 +58,7 @@ font: bold;</string>
 border-radius: 11px;</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_2">
+  <widget class="QLabel" name="textOr">
    <property name="geometry">
     <rect>
      <x>570</x>
@@ -75,13 +75,13 @@ font-size: 18px;</string>
     <string>Or</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_3">
+  <widget class="QLabel" name="textSubract">
    <property name="geometry">
     <rect>
-     <x>460</x>
+     <x>490</x>
      <y>230</y>
-     <width>301</width>
-     <height>20</height>
+     <width>191</width>
+     <height>51</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -90,28 +90,11 @@ font-size: 20px;
 font: bold;</string>
    </property>
    <property name="text">
-    <string>Add or subtract from your</string>
+    <string>Subtract from your
+current balance:</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_4">
-   <property name="geometry">
-    <rect>
-     <x>510</x>
-     <y>260</y>
-     <width>161</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">color: rgb(255, 255, 255);
-font-size: 20px;
-font: bold;</string>
-   </property>
-   <property name="text">
-    <string>current balance:</string>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="lineEdit_2">
+  <widget class="QLineEdit" name="subtractFromBalance">
    <property name="geometry">
     <rect>
      <x>520</x>

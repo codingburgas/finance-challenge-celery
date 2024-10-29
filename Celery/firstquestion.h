@@ -1,6 +1,6 @@
 #ifndef FIRSTQUESTION_H
 #define FIRSTQUESTION_H
-
+#include "models/user.h"
 #include <QDialog>
 #include <QLineEdit>
 namespace Ui {

@@ -1,6 +1,6 @@
 #ifndef DASHBOARD_H
 #define DASHBOARD_H
-
+#include "models/user.h"
 #include <QDialog>
 
 namespace Ui {
@@ -12,7 +12,7 @@ class Dashboard : public QDialog
     Q_OBJECT
 
 public:
-    explicit Dashboard(const QString &balance, QWidget *parent = nullptr);
+    explicit Dashboard(QWidget *parent = nullptr);
     ~Dashboard();
 
 private slots:
@@ -22,9 +22,14 @@ private slots:
 
     void on_spendings_clicked();
 
+
+    void on_editDetails_clicked();
+
 private:
     Ui::Dashboard *ui;
-    QString balance;
+
+    bool isBalanceClicked;
+    bool isBudgetClicked;
 };
 
 #endif // DASHBOARD_H

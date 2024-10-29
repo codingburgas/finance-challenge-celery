@@ -1,48 +1,18 @@
 #include "dashboard.h"
 #include "ui_dashboard.h"
 #include "dashboard_spendings.h"
-#include "ui_dashboard_spendings.h"
+#include "dashboard_newbalance.h"
 #include <QPixmap>
-Dashboard::Dashboard(const QString &balance, QWidget *parent)
+Dashboard::Dashboard( QWidget *parent)
     : QDialog(parent)
     , ui(new Ui::Dashboard)
-    , balance(balance)
+    , isBalanceClicked(false)
+    , isBudgetClicked(false)
 {
     ui->setupUi(this);
     QPixmap pix(":/images/dashboard.png");
-    ui->backgroundd->setPixmap(pix);
-    ui->currentBalance->setStyleSheet(
-        "QPushButton {"
-        "   background-color: transparent;"
-        "   border-radius: 70px;"
-        "   font: bold;"
-        "   color: #B6FD33;"
-        "}"
-        );
-    ui->savingGoals->setStyleSheet(
-        "QPushButton {"
-        "   background-color: transparent;"
-        "   border-radius: 70px;"
-        "   font: bold;"
-        "   color: #B6FD33;"
-        "}"
-        );
-    ui->spendings->setStyleSheet(
-        "QPushButton {"
-        "   background-color: transparent;"
-        "   border-radius: 70px;"
-        "   font: bold;"
-        "   color: #B6FD33;"
-        "}"
-        );
-    ui->budget->setStyleSheet(
-        "QPushButton {"
-        "   background-color: transparent;"
-        "   border-radius: 70px;"
-        "   font: bold;"
-        "   color: #B6FD33;"
-        "}"
-        );
+    ui->backgrounddd->setPixmap(pix);
+
 
 }
 
@@ -53,14 +23,21 @@ Dashboard::~Dashboard()
 
 void Dashboard::on_currentBalance_clicked()
 {
-    ui->heading->setText("Current Balance");
-     ui->input->setText(balance);
+    isBalanceClicked = true;
+    ui->label->setText("Current Balance");
+    ui->mainn->setText(QString::number(currentUser.balance));
+    ui->currentBalance->setStyleSheet("text-decoration: underline; color:white; background-color:transparent;");
+    ui->budget->setStyleSheet("text-decoration: none; color:white; background-color:transparent;");
+
 }
 
 
 void Dashboard::on_budget_clicked()
 {
-     ui->heading->setText("Budget");
+    isBudgetClicked = true;
+    ui->label->setText("Budget");
+    ui->currentBalance->setStyleSheet("text-decoration: none; color:white; background-color:transparent;");
+    ui->budget->setStyleSheet("text-decoration: underlined; color:white; background-color:transparent;");
 }
 
 
@@ -69,5 +46,15 @@ void Dashboard::on_spendings_clicked()
     Dashboard_spendings *spendingsWindow = new Dashboard_spendings();
     spendingsWindow->show();
     this->close();
+}
+
+
+void Dashboard::on_editDetails_clicked()
+{
+    if(isBalanceClicked){
+        dashboard_newBalance *balanceWindow = new dashboard_newBalance();
+        balanceWindow->show();
+        this->close();
+    }
 }
 

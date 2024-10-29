@@ -1,6 +1,7 @@
 #ifndef SECONDQUESTION_H
 #define SECONDQUESTION_H
-
+#include "models/user.h"
+#include "models/savinggoal.h"
 #include <QDialog>
 
 namespace Ui {

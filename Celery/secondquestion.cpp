@@ -19,8 +19,7 @@ secondQuestion::~secondQuestion()
 
 void secondQuestion::on_okButton_clicked()
 {
-    QString savingGoalName = ui->nameInput->text();
-    qDebug() <<savingGoalName;
+
     QString savingGoalAmount = ui->targetInput->text();
     qDebug() <<savingGoalAmount;
     thirdQuestion *questionWindow = new thirdQuestion();

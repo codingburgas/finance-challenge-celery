@@ -93,7 +93,7 @@ font-weight: bold;
 </string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="nameInput">
+  <widget class="QLineEdit" name="nameInpu">
    <property name="geometry">
     <rect>
      <x>469</x>
@@ -162,7 +162,7 @@ color:white;
   <zorder>nameText</zorder>
   <zorder>targetText</zorder>
   <zorder>targetInput</zorder>
-  <zorder>nameInput</zorder>
+  <zorder>nameInpu</zorder>
   <zorder>okButton</zorder>
  </widget>
  <resources/>

@@ -67,7 +67,7 @@ color: rgb(111, 111, 111);</string>
      <string>Or Sign in</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="pushButtonn">
     <property name="geometry">
      <rect>
       <x>172</x>

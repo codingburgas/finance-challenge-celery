@@ -13,7 +13,7 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <widget class="QLabel" name="backgroundd">
+  <widget class="QLabel" name="backgrounddd">
    <property name="geometry">
     <rect>
      <x>0</x>
@@ -24,8 +24,13 @@
    </property>
    <property name="font">
     <font>
+     <pointsize>22</pointsize>
      <bold>true</bold>
     </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: white;
+</string>
    </property>
    <property name="text">
     <string>TextLabel</string>
@@ -34,15 +39,15 @@
   <widget class="QPushButton" name="editDetails">
    <property name="geometry">
     <rect>
-     <x>650</x>
-     <y>520</y>
-     <width>181</width>
-     <height>41</height>
+     <x>589</x>
+     <y>623</y>
+     <width>322</width>
+     <height>86</height>
     </rect>
    </property>
    <property name="styleSheet">
     <string notr="true">background-color: rgb(51, 51, 51);
-border-radius: 11px;
+border-radius: 40px;
 font-size: 28px;
 font: bold;
 color: rgb(182, 253, 51);</string>
@@ -66,7 +71,9 @@ color: rgb(182, 253, 51);</string>
     </font>
    </property>
    <property name="styleSheet">
-    <string notr="true">color:white;</string>
+    <string notr="true">color:white;
+background-color:transparent;
+</string>
    </property>
    <property name="text">
     <string>Current balance</string>
@@ -87,7 +94,8 @@ color: rgb(182, 253, 51);</string>
     </font>
    </property>
    <property name="styleSheet">
-    <string notr="true">color:white;</string>
+    <string notr="true">color:white;
+background-color:transparent;</string>
    </property>
    <property name="text">
     <string>Saving goals</string>
@@ -108,7 +116,8 @@ color: rgb(182, 253, 51);</string>
     </font>
    </property>
    <property name="styleSheet">
-    <string notr="true">color:white;</string>
+    <string notr="true">color:white;
+background-color:transparent;</string>
    </property>
    <property name="text">
     <string>Spendings</string>
@@ -126,10 +135,13 @@ color: rgb(182, 253, 51);</string>
    <property name="font">
     <font>
      <pointsize>16</pointsize>
+     <underline>true</underline>
     </font>
    </property>
    <property name="styleSheet">
-    <string notr="true">color:white;</string>
+    <string notr="true">color:white;
+background-color:transparent;
+text-decoration: underline;</string>
    </property>
    <property name="text">
     <string>Budget</string>
@@ -138,10 +150,10 @@ color: rgb(182, 253, 51);</string>
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>630</x>
-     <y>130</y>
+     <x>568</x>
+     <y>168</y>
      <width>221</width>
-     <height>31</height>
+     <height>41</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -150,7 +162,29 @@ font: bold;
 font-size: 28px;</string>
    </property>
    <property name="text">
-    <string>Current balance</string>
+    <string>Budget</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="mainn">
+   <property name="geometry">
+    <rect>
+     <x>570</x>
+     <y>220</y>
+     <width>231</width>
+     <height>191</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>26</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">text-align:center;
+color:white;</string>
+   </property>
+   <property name="text">
+    <string/>
    </property>
   </widget>
  </widget>

@@ -17,9 +17,14 @@ SOURCES += \
     firstquestion.cpp \
     main.cpp \
     mainwindow.cpp \
+    models/budgetitem.cpp \
+    models/savinggoal.cpp \
+    models/transaction.cpp \
+    models/user.cpp \
     register.cpp \
     secondquestion.cpp \
-    thirdquestion.cpp
+    thirdquestion.cpp \
+
 
 HEADERS += \
     dashboard.h \
@@ -29,9 +34,14 @@ HEADERS += \
     dashboard_spendings.h \
     firstquestion.h \
     mainwindow.h \
+    models/budgetitem.h \
+    models/savinggoal.h \
+    models/transaction.h \
+    models/user.h \
     register.h \
     secondquestion.h \
-    thirdquestion.h
+    thirdquestion.h \
+
 
 FORMS += \
     dashboard.ui \

@@ -98,7 +98,7 @@ font-size: 20px;
     <string>Password:</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit">
+  <widget class="QLineEdit" name="regUser">
    <property name="geometry">
     <rect>
      <x>429</x>
@@ -115,7 +115,7 @@ color: white;
 font-size:20px;</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit_2">
+  <widget class="QLineEdit" name="regPass">
    <property name="geometry">
     <rect>
      <x>429</x>
@@ -132,7 +132,7 @@ color: white;
 font-size:20px;</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit_3">
+  <widget class="QLineEdit" name="regEmail">
    <property name="geometry">
     <rect>
      <x>429</x>
@@ -208,7 +208,7 @@ account?</string>
     <string>Password:</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit_4">
+  <widget class="QLineEdit" name="logUser">
    <property name="geometry">
     <rect>
      <x>833</x>
@@ -233,7 +233,7 @@ font-size:20px;
 </string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit_5">
+  <widget class="QLineEdit" name="logPass">
    <property name="geometry">
     <rect>
      <x>833</x>
@@ -250,7 +250,7 @@ color: white;
 font-size:20px;</string>
    </property>
   </widget>
-  <widget class="QLabel" name="backgroundd">
+  <widget class="QLabel" name="backgrounddd">
    <property name="geometry">
     <rect>
      <x>0</x>
@@ -286,6 +286,11 @@ font-size:20px;</string>
    <property name="autoFillBackground">
     <bool>false</bool>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: transparent;
+         border-radius: 70px;
+  font: bold;</string>
+   </property>
    <property name="text">
     <string>Log In</string>
    </property>
@@ -313,23 +318,28 @@ font-size:20px;</string>
    <property name="autoFillBackground">
     <bool>false</bool>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: transparent;
+          border-radius: 70px;
+          font: bold;</string>
+   </property>
    <property name="text">
     <string>Confirm</string>
    </property>
   </widget>
-  <zorder>backgroundd</zorder>
+  <zorder>backgrounddd</zorder>
   <zorder>welcome</zorder>
   <zorder>username_create</zorder>
   <zorder>addEmail</zorder>
   <zorder>password</zorder>
-  <zorder>lineEdit</zorder>
-  <zorder>lineEdit_2</zorder>
-  <zorder>lineEdit_3</zorder>
+  <zorder>regUser</zorder>
+  <zorder>regPass</zorder>
+  <zorder>regEmail</zorder>
   <zorder>haveAccount</zorder>
   <zorder>username_logIn</zorder>
   <zorder>password_logIn</zorder>
-  <zorder>lineEdit_4</zorder>
-  <zorder>lineEdit_5</zorder>
+  <zorder>logUser</zorder>
+  <zorder>logPass</zorder>
   <zorder>loginButton</zorder>
   <zorder>confirmButton</zorder>
  </widget>

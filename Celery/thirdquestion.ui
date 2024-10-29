@@ -74,7 +74,7 @@ font: bold;</string>
     <string>Total amount:</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="nameAnswer">
+  <widget class="QLineEdit" name="nameAnswerr">
    <property name="geometry">
     <rect>
      <x>478</x>
@@ -160,7 +160,7 @@ color:white;
   <zorder>question</zorder>
   <zorder>nameTxt</zorder>
   <zorder>totalTxt</zorder>
-  <zorder>nameAnswer</zorder>
+  <zorder>nameAnswerr</zorder>
   <zorder>amountAnswer</zorder>
   <zorder>okButton</zorder>
  </widget>

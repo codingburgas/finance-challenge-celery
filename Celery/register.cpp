@@ -12,23 +12,8 @@ Register::Register(QWidget *parent)
 {
     ui->setupUi(this);
     QPixmap pix(":/register/register (2).png");
-    ui->backgroundd->setPixmap(pix);
-    ui->loginButton->setStyleSheet(
-        "QPushButton {"
-        "   background-color: transparent;"
-        "   border-radius: 70px;"
-        "   font: bold;"
-        "}"
+    ui->backgrounddd->setPixmap(pix);
 
-        );
-    ui->confirmButton->setStyleSheet(
-        "QPushButton {"
-        "   background-color: transparent;"
-        "   border-radius: 70px;"
-        "   font: bold;"
-        "}"
-
-        );
 
 
 
@@ -44,6 +29,7 @@ void Register::on_loginButton_clicked()
     firstQuestion *questionWindow = new firstQuestion();
     questionWindow->show();
     this->close();
+
 }
 
 
@@ -52,5 +38,8 @@ void Register::on_confirmButton_clicked()
     firstQuestion *questionWindow = new firstQuestion();
     questionWindow->show();
     this->close();
+    currentUser.passHash = ui->regPass->text().toStdString();
+    currentUser.username = ui->regUser->text().toStdString();
+    currentUser.email = ui->regEmail->text().toStdString();
 }
 
