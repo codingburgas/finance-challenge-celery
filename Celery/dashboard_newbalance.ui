@@ -29,16 +29,16 @@
   <widget class="QLabel" name="textNewBalance">
    <property name="geometry">
     <rect>
-     <x>480</x>
-     <y>100</y>
-     <width>221</width>
-     <height>31</height>
+     <x>590</x>
+     <y>110</y>
+     <width>367</width>
+     <height>43</height>
     </rect>
    </property>
    <property name="styleSheet">
     <string notr="true">color: rgb(255, 255, 255);
-font-size: 20px;
-font: bold;</string>
+font-size: 30px;
+weight: 400;</string>
    </property>
    <property name="text">
     <string>Set your new balance:</string>
@@ -47,81 +47,48 @@ font: bold;</string>
   <widget class="QLineEdit" name="newBalanceEdit">
    <property name="geometry">
     <rect>
-     <x>520</x>
-     <y>130</y>
-     <width>131</width>
-     <height>26</height>
+     <x>560</x>
+     <y>160</y>
+     <width>341</width>
+     <height>67</height>
     </rect>
    </property>
    <property name="styleSheet">
     <string notr="true">background-color: rgb(32, 32, 32);
-border-radius: 11px;</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="textOr">
-   <property name="geometry">
-    <rect>
-     <x>570</x>
-     <y>190</y>
-     <width>63</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">color: rgb(119, 119, 119);
-font-size: 18px;</string>
-   </property>
-   <property name="text">
-    <string>Or</string>
+border-radius: 20px;</string>
    </property>
   </widget>
   <widget class="QLabel" name="textSubract">
    <property name="geometry">
     <rect>
-     <x>490</x>
-     <y>230</y>
-     <width>261</width>
-     <height>51</height>
+     <x>556</x>
+     <y>235</y>
+     <width>388</width>
+     <height>43</height>
     </rect>
    </property>
    <property name="styleSheet">
     <string notr="true">color: rgb(255, 255, 255);
-font-size: 20px;
-font: bold;</string>
+font-size: 30px;
+weight: 400;</string>
    </property>
    <property name="text">
-    <string>Add or subtract from your
-current balance:</string>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="addOrSubAmount">
-   <property name="geometry">
-    <rect>
-     <x>520</x>
-     <y>290</y>
-     <width>131</width>
-     <height>26</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(32, 32, 32);
-border-radius: 11px;</string>
+    <string>Edit your current balance:</string>
    </property>
   </widget>
   <widget class="QPushButton" name="doneButton">
    <property name="geometry">
     <rect>
-     <x>500</x>
-     <y>390</y>
-     <width>171</width>
-     <height>41</height>
+     <x>589</x>
+     <y>623</y>
+     <width>322</width>
+     <height>86</height>
     </rect>
    </property>
    <property name="styleSheet">
     <string notr="true">background-color: rgb(51, 51, 51);
-border-radius: 11px;
-font-size: 28px;
-font: bold;
+border-radius: 40px;
+font-size: 32px;
 color: rgb(182, 253, 51);</string>
    </property>
    <property name="text">
@@ -131,10 +98,10 @@ color: rgb(182, 253, 51);</string>
   <widget class="QPushButton" name="currentBalance">
    <property name="geometry">
     <rect>
-     <x>920</x>
-     <y>180</y>
-     <width>211</width>
-     <height>31</height>
+     <x>1085</x>
+     <y>216</y>
+     <width>258</width>
+     <height>43</height>
     </rect>
    </property>
    <property name="text">
@@ -144,10 +111,10 @@ color: rgb(182, 253, 51);</string>
   <widget class="QPushButton" name="savingGoals">
    <property name="geometry">
     <rect>
-     <x>920</x>
-     <y>230</y>
-     <width>211</width>
-     <height>31</height>
+     <x>1085</x>
+     <y>278</y>
+     <width>258</width>
+     <height>44</height>
     </rect>
    </property>
    <property name="text">
@@ -157,10 +124,10 @@ color: rgb(182, 253, 51);</string>
   <widget class="QPushButton" name="spendings">
    <property name="geometry">
     <rect>
-     <x>920</x>
-     <y>278</y>
-     <width>211</width>
-     <height>31</height>
+     <x>1085</x>
+     <y>345</y>
+     <width>258</width>
+     <height>43</height>
     </rect>
    </property>
    <property name="text">
@@ -170,64 +137,80 @@ color: rgb(182, 253, 51);</string>
   <widget class="QPushButton" name="budget">
    <property name="geometry">
     <rect>
-     <x>920</x>
-     <y>328</y>
-     <width>211</width>
-     <height>31</height>
+     <x>1085</x>
+     <y>411</y>
+     <width>258</width>
+     <height>44</height>
     </rect>
    </property>
    <property name="text">
     <string>Budget</string>
    </property>
   </widget>
-  <widget class="QLabel" name="textSubract_2">
+  <widget class="QLineEdit" name="addOrSubPurpose">
    <property name="geometry">
     <rect>
-     <x>420</x>
-     <y>280</y>
+     <x>640</x>
+     <y>380</y>
+     <width>268</width>
+     <height>67</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(32, 32, 32);
+border-radius: 20px;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>540</x>
+     <y>400</y>
      <width>91</width>
-     <height>41</height>
+     <height>20</height>
     </rect>
    </property>
    <property name="styleSheet">
     <string notr="true">color: rgb(255, 255, 255);
 font-size: 20px;
-font: bold;</string>
+weight: 300;</string>
+   </property>
+   <property name="text">
+    <string>For/From:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>540</x>
+     <y>310</y>
+     <width>71</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+font-size: 20px;
+weight: 300;
+
+</string>
    </property>
    <property name="text">
     <string>Amount:</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="addOrSubPurpose">
+  <widget class="QLineEdit" name="addOrSubAmount">
    <property name="geometry">
     <rect>
-     <x>520</x>
-     <y>330</y>
-     <width>131</width>
-     <height>26</height>
+     <x>640</x>
+     <y>290</y>
+     <width>268</width>
+     <height>67</height>
     </rect>
    </property>
    <property name="styleSheet">
     <string notr="true">background-color: rgb(32, 32, 32);
-border-radius: 11px;</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="textSubract_3">
-   <property name="geometry">
-    <rect>
-     <x>420</x>
-     <y>320</y>
-     <width>91</width>
-     <height>41</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">color: rgb(255, 255, 255);
-font-size: 20px;
-font: bold;</string>
-   </property>
-   <property name="text">
-    <string>Purpose:</string>
+border-radius: 20px;</string>
    </property>
   </widget>
  </widget>

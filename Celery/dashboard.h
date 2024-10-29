@@ -22,8 +22,9 @@ private slots:
 
     void on_spendings_clicked();
 
-
     void on_editDetails_clicked();
+
+    void on_plus_dashboard_clicked();
 
 private:
     Ui::Dashboard *ui;

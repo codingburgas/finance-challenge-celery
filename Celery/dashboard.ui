@@ -48,8 +48,8 @@
    <property name="styleSheet">
     <string notr="true">background-color: rgb(51, 51, 51);
 border-radius: 40px;
-font-size: 28px;
-font: bold;
+font-size: 32px;
+weight: 700;
 color: rgb(182, 253, 51);</string>
    </property>
    <property name="text">
@@ -151,15 +151,15 @@ text-decoration: underline;</string>
    <property name="geometry">
     <rect>
      <x>568</x>
-     <y>168</y>
-     <width>221</width>
-     <height>41</height>
+     <y>176</y>
+     <width>258</width>
+     <height>51</height>
     </rect>
    </property>
    <property name="styleSheet">
     <string notr="true">color: rgb(255, 255, 255);
-font: bold;
-font-size: 28px;</string>
+weight: 500;
+font-size: 36px;</string>
    </property>
    <property name="text">
     <string>Budget</string>
@@ -185,6 +185,25 @@ color:white;</string>
    </property>
    <property name="text">
     <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="plus_dashboard">
+   <property name="geometry">
+    <rect>
+     <x>906</x>
+     <y>155</y>
+     <width>42</width>
+     <height>96</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(168, 168, 168);
+weight: 300;
+font-size:  64px;
+</string>
+   </property>
+   <property name="text">
+    <string>+</string>
    </property>
   </widget>
  </widget>

@@ -29,16 +29,16 @@
   <widget class="QLabel" name="spendingsText">
    <property name="geometry">
     <rect>
-     <x>190</x>
-     <y>90</y>
-     <width>141</width>
-     <height>41</height>
+     <x>186</x>
+     <y>82</y>
+     <width>258</width>
+     <height>43</height>
     </rect>
    </property>
    <property name="styleSheet">
     <string notr="true">color: rgb(255, 255, 255);
-font: bold;
-font-size: 28px;</string>
+weight: 500;
+font-size: 36px;</string>
    </property>
    <property name="text">
     <string>Spendings</string>
@@ -47,17 +47,17 @@ font-size: 28px;</string>
   <widget class="QPushButton" name="doneButton">
    <property name="geometry">
     <rect>
-     <x>550</x>
-     <y>500</y>
-     <width>171</width>
-     <height>41</height>
+     <x>589</x>
+     <y>623</y>
+     <width>322</width>
+     <height>86</height>
     </rect>
    </property>
    <property name="styleSheet">
     <string notr="true">background-color: rgb(51, 51, 51);
-border-radius: 11px;
-font-size: 28px;
-font: bold;
+border-radius: 40px;
+font-size: 32px;
+weight: 700;
 color: rgb(182, 253, 51);</string>
    </property>
    <property name="text">
@@ -67,18 +67,55 @@ color: rgb(182, 253, 51);</string>
   <widget class="QLabel" name="recent_activities">
    <property name="geometry">
     <rect>
-     <x>190</x>
-     <y>130</y>
-     <width>161</width>
-     <height>20</height>
+     <x>194</x>
+     <y>154</y>
+     <width>273</width>
+     <height>44</height>
     </rect>
    </property>
    <property name="styleSheet">
     <string notr="true">color: rgb(255, 255, 255);
-font-size: 20px;</string>
+font-size: 24px;
+weight: 300;</string>
    </property>
    <property name="text">
     <string>Recent activities:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="for_spendings">
+   <property name="geometry">
+    <rect>
+     <x>213</x>
+     <y>227</y>
+     <width>36</width>
+     <height>36</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(207, 207, 207);
+font-size: 24 px;
+weight: 300;</string>
+   </property>
+   <property name="text">
+    <string>For</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="amount_spendings">
+   <property name="geometry">
+    <rect>
+     <x>412</x>
+     <y>227</y>
+     <width>95</width>
+     <height>36</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(207, 207, 207);
+font-size: 24 px;
+weight: 300;</string>
+   </property>
+   <property name="text">
+    <string>Amount</string>
    </property>
   </widget>
  </widget>
