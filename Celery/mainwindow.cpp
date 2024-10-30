@@ -32,6 +32,7 @@ MainWindow::MainWindow(QWidget *parent)
         qDebug() << "Connected to Azure SQL Database successfully!";
     }
 
+
     QPixmap pix(":/images/mainWindow.png");
     ui->label_pic->setPixmap(pix);
 
