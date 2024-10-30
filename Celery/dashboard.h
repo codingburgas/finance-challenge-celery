@@ -26,6 +26,8 @@ private slots:
 
     void on_plus_dashboard_clicked();
 
+    void on_savingGoals_clicked();
+
 private:
     Ui::Dashboard *ui;
 

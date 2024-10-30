@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>dashboard_savingGoals</class>
+ <widget class="QDialog" name="dashboard_savingGoals">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1500</width>
+    <height>775</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QLabel" name="savingGoalsText">
+   <property name="geometry">
+    <rect>
+     <x>186</x>
+     <y>82</y>
+     <width>258</width>
+     <height>43</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+font-size: 36px;
+weight: 500;</string>
+   </property>
+   <property name="text">
+    <string>Saving goals</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="recentActivitiesText">
+   <property name="geometry">
+    <rect>
+     <x>194</x>
+     <y>154</y>
+     <width>273</width>
+     <height>44</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+font-size: 24px;
+weight: 300px;</string>
+   </property>
+   <property name="text">
+    <string>Recent activities:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="for_saving">
+   <property name="geometry">
+    <rect>
+     <x>213</x>
+     <y>227</y>
+     <width>36</width>
+     <height>36</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(207, 207, 207);
+font-size: 24px;
+weight: 300;</string>
+   </property>
+   <property name="text">
+    <string>For</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="amount_saving">
+   <property name="geometry">
+    <rect>
+     <x>412</x>
+     <y>227</y>
+     <width>95</width>
+     <height>36</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(207, 207, 207);
+font-size: 24px;
+weight: 300;</string>
+   </property>
+   <property name="text">
+    <string>Amount</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="editDetailsButton">
+   <property name="geometry">
+    <rect>
+     <x>589</x>
+     <y>623</y>
+     <width>322</width>
+     <height>86</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(51, 51, 51);
+border-radius: 40px;
+font-size: 28px;
+font: bold;
+color: rgb(182, 253, 51);</string>
+   </property>
+   <property name="text">
+    <string>Edit details</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="backgroundd">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1500</width>
+     <height>775</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

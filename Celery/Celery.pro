@@ -12,6 +12,7 @@ SOURCES += \
     dashboard.cpp \
     dashboard_newbalance.cpp \
     dashboard_newbudget.cpp \
+    dashboard_savinggoals.cpp \
     dashboard_spendings.cpp \
     firstquestion.cpp \
     main.cpp \
@@ -29,6 +30,7 @@ HEADERS += \
     dashboard.h \
     dashboard_newbalance.h \
     dashboard_newbudget.h \
+    dashboard_savinggoals.h \
     dashboard_spendings.h \
     firstquestion.h \
     mainwindow.h \
@@ -45,6 +47,7 @@ FORMS += \
     dashboard.ui \
     dashboard_newbalance.ui \
     dashboard_newbudget.ui \
+    dashboard_savinggoals.ui \
     dashboard_spendings.ui \
     firstquestion.ui \
     mainwindow.ui \

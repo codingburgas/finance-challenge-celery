@@ -3,6 +3,7 @@
 #include "dashboard_spendings.h"
 #include "dashboard_newbalance.h"
 #include "dashboard_newbudget.h"
+#include "dashboard_savinggoals.h"
 
 #include <QPixmap>
 Dashboard::Dashboard( QWidget *parent)
@@ -64,4 +65,12 @@ void Dashboard::on_editDetails_clicked()
     }
 }
 
+
+
+void Dashboard::on_savingGoals_clicked()
+{
+    dashboard_savingGoals *savingWindow = new dashboard_savingGoals();
+    savingWindow->show();
+    this->close();
+}
 
