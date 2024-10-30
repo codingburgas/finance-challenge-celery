@@ -23,6 +23,7 @@ public:
     string passHash;
     string email;
     int balance;
+    int budget;
 
     vector<transaction> spendings;
     vector<savingGoal> savingGoals;

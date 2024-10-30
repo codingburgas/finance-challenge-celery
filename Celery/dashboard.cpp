@@ -54,6 +54,9 @@ void Dashboard::on_spendings_clicked()
 
 void Dashboard::on_editDetails_clicked()
 {
+    dashboard_newBudget *newBudget = new dashboard_newBudget();
+    newBudget->show();
+    this->close();
     if(isBalanceClicked){
         dashboard_newBalance *balanceWindow = new dashboard_newBalance();
         balanceWindow->show();
@@ -61,10 +64,4 @@ void Dashboard::on_editDetails_clicked()
     }
 }
 
-void Dashboard::on_plus_dashboard_clicked()
-{
-    dashboard_newBudget *newBudget = new dashboard_newBudget();
-    newBudget->show();
-    this->close();
-}
 

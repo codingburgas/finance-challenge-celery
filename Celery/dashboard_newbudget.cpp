@@ -18,6 +18,27 @@ dashboard_newBudget::~dashboard_newBudget()
 
 void dashboard_newBudget::on_doneButton_clicked()
 {
+
+    int editbudget = ui->editCurrentBudget->text().toInt();
+    QString howMuch = ui->writeHowMuchSpent->text();
+    if(ui->editCurrentBudget->text().toInt()==0){
+        currentUser.budget += editbudget;
+
+        if(editbudget < 0){
+
+            transaction temp;
+            temp.name = howMuch.toStdString();
+            temp.spent = editbudget;
+            currentUser.spendings.push_back(temp);
+
+        }
+    }
+    else{
+        currentUser.budget = ui->editCurrentBudget->text().toInt();
+
+    }
+
+
     Dashboard *dashboard = new Dashboard();
     dashboard->show();
     this->close();

@@ -29,9 +29,6 @@ Dashboard_spendings::~Dashboard_spendings()
 void Dashboard_spendings::on_doneButton_clicked()
 {
 
-    Dashboard *dashboard = new Dashboard();
-    dashboard->show();
-
     Dashboard *dashboardWindow = new Dashboard();
     dashboardWindow->show();
 

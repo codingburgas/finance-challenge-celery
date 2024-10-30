@@ -104,6 +104,10 @@ color: rgb(182, 253, 51);</string>
      <height>43</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">color:white;
+background-color:transparent;</string>
+   </property>
    <property name="text">
     <string>Current Balance</string>
    </property>
@@ -116,6 +120,10 @@ color: rgb(182, 253, 51);</string>
      <width>258</width>
      <height>44</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:white;
+background-color:transparent;</string>
    </property>
    <property name="text">
     <string>Saving Goals</string>
@@ -130,6 +138,10 @@ color: rgb(182, 253, 51);</string>
      <height>43</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">color:white;
+background-color:transparent;</string>
+   </property>
    <property name="text">
     <string>Spendings</string>
    </property>
@@ -142,6 +154,10 @@ color: rgb(182, 253, 51);</string>
      <width>258</width>
      <height>44</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:white;
+background-color:transparent;</string>
    </property>
    <property name="text">
     <string>Budget</string>

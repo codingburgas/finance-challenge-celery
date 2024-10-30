@@ -152,7 +152,7 @@ weight: 300;
     <string>Current budget:</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="writeCurrentBudget">
+  <widget class="QLineEdit" name="editCurrentBudget">
    <property name="geometry">
     <rect>
      <x>610</x>

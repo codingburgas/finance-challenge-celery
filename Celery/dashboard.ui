@@ -187,25 +187,6 @@ color:white;</string>
     <string/>
    </property>
   </widget>
-  <widget class="QPushButton" name="plus_dashboard">
-   <property name="geometry">
-    <rect>
-     <x>906</x>
-     <y>155</y>
-     <width>42</width>
-     <height>96</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">color: rgb(168, 168, 168);
-weight: 300;
-font-size:  64px;
-</string>
-   </property>
-   <property name="text">
-    <string>+</string>
-   </property>
-  </widget>
  </widget>
  <resources/>
  <connections/>
