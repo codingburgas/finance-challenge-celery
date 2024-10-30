@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>secondQuestion</class>
+ <widget class="QDialog" name="secondQuestion">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1500</width>
+    <height>775</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QLabel" name="question">
+   <property name="geometry">
+    <rect>
+     <x>610</x>
+     <y>243</y>
+     <width>311</width>
+     <height>74</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>-1</pointsize>
+     <italic>false</italic>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+font-size: 38px;
+font: bold;</string>
+   </property>
+   <property name="text">
+    <string>Set a saving goal</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="nameText">
+   <property name="geometry">
+    <rect>
+     <x>362</x>
+     <y>386</y>
+     <width>121</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+font-size: 30px;
+font: bold;</string>
+   </property>
+   <property name="text">
+    <string>Name:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="targetText">
+   <property name="geometry">
+    <rect>
+     <x>357</x>
+     <y>492</y>
+     <width>131</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+font-size: 30px;
+font: bold;</string>
+   </property>
+   <property name="text">
+    <string>Target:</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="targetInput">
+   <property name="geometry">
+    <rect>
+     <x>469</x>
+     <y>473</y>
+     <width>573</width>
+     <height>82</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(51, 51, 51);
+border-radius: 11px;
+ padding: 10px ;
+color: white;
+font-size: 50px;
+font-weight: bold;
+</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="nameInpu">
+   <property name="geometry">
+    <rect>
+     <x>469</x>
+     <y>359</y>
+     <width>573</width>
+     <height>82</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(51, 51, 51);
+border-radius: 11px;
+ padding: 10px ;
+color: white;
+font-size: 50px;
+font-weight: bold;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="backgroundd">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1500</width>
+     <height>775</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="okButton">
+   <property name="geometry">
+    <rect>
+     <x>723</x>
+     <y>600</y>
+     <width>64</width>
+     <height>66</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>16</pointsize>
+     <italic>false</italic>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>ArrowCursor</cursorShape>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:transparent;
+font-weight:bold;
+color:white;
+</string>
+   </property>
+   <property name="text">
+    <string>OK</string>
+   </property>
+  </widget>
+  <zorder>backgroundd</zorder>
+  <zorder>question</zorder>
+  <zorder>nameText</zorder>
+  <zorder>targetText</zorder>
+  <zorder>targetInput</zorder>
+  <zorder>nameInpu</zorder>
+  <zorder>okButton</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

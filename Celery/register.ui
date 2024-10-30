@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Register</class>
+ <widget class="QDialog" name="Register">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1500</width>
+    <height>775</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">color: rgb(178, 215, 138);
+font-size: 28px;
+font: bold;</string>
+  </property>
+  <widget class="QLabel" name="welcome">
+   <property name="geometry">
+    <rect>
+     <x>423</x>
+     <y>193</y>
+     <width>311</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>-1</pointsize>
+     <italic>false</italic>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(182, 253, 51);
+font: bold;
+font-size:46px;
+</string>
+   </property>
+   <property name="text">
+    <string>Welcome!</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="username_create">
+   <property name="geometry">
+    <rect>
+     <x>428</x>
+     <y>270</y>
+     <width>141</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(178, 215, 138);
+font-size: 20px;
+</string>
+   </property>
+   <property name="text">
+    <string>Username:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="addEmail">
+   <property name="geometry">
+    <rect>
+     <x>428</x>
+     <y>353</y>
+     <width>81</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(178, 215, 138);
+font-size:20px;
+</string>
+   </property>
+   <property name="text">
+    <string>Email:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="password">
+   <property name="geometry">
+    <rect>
+     <x>428</x>
+     <y>444</y>
+     <width>141</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(178, 215, 138);
+font-size: 20px;
+</string>
+   </property>
+   <property name="text">
+    <string>Password:</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="regUser">
+   <property name="geometry">
+    <rect>
+     <x>429</x>
+     <y>302</y>
+     <width>292</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(193, 222, 161);
+border-radius: 9px;
+ padding: 10px;
+color: white;
+font-size:20px;</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="regPass">
+   <property name="geometry">
+    <rect>
+     <x>429</x>
+     <y>487</y>
+     <width>292</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(193, 222, 161);
+border-radius: 9px;
+ padding: 10px;
+color: white;
+font-size:20px;</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="regEmail">
+   <property name="geometry">
+    <rect>
+     <x>429</x>
+     <y>387</y>
+     <width>292</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(193, 222, 161);
+border-radius: 9px;
+ padding: 10px;
+color: white;
+font-size:20px;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="haveAccount">
+   <property name="geometry">
+    <rect>
+     <x>834</x>
+     <y>185</y>
+     <width>491</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>-1</pointsize>
+     <italic>false</italic>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(182, 253, 51);
+font-size: 35px;
+font: bold;
+line-height: 10px;</string>
+   </property>
+   <property name="text">
+    <string>Already have an 
+account?</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="username_logIn">
+   <property name="geometry">
+    <rect>
+     <x>832</x>
+     <y>270</y>
+     <width>161</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-size:20px;</string>
+   </property>
+   <property name="text">
+    <string>Username:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="password_logIn">
+   <property name="geometry">
+    <rect>
+     <x>834</x>
+     <y>364</y>
+     <width>151</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-size:20px;</string>
+   </property>
+   <property name="text">
+    <string>Password:</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="logUser">
+   <property name="geometry">
+    <rect>
+     <x>833</x>
+     <y>302</y>
+     <width>292</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>-1</pointsize>
+     <italic>false</italic>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(193, 222, 161);
+border-radius: 9px;
+ padding: 10px;
+color: white;
+font-size:20px;
+</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="logPass">
+   <property name="geometry">
+    <rect>
+     <x>833</x>
+     <y>396</y>
+     <width>292</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(193, 222, 161);
+border-radius: 9px;
+ padding: 10px;
+color: white;
+font-size:20px;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="backgrounddd">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1500</width>
+     <height>775</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="loginButton">
+   <property name="geometry">
+    <rect>
+     <x>833</x>
+     <y>561</y>
+     <width>104</width>
+     <height>42</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>-1</pointsize>
+     <italic>false</italic>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>ArrowCursor</cursorShape>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: transparent;
+         border-radius: 70px;
+  font: bold;</string>
+   </property>
+   <property name="text">
+    <string>Log In</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="confirmButton">
+   <property name="geometry">
+    <rect>
+     <x>429</x>
+     <y>561</y>
+     <width>120</width>
+     <height>45</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>-1</pointsize>
+     <italic>false</italic>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>ArrowCursor</cursorShape>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: transparent;
+          border-radius: 70px;
+          font: bold;</string>
+   </property>
+   <property name="text">
+    <string>Confirm</string>
+   </property>
+  </widget>
+  <zorder>backgrounddd</zorder>
+  <zorder>welcome</zorder>
+  <zorder>username_create</zorder>
+  <zorder>addEmail</zorder>
+  <zorder>password</zorder>
+  <zorder>regUser</zorder>
+  <zorder>regPass</zorder>
+  <zorder>regEmail</zorder>
+  <zorder>haveAccount</zorder>
+  <zorder>username_logIn</zorder>
+  <zorder>password_logIn</zorder>
+  <zorder>logUser</zorder>
+  <zorder>logPass</zorder>
+  <zorder>loginButton</zorder>
+  <zorder>confirmButton</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

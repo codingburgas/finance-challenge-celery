@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>images/dashboard-balance.png</file>
+    </qresource>
+</RCC>

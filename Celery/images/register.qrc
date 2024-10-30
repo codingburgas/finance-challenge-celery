@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/register">
+        <file>register (2).png</file>
+    </qresource>
+    <qresource prefix="/new/prefix1"/>
+</RCC>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>thirdQuestion</class>
+ <widget class="QDialog" name="thirdQuestion">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1500</width>
+    <height>775</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QLabel" name="question">
+   <property name="geometry">
+    <rect>
+     <x>556</x>
+     <y>220</y>
+     <width>381</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>-1</pointsize>
+     <italic>false</italic>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+font-size: 38px;
+font: bold;</string>
+   </property>
+   <property name="text">
+    <string>What is your budget?</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="nameTxt">
+   <property name="geometry">
+    <rect>
+     <x>373</x>
+     <y>382</y>
+     <width>111</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+font-size: 30px;
+font: bold;</string>
+   </property>
+   <property name="text">
+    <string>Name:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="totalTxt">
+   <property name="geometry">
+    <rect>
+     <x>245</x>
+     <y>487</y>
+     <width>211</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+font-size: 30px;
+font: bold;</string>
+   </property>
+   <property name="text">
+    <string>Total amount:</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="nameAnswerr">
+   <property name="geometry">
+    <rect>
+     <x>478</x>
+     <y>359</y>
+     <width>573</width>
+     <height>82</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(51, 51, 51);
+border-radius: 11px;
+ padding: 10px ;
+color: white;
+font-size: 50px;
+font-weight: bold;</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="amountAnswer">
+   <property name="geometry">
+    <rect>
+     <x>478</x>
+     <y>463</y>
+     <width>573</width>
+     <height>82</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(51, 51, 51);
+border-radius: 11px;
+ padding: 10px ;
+color: white;
+font-size: 50px;
+font-weight: bold;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="backgroundd">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1500</width>
+     <height>775</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>zz</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="okButton">
+   <property name="geometry">
+    <rect>
+     <x>720</x>
+     <y>598</y>
+     <width>64</width>
+     <height>66</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>16</pointsize>
+     <italic>false</italic>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>ArrowCursor</cursorShape>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:transparent;
+font-weight:bold;
+color:white;
+</string>
+   </property>
+   <property name="text">
+    <string>OK</string>
+   </property>
+  </widget>
+  <zorder>backgroundd</zorder>
+  <zorder>question</zorder>
+  <zorder>nameTxt</zorder>
+  <zorder>totalTxt</zorder>
+  <zorder>nameAnswerr</zorder>
+  <zorder>amountAnswer</zorder>
+  <zorder>okButton</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

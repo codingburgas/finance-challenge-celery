@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>dashboard_newBudget</class>
+ <widget class="QDialog" name="dashboard_newBudget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1500</width>
+    <height>775</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QLabel" name="backgroundd">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>0</y>
+     <width>1500</width>
+     <height>775</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="newBudgetText">
+   <property name="geometry">
+    <rect>
+     <x>204</x>
+     <y>97</y>
+     <width>291</width>
+     <height>43</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+font-size: 36px;
+weight: 500;
+</string>
+   </property>
+   <property name="text">
+    <string>Set a new budget</string>
+   </property>
+   <property name="textFormat">
+    <enum>Qt::TextFormat::RichText</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="nameText">
+   <property name="geometry">
+    <rect>
+     <x>214</x>
+     <y>225</y>
+     <width>75</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+font-size: 24px;
+weiht: 300;
+</string>
+   </property>
+   <property name="text">
+    <string>Name</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="amountText">
+   <property name="geometry">
+    <rect>
+     <x>214</x>
+     <y>354</y>
+     <width>177</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+font-size: 24px;
+weight: 300;</string>
+   </property>
+   <property name="text">
+    <string>Set an amount</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="writeName">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>270</y>
+     <width>285</width>
+     <height>67</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(32, 32, 32);
+border-radius: 20px;
+padding: 0 20;</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="writeAmount">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>400</y>
+     <width>285</width>
+     <height>67</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(32, 32, 32);
+border-radius: 20px;
+padding: 0 20;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>610</x>
+     <y>90</y>
+     <width>258</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+font-size: 36px;
+weight: 500;</string>
+   </property>
+   <property name="text">
+    <string>Edit budget</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="currentBudgetText">
+   <property name="geometry">
+    <rect>
+     <x>610</x>
+     <y>220</y>
+     <width>241</width>
+     <height>36</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+font-size: 24px;
+weight: 300;
+</string>
+   </property>
+   <property name="text">
+    <string>Current budget:</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="writeCurrentBudget">
+   <property name="geometry">
+    <rect>
+     <x>610</x>
+     <y>270</y>
+     <width>285</width>
+     <height>67</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(32, 32, 32);
+border-radius: 20px;
+padding: 0 20;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="howmuchText">
+   <property name="geometry">
+    <rect>
+     <x>610</x>
+     <y>350</y>
+     <width>225</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+font-size: 24px;
+weight: 300;</string>
+   </property>
+   <property name="text">
+    <string>How much have you spent:</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="writeHowMuchSpent">
+   <property name="geometry">
+    <rect>
+     <x>610</x>
+     <y>400</y>
+     <width>285</width>
+     <height>67</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(32, 32, 32);
+border-radius: 20px;
+padding: 0 20;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="budgetName1">
+   <property name="geometry">
+    <rect>
+     <x>1038</x>
+     <y>119</y>
+     <width>273</width>
+     <height>44</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Budget Name 1 </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="budgetName2">
+   <property name="geometry">
+    <rect>
+     <x>1038</x>
+     <y>203</y>
+     <width>273</width>
+     <height>44</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Budget Name 2 </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="budgetName3">
+   <property name="geometry">
+    <rect>
+     <x>1038</x>
+     <y>287</y>
+     <width>273</width>
+     <height>44</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Budget Name 3 </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="budgetName4">
+   <property name="geometry">
+    <rect>
+     <x>1036</x>
+     <y>371</y>
+     <width>273</width>
+     <height>44</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Budget Name 4 </string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="doneButton">
+   <property name="geometry">
+    <rect>
+     <x>620</x>
+     <y>620</y>
+     <width>322</width>
+     <height>86</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(51, 51, 51);
+border-radius:  40px;
+font-size: 32px;
+weight: 700;
+color: rgb(182, 253, 51);</string>
+   </property>
+   <property name="text">
+    <string>Done</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
