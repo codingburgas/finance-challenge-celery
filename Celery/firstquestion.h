@@ -22,7 +22,7 @@ private slots:
 
 private:
     Ui::firstQuestion *ui;
-
+    QString balance;
 };
 
 #endif // FIRSTQUESTION_H

@@ -21,7 +21,7 @@ private slots:
 
 private:
     Ui::thirdQuestion *ui;
-       QString balance;
+       QString budget;
 };
 
 #endif // THIRDQUESTION_H

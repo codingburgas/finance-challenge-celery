@@ -1,6 +1,6 @@
 #ifndef DASHBOARD_NEWBUDGET_H
 #define DASHBOARD_NEWBUDGET_H
-
+#include "models/user.h"
 #include <QDialog>
 
 namespace Ui {

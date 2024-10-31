@@ -1,6 +1,6 @@
 #ifndef DASHBOARD_SAVINGGOALS_H
 #define DASHBOARD_SAVINGGOALS_H
-
+#include "models/user.h"
 #include <QDialog>
 
 namespace Ui {

@@ -6,7 +6,6 @@
 thirdQuestion::thirdQuestion(QWidget *parent)
     : QDialog(parent)
     , ui(new Ui::thirdQuestion)
- , balance("")
 {
     ui->setupUi(this);
     QPixmap pix("://questionnaire.png");

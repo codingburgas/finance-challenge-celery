@@ -24,6 +24,8 @@ public:
     string email;
     int balance;
     int budget;
+    int saving;
+    int spending;
 
     vector<transaction> spendings;
     vector<savingGoal> savingGoals;

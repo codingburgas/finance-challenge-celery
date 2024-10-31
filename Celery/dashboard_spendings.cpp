@@ -41,7 +41,24 @@ Dashboard_spendings::~Dashboard_spendings()
 
 void Dashboard_spendings::on_doneButton_clicked()
 {
+    int amount = ui->amount_spendings->text().toInt();
+    QString forWhat = ui->for_spendings->text();
+    if(ui->amount_spendings->text().toInt()==0){
+        currentUser.spending += amount;
 
+        if(amount < 0){
+
+            transaction temp;
+            temp.name = forWhat.toStdString();
+            temp.spent = amount;
+            currentUser.spendings.push_back(temp);
+
+        }
+    }
+    else{
+        currentUser.spending = ui->amount_spendings->text().toInt();
+
+    }
     Dashboard *dashboardWindow = new Dashboard();
     dashboardWindow->show();
     this->close();

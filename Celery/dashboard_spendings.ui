@@ -130,7 +130,7 @@ font-size: 23px;</string>
     <string>TextLabel</string>
    </property>
   </widget>
-  <widget class="QLabel" name="amount_saving">
+  <widget class="QLabel" name="amount_spendings">
    <property name="geometry">
     <rect>
      <x>412</x>
@@ -274,7 +274,7 @@ weight: 300;</string>
     <string/>
    </property>
   </widget>
-  <widget class="QLabel" name="for_saving">
+  <widget class="QLabel" name="for_spendings">
    <property name="geometry">
     <rect>
      <x>222</x>
@@ -298,14 +298,14 @@ weight: 300;</string>
   <zorder>recent_activities</zorder>
   <zorder>amountPerGiven</zorder>
   <zorder>purposeOfAmount</zorder>
-  <zorder>amount_saving</zorder>
+  <zorder>amount_spendings</zorder>
   <zorder>purposeOfAmount_2</zorder>
   <zorder>purposeOfAmount_3</zorder>
   <zorder>purposeOfAmount_4</zorder>
   <zorder>amountPerGiven_2</zorder>
   <zorder>amountPerGiven_3</zorder>
   <zorder>amountPerGiven_4</zorder>
-  <zorder>for_saving</zorder>
+  <zorder>for_spendings</zorder>
  </widget>
  <resources/>
  <connections/>

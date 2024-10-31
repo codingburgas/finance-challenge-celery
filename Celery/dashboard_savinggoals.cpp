@@ -1,7 +1,7 @@
 #include "dashboard_savinggoals.h"
 #include "ui_dashboard_savinggoals.h"
 #include "dashboard.h"
-
+#include "ui_dashboard.h"
 dashboard_savingGoals::dashboard_savingGoals(QWidget *parent)
     : QDialog(parent)
     , ui(new Ui::dashboard_savingGoals)
@@ -11,27 +11,6 @@ dashboard_savingGoals::dashboard_savingGoals(QWidget *parent)
     QPixmap pix(":/images/images/dashboard-spendings.png");
     ui->backgroundd->setPixmap(pix);
     void on_background_linkActivated(const QString &link);
-
-    transaction temp;
-    if(currentUser.savingGoals.empty()){
-        return;
-    }
-
-    ui->amountPerGiven->setText(QString::number(currentUser.spendings.rbegin()->spent));
-    ui->purposeOfAmount->setText(QString::fromStdString(currentUser.spendings.rbegin()->name));
-    if (currentUser.spendings.size() > 1) {
-        ui->amountPerGiven_2->setText(QString::number(currentUser.spendings[currentUser.spendings.size() - 2].spent));
-        ui->purposeOfAmount_2->setText(QString::fromStdString(currentUser.spendings[currentUser.spendings.size() - 2].name));
-    }
-    if (currentUser.spendings.size() > 2) {
-        ui->amountPerGiven_3->setText(QString::number(currentUser.spendings[currentUser.spendings.size() - 3].spent));
-        ui->purposeOfAmount_3->setText(QString::fromStdString(currentUser.spendings[currentUser.spendings.size() - 3].name));
-    }
-    if (currentUser.spendings.size() > 3) {
-
-        ui->amountPerGiven_4->setText(QString::number(currentUser.spendings[currentUser.spendings.size() - 4].spent));
-        ui->purposeOfAmount_4->setText(QString::fromStdString(currentUser.spendings[currentUser.spendings.size() - 4].name));
-    }
 
 }
 
@@ -48,6 +27,24 @@ void dashboard_savingGoals::on_background_linkActivated(const QString &link)
 
 void dashboard_savingGoals::on_doneButton_clicked()
 {
+    int amount = ui->amount_saving->text().toInt();
+    QString forWhat = ui->for_saving->text();
+    if(ui->amount_saving->text().toInt()==0){
+        currentUser.saving += amount;
+
+        if(amount < 0){
+
+            transaction temp;
+            temp.name = forWhat.toStdString();
+            temp.spent = amount;
+            currentUser.spendings.push_back(temp);
+
+        }
+    }
+    else{
+        currentUser.saving = ui->amount_saving->text().toInt();
+
+    }
     Dashboard *dashboardWindow = new Dashboard;
     dashboardWindow->show();
     this->close();

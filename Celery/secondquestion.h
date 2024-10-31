@@ -21,6 +21,7 @@ private slots:
 
 private:
     Ui::secondQuestion *ui;
+    QString saving;
 };
 
 #endif // SECONDQUESTION_H
