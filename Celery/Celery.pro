@@ -23,7 +23,7 @@ SOURCES += \
     models/user.cpp \
     register.cpp \
     secondquestion.cpp \
-    thirdquestion.cpp \
+    thirdquestion.cpp
 
 
 HEADERS += \
@@ -40,7 +40,7 @@ HEADERS += \
     models/user.h \
     register.h \
     secondquestion.h \
-    thirdquestion.h \
+    thirdquestion.h
 
 
 FORMS += \
