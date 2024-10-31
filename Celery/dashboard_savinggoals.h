@@ -18,7 +18,9 @@ public:
 private slots:
     void on_doneButton_clicked();
 
-    void on_backgroundd_linkActivated(const QString &link);
+    void on_background_linkActivated(const QString &link);
+
+    void on_editDetailsButton_clicked();
 
 private:
     Ui::dashboard_savingGoals *ui;

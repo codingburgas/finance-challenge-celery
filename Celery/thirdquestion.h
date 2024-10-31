@@ -1,6 +1,7 @@
 #ifndef THIRDQUESTION_H
 #define THIRDQUESTION_H
-
+#include "models/user.h"
+#include "models/budgetitem.h"
 #include <QDialog>
 
 namespace Ui {

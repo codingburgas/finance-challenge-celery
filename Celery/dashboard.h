@@ -24,7 +24,6 @@ private slots:
 
     void on_editDetails_clicked();
 
-    void on_plus_dashboard_clicked();
 
     void on_savingGoals_clicked();
 

@@ -21,7 +21,11 @@ void secondQuestion::on_okButton_clicked()
 {
 
     QString savingGoalAmount = ui->targetInput->text();
-    qDebug() <<savingGoalAmount;
+    QString savingGoalName = ui->nameInpu->text();
+    savingGoal goal;
+    goal.name = savingGoalName.toStdString();
+    goal.req = savingGoalAmount.toDouble();
+    currentUser.savingGoals.push_back(goal);
     thirdQuestion *questionWindow = new thirdQuestion();
     questionWindow->show();
     this->close();

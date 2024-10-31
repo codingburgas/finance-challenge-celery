@@ -55,7 +55,9 @@ weight: 400;</string>
    </property>
    <property name="styleSheet">
     <string notr="true">background-color: rgb(32, 32, 32);
-border-radius: 20px;</string>
+border-radius: 20px;
+padding: 0 20;
+color:white;</string>
    </property>
   </widget>
   <widget class="QLabel" name="textSubract">
@@ -95,74 +97,6 @@ color: rgb(182, 253, 51);</string>
     <string>Done</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="currentBalance">
-   <property name="geometry">
-    <rect>
-     <x>1085</x>
-     <y>216</y>
-     <width>258</width>
-     <height>43</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">color:white;
-background-color:transparent;</string>
-   </property>
-   <property name="text">
-    <string>Current Balance</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="savingGoals">
-   <property name="geometry">
-    <rect>
-     <x>1085</x>
-     <y>278</y>
-     <width>258</width>
-     <height>44</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">color:white;
-background-color:transparent;</string>
-   </property>
-   <property name="text">
-    <string>Saving Goals</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="spendings">
-   <property name="geometry">
-    <rect>
-     <x>1085</x>
-     <y>345</y>
-     <width>258</width>
-     <height>43</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">color:white;
-background-color:transparent;</string>
-   </property>
-   <property name="text">
-    <string>Spendings</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="budget">
-   <property name="geometry">
-    <rect>
-     <x>1085</x>
-     <y>411</y>
-     <width>258</width>
-     <height>44</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">color:white;
-background-color:transparent;</string>
-   </property>
-   <property name="text">
-    <string>Budget</string>
-   </property>
-  </widget>
   <widget class="QLineEdit" name="addOrSubPurpose">
    <property name="geometry">
     <rect>
@@ -174,7 +108,9 @@ background-color:transparent;</string>
    </property>
    <property name="styleSheet">
     <string notr="true">background-color: rgb(32, 32, 32);
-border-radius: 20px;</string>
+border-radius: 20px;
+padding: 0 20;
+color:white;</string>
    </property>
   </widget>
   <widget class="QLabel" name="label">
@@ -226,7 +162,9 @@ weight: 300;
    </property>
    <property name="styleSheet">
     <string notr="true">background-color: rgb(32, 32, 32);
-border-radius: 20px;</string>
+border-radius: 20px;
+padding: 0 20;
+color:white;</string>
    </property>
   </widget>
  </widget>

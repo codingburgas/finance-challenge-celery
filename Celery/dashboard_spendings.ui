@@ -16,16 +16,23 @@
   <widget class="QLabel" name="spendingsText">
    <property name="geometry">
     <rect>
-     <x>190</x>
-     <y>90</y>
-     <width>141</width>
-     <height>41</height>
+     <x>186</x>
+     <y>82</y>
+     <width>258</width>
+     <height>43</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>-1</pointsize>
+     <italic>false</italic>
+     <bold>true</bold>
+    </font>
    </property>
    <property name="styleSheet">
     <string notr="true">color: rgb(255, 255, 255);
 font: bold;
-font-size: 28px;</string>
+font-size: 30px;</string>
    </property>
    <property name="text">
     <string>Spendings</string>
@@ -54,15 +61,15 @@ color: rgb(182, 253, 51);</string>
   <widget class="QLabel" name="recent_activities">
    <property name="geometry">
     <rect>
-     <x>190</x>
-     <y>130</y>
-     <width>161</width>
-     <height>20</height>
+     <x>194</x>
+     <y>154</y>
+     <width>184</width>
+     <height>44</height>
     </rect>
    </property>
    <property name="styleSheet">
     <string notr="true">color: rgb(255, 255, 255);
-font-size: 20px;</string>
+font-size: 23px;</string>
    </property>
    <property name="text">
     <string>Recent activities:</string>
@@ -71,7 +78,7 @@ font-size: 20px;</string>
   <widget class="QLabel" name="amountPerGiven">
    <property name="geometry">
     <rect>
-     <x>380</x>
+     <x>420</x>
      <y>280</y>
      <width>171</width>
      <height>91</height>
@@ -94,7 +101,7 @@ font-size: 20px;</string>
     <rect>
      <x>218</x>
      <y>280</y>
-     <width>141</width>
+     <width>191</width>
      <height>91</height>
     </rect>
    </property>
@@ -123,12 +130,163 @@ font-size: 20px;</string>
     <string>TextLabel</string>
    </property>
   </widget>
+  <widget class="QLabel" name="amount_saving">
+   <property name="geometry">
+    <rect>
+     <x>412</x>
+     <y>227</y>
+     <width>95</width>
+     <height>36</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(207, 207, 207);
+font-size: 24px;
+weight: 300;</string>
+   </property>
+   <property name="text">
+    <string>Amount</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="purposeOfAmount_2">
+   <property name="geometry">
+    <rect>
+     <x>218</x>
+     <y>337</y>
+     <width>171</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:white;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="purposeOfAmount_3">
+   <property name="geometry">
+    <rect>
+     <x>218</x>
+     <y>394</y>
+     <width>171</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:white;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="purposeOfAmount_4">
+   <property name="geometry">
+    <rect>
+     <x>218</x>
+     <y>451</y>
+     <width>181</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:white;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="amountPerGiven_2">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>337</y>
+     <width>171</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:white;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="amountPerGiven_3">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>394</y>
+     <width>171</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:white;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="amountPerGiven_4">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>451</y>
+     <width>171</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:white;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
   <zorder>backgroundd</zorder>
   <zorder>spendingsText</zorder>
   <zorder>doneButton</zorder>
   <zorder>recent_activities</zorder>
   <zorder>amountPerGiven</zorder>
   <zorder>purposeOfAmount</zorder>
+  <zorder>amount_saving</zorder>
+  <zorder>purposeOfAmount_2</zorder>
+  <zorder>purposeOfAmount_3</zorder>
+  <zorder>purposeOfAmount_4</zorder>
+  <zorder>amountPerGiven_2</zorder>
+  <zorder>amountPerGiven_3</zorder>
+  <zorder>amountPerGiven_4</zorder>
  </widget>
  <resources/>
  <connections/>

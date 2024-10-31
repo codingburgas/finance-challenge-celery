@@ -16,7 +16,7 @@
   <widget class="QLabel" name="backgroundd">
    <property name="geometry">
     <rect>
-     <x>30</x>
+     <x>0</x>
      <y>0</y>
      <width>1500</width>
      <height>775</height>
@@ -45,7 +45,7 @@ weight: 500;
     <string>Set a new budget</string>
    </property>
    <property name="textFormat">
-    <enum>Qt::TextFormat::RichText</enum>
+    <enum>Qt::PlainText</enum>
    </property>
   </widget>
   <widget class="QLabel" name="nameText">
@@ -94,10 +94,16 @@ weight: 300;</string>
      <height>67</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
    <property name="styleSheet">
     <string notr="true">background-color: rgb(32, 32, 32);
 border-radius: 20px;
-padding: 0 20;</string>
+padding: 0 20;
+color:white;</string>
    </property>
   </widget>
   <widget class="QLineEdit" name="writeAmount">
@@ -109,10 +115,16 @@ padding: 0 20;</string>
      <height>67</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
    <property name="styleSheet">
     <string notr="true">background-color: rgb(32, 32, 32);
 border-radius: 20px;
-padding: 0 20;</string>
+padding: 0 20;
+color:white;</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_4">
@@ -161,10 +173,17 @@ weight: 300;
      <height>67</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgb(32, 32, 32);
+    <string notr="true">background-color: #2C2B2C;
 border-radius: 20px;
-padding: 0 20;</string>
+padding: 0 20;
+color:white;
+</string>
    </property>
   </widget>
   <widget class="QLabel" name="howmuchText">
@@ -172,7 +191,7 @@ padding: 0 20;</string>
     <rect>
      <x>610</x>
      <y>350</y>
-     <width>225</width>
+     <width>291</width>
      <height>29</height>
     </rect>
    </property>
@@ -194,10 +213,16 @@ weight: 300;</string>
      <height>67</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgb(32, 32, 32);
+    <string notr="true">background-color: #2C2B2C;
 border-radius: 20px;
-padding: 0 20;</string>
+padding: 0 20;
+color:white;</string>
    </property>
   </widget>
   <widget class="QLabel" name="budgetName1">
@@ -208,6 +233,9 @@ padding: 0 20;</string>
      <width>273</width>
      <height>44</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:white;</string>
    </property>
    <property name="text">
     <string>Budget Name 1 </string>
@@ -222,6 +250,9 @@ padding: 0 20;</string>
      <height>44</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">color:white;</string>
+   </property>
    <property name="text">
     <string>Budget Name 2 </string>
    </property>
@@ -234,6 +265,9 @@ padding: 0 20;</string>
      <width>273</width>
      <height>44</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:white;</string>
    </property>
    <property name="text">
     <string>Budget Name 3 </string>
@@ -248,6 +282,9 @@ padding: 0 20;</string>
      <height>44</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">color:white;</string>
+   </property>
    <property name="text">
     <string>Budget Name 4 </string>
    </property>
@@ -255,8 +292,8 @@ padding: 0 20;</string>
   <widget class="QPushButton" name="doneButton">
    <property name="geometry">
     <rect>
-     <x>620</x>
-     <y>620</y>
+     <x>589</x>
+     <y>623</y>
      <width>322</width>
      <height>86</height>
     </rect>

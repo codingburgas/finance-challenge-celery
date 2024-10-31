@@ -20,10 +20,13 @@ thirdQuestion::~thirdQuestion()
 
 void thirdQuestion::on_okButton_clicked()
 {
+
     QString budgetName = ui->nameAnswerr->text();
-    qDebug() <<budgetName;
     QString budgetAmount = ui->amountAnswer->text();
-    qDebug() <<budgetAmount;
+    budgetItem firstItem;
+    firstItem.name = budgetName.toStdString();
+    firstItem.planned = budgetAmount.toDouble();
+    currentUser.budgetPlan.push_back(firstItem);
     Dashboard *dashboardWindow = new Dashboard();
     dashboardWindow->show();
     this->close();
