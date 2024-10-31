@@ -11,6 +11,8 @@ Dashboard::Dashboard( QWidget *parent)
     , ui(new Ui::Dashboard)
     , isBalanceClicked(false)
     , isBudgetClicked(true)
+    , isSavingGoalsClicked(false)
+    , isSpendingsClicked(false)
 {
     ui->setupUi(this);
     QPixmap pix(":/images/dashboard.png");
@@ -26,38 +28,60 @@ Dashboard::~Dashboard()
 
 void Dashboard::on_currentBalance_clicked()
 {
-    isBudgetClicked = false;
+    isSpendingsClicked = false;
     isBalanceClicked = true;
+    isBudgetClicked = false;
+    isSavingGoalsClicked = false;
     ui->label->setText("Current Balance");
-    ui->mainn->setText(QString::number(currentUser.balance));
-    ui->currentBalance->setStyleSheet("text-decoration: underline; color:white; background-color:transparent;");
+    ui->spendings->setStyleSheet("text-decoration: none; color:white; background-color:transparent;");
     ui->budget->setStyleSheet("text-decoration: none; color:white; background-color:transparent;");
+    ui->savingGoals->setStyleSheet("text-decoration: none; color:white; background-color:transparent;");
 
+    ui->currentBalance->setStyleSheet("text-decoration: underlined; color:white; background-color:transparent;");
 }
 
 
 void Dashboard::on_budget_clicked()
 {
-    isBudgetClicked = true;
+    isSpendingsClicked = false;
     isBalanceClicked = false;
+    isBudgetClicked = true;
+    isSavingGoalsClicked = false;
     ui->label->setText("Budget");
     ui->currentBalance->setStyleSheet("text-decoration: none; color:white; background-color:transparent;");
+    ui->spendings->setStyleSheet("text-decoration: none; color:white; background-color:transparent;");
+    ui->savingGoals->setStyleSheet("text-decoration: none; color:white; background-color:transparent;");
+
     ui->budget->setStyleSheet("text-decoration: underlined; color:white; background-color:transparent;");
 }
 
 
 void Dashboard::on_spendings_clicked()
 {
-    Dashboard_spendings *spendingsWindow = new Dashboard_spendings();
-    spendingsWindow->show();
-    this->close();
+    isSpendingsClicked = true;
+    isBalanceClicked = false;
+    isBudgetClicked = false;
+    isSavingGoalsClicked = false;
+    ui->label->setText("Spendings");
+    ui->currentBalance->setStyleSheet("text-decoration: none; color:white; background-color:transparent;");
+    ui->budget->setStyleSheet("text-decoration: none; color:white; background-color:transparent;");
+    ui->savingGoals->setStyleSheet("text-decoration: none; color:white; background-color:transparent;");
+
+    ui->spendings->setStyleSheet("text-decoration: underlined; color:white; background-color:transparent;");
 }
 
 void Dashboard::on_savingGoals_clicked()
 {
-    dashboard_savingGoals *savingWindow = new dashboard_savingGoals();
-    savingWindow->show();
-    this->close();
+    isSpendingsClicked = false;
+    isSavingGoalsClicked = true;
+    isBudgetClicked = false;
+    isBalanceClicked = false;
+    ui->label->setText("Saving Goals");
+    ui->currentBalance->setStyleSheet("text-decoration: none; color:white; background-color:transparent;");
+    ui->budget->setStyleSheet("text-decoration: none; color:white; background-color:transparent;");
+    ui->spendings->setStyleSheet("text-decoration: none; color:white; background-color:transparent;");
+
+    ui->savingGoals->setStyleSheet("text-decoration: underlined; color:white; background-color:transparent;");
 }
 
 
@@ -75,7 +99,16 @@ void Dashboard::on_editDetails_clicked()
         balanceWindow->show();
         this->close();
     }
+
+    if(isSavingGoalsClicked){
+        dashboard_savingGoals *savingWindow = new dashboard_savingGoals();
+        savingWindow->show();
+        this->close();
+    }
+
+    if(isSpendingsClicked){
+        Dashboard_spendings *spendings = new Dashboard_spendings();
+        spendings->show();
+        this->close();
+    }
 }
-
-
-

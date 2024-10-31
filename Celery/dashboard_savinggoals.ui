@@ -85,7 +85,7 @@ weight: 300;</string>
     <string>Amount</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="editDetailsButton">
+  <widget class="QPushButton" name="doneButton">
    <property name="geometry">
     <rect>
      <x>589</x>
@@ -118,31 +118,12 @@ color: rgb(182, 253, 51);</string>
     <string>TextLabel</string>
    </property>
   </widget>
-  <widget class="QLabel" name="amount_saving_2">
-   <property name="geometry">
-    <rect>
-     <x>760</x>
-     <y>740</y>
-     <width>95</width>
-     <height>36</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">color: rgb(207, 207, 207);
-font-size: 24px;
-weight: 300;</string>
-   </property>
-   <property name="text">
-    <string>Amount</string>
-   </property>
-  </widget>
   <zorder>backgroundd</zorder>
   <zorder>savingGoalsText</zorder>
   <zorder>recentActivitiesText</zorder>
   <zorder>for_saving</zorder>
   <zorder>amount_saving</zorder>
-  <zorder>editDetailsButton</zorder>
-  <zorder>amount_saving_2</zorder>
+  <zorder>doneButton</zorder>
  </widget>
  <resources/>
  <connections/>

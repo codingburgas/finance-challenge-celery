@@ -27,14 +27,9 @@ void dashboard_savingGoals::on_background_linkActivated(const QString &link)
 
 void dashboard_savingGoals::on_doneButton_clicked()
 {
-    // Implementation of what should happen when the done button is clicked
-    // You can add any action you want to perform here
-}
-
-void dashboard_savingGoals::on_editDetailsButton_clicked()
-{
     Dashboard *dashboardWindow = new Dashboard;
     dashboardWindow->show();
     this->close();
 }
+
 

@@ -44,7 +44,6 @@ void Dashboard_spendings::on_doneButton_clicked()
 
     Dashboard *dashboardWindow = new Dashboard();
     dashboardWindow->show();
-
     this->close();
 }
 

@@ -32,6 +32,8 @@ private:
 
     bool isBalanceClicked;
     bool isBudgetClicked;
+    bool isSavingGoalsClicked;
+    bool isSpendingsClicked;
 };
 
 #endif // DASHBOARD_H
