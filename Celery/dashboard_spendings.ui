@@ -274,6 +274,24 @@ weight: 300;</string>
     <string/>
    </property>
   </widget>
+  <widget class="QLabel" name="for_saving">
+   <property name="geometry">
+    <rect>
+     <x>222</x>
+     <y>227</y>
+     <width>95</width>
+     <height>36</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(207, 207, 207);
+font-size: 24px;
+weight: 300;</string>
+   </property>
+   <property name="text">
+    <string>For</string>
+   </property>
+  </widget>
   <zorder>backgroundd</zorder>
   <zorder>spendingsText</zorder>
   <zorder>doneButton</zorder>
@@ -287,6 +305,7 @@ weight: 300;</string>
   <zorder>amountPerGiven_2</zorder>
   <zorder>amountPerGiven_3</zorder>
   <zorder>amountPerGiven_4</zorder>
+  <zorder>for_saving</zorder>
  </widget>
  <resources/>
  <connections/>
