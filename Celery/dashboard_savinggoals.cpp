@@ -50,4 +50,7 @@ void dashboard_savingGoals::on_doneButton_clicked()
     this->close();
 }
 
+void dashboard_savingGoals::on_editDetailsButton_clicked()
+{
 
+}
