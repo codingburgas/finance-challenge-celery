@@ -1,6 +1,8 @@
 #ifndef DASHBOARD_H
 #define DASHBOARD_H
 #include "models/user.h"
+#include "models/transaction.h"
+#include "models/budgetitem.h"
 #include <QDialog>
 
 namespace Ui {
@@ -26,6 +28,8 @@ private slots:
 
 
     void on_savingGoals_clicked();
+
+    void on_secondBudgetName_linkActivated(const QString &link);
 
 private:
     Ui::Dashboard *ui;

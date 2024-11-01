@@ -12,7 +12,6 @@ Dashboard_spendings::Dashboard_spendings(QWidget *parent)
     ui->setupUi(this);
     QPixmap pix(":/images/images/dashboard-spendings.png");
     ui->backgroundd->setPixmap(pix);
-    transaction temp;
     if(currentUser.spendings.empty()){
         return;
     }

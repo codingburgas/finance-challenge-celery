@@ -187,6 +187,86 @@ color:white;</string>
     <string/>
    </property>
   </widget>
+  <widget class="QLabel" name="firstBudgetName">
+   <property name="geometry">
+    <rect>
+     <x>66</x>
+     <y>216</y>
+     <width>258</width>
+     <height>43</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-size: 30px;
+color:white;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="secondBudgetName">
+   <property name="geometry">
+    <rect>
+     <x>66</x>
+     <y>278</y>
+     <width>258</width>
+     <height>43</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-size: 30px;
+color:white;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="thirdBudgetName">
+   <property name="geometry">
+    <rect>
+     <x>66</x>
+     <y>339</y>
+     <width>258</width>
+     <height>43</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-size: 30px;
+color:white;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="forthBudgetName">
+   <property name="geometry">
+    <rect>
+     <x>66</x>
+     <y>400</y>
+     <width>258</width>
+     <height>43</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-size: 30px;
+color:white;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <zorder>backgrounddd</zorder>
+  <zorder>editDetails</zorder>
+  <zorder>currentBalance</zorder>
+  <zorder>savingGoals</zorder>
+  <zorder>spendings</zorder>
+  <zorder>budget</zorder>
+  <zorder>label</zorder>
+  <zorder>mainn</zorder>
+  <zorder>forthBudgetName</zorder>
+  <zorder>firstBudgetName</zorder>
+  <zorder>thirdBudgetName</zorder>
+  <zorder>secondBudgetName</zorder>
  </widget>
  <resources/>
  <connections/>

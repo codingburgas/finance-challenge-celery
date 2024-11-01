@@ -2,7 +2,7 @@
 #include "ui_thirdquestion.h"
 #include "dashboard.h"
 #include "ui_dashboard.h"
-
+#include <QDebug>
 thirdQuestion::thirdQuestion(QWidget *parent)
     : QDialog(parent)
     , ui(new Ui::thirdQuestion)
@@ -26,6 +26,7 @@ void thirdQuestion::on_okButton_clicked()
     firstItem.name = budgetName.toStdString();
     firstItem.planned = budgetAmount.toDouble();
     currentUser.budgetPlan.push_back(firstItem);
+    qDebug()<<firstItem.name;
     Dashboard *dashboardWindow = new Dashboard();
     dashboardWindow->show();
     this->close();
