@@ -17,6 +17,7 @@ Dashboard::Dashboard( QWidget *parent)
     ui->setupUi(this);
     QPixmap pix(":/images/dashboard.png");
     ui->backgrounddd->setPixmap(pix);
+    ui->label->setText(QString::fromStdString(currentUser.username) + "'s Budget");
     if(currentUser.budgetPlan.empty()){
         return;
     }
@@ -45,7 +46,7 @@ void Dashboard::on_currentBalance_clicked()
     isBalanceClicked = true;
     isBudgetClicked = false;
     isSavingGoalsClicked = false;
-    ui->label->setText("Current Balance");
+    ui->label->setText(QString::fromStdString(currentUser.username) + "'s Current Balance");
     ui->spendings->setStyleSheet("text-decoration: none; color:white; background-color:transparent;");
     ui->budget->setStyleSheet("text-decoration: none; color:white; background-color:transparent;");
     ui->savingGoals->setStyleSheet("text-decoration: none; color:white; background-color:transparent;");
@@ -60,7 +61,7 @@ void Dashboard::on_budget_clicked()
     isBalanceClicked = false;
     isBudgetClicked = true;
     isSavingGoalsClicked = false;
-    ui->label->setText("Budget");
+    ui->label->setText(QString::fromStdString(currentUser.username) + "'s Budget");
     ui->currentBalance->setStyleSheet("text-decoration: none; color:white; background-color:transparent;");
     ui->spendings->setStyleSheet("text-decoration: none; color:white; background-color:transparent;");
     ui->savingGoals->setStyleSheet("text-decoration: none; color:white; background-color:transparent;");
@@ -79,7 +80,7 @@ void Dashboard::on_spendings_clicked()
     for (const auto& transaction : currentUser.spendings) {
         totalSpent += transaction.spent;
     }
-    ui->label->setText("Spendings");
+    ui->label->setText(QString::fromStdString(currentUser.username) + "'s Spendings");
     ui->currentBalance->setStyleSheet("text-decoration: none; color:white; background-color:transparent;");
     ui->budget->setStyleSheet("text-decoration: none; color:white; background-color:transparent;");
     ui->savingGoals->setStyleSheet("text-decoration: none; color:white; background-color:transparent;");
@@ -93,7 +94,7 @@ void Dashboard::on_savingGoals_clicked()
     isSavingGoalsClicked = true;
     isBudgetClicked = false;
     isBalanceClicked = false;
-    ui->label->setText("Saving Goals");
+    ui->label->setText(QString::fromStdString(currentUser.username) + "'s Saving Goals");
     ui->currentBalance->setStyleSheet("text-decoration: none; color:white; background-color:transparent;");
     ui->budget->setStyleSheet("text-decoration: none; color:white; background-color:transparent;");
     ui->spendings->setStyleSheet("text-decoration: none; color:white; background-color:transparent;");

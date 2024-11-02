@@ -68,12 +68,14 @@ color: rgb(182, 253, 51);</string>
    <property name="font">
     <font>
      <pointsize>16</pointsize>
+     <underline>true</underline>
     </font>
    </property>
    <property name="styleSheet">
     <string notr="true">color:white;
 background-color:transparent;
-</string>
+text-decoration: underline;
+text-decoration-color: rgb(182, 253, 51);</string>
    </property>
    <property name="text">
     <string>Current balance</string>
@@ -91,11 +93,14 @@ background-color:transparent;
    <property name="font">
     <font>
      <pointsize>16</pointsize>
+     <underline>true</underline>
     </font>
    </property>
    <property name="styleSheet">
     <string notr="true">color:white;
-background-color:transparent;</string>
+background-color:transparent;
+text-decoration: underline;
+text-decoration-color: rgb(182, 253, 51);</string>
    </property>
    <property name="text">
     <string>Saving goals</string>
@@ -113,11 +118,14 @@ background-color:transparent;</string>
    <property name="font">
     <font>
      <pointsize>16</pointsize>
+     <underline>true</underline>
     </font>
    </property>
    <property name="styleSheet">
     <string notr="true">color:white;
-background-color:transparent;</string>
+background-color:transparent;
+text-decoration: underline;
+text-decoration-color: rgb(182, 253, 51);</string>
    </property>
    <property name="text">
     <string>Spendings</string>
@@ -141,7 +149,8 @@ background-color:transparent;</string>
    <property name="styleSheet">
     <string notr="true">color:white;
 background-color:transparent;
-text-decoration: underline;</string>
+text-decoration: underline;
+text-decoration-color: #B6FD33;</string>
    </property>
    <property name="text">
     <string>Budget</string>
@@ -150,9 +159,9 @@ text-decoration: underline;</string>
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>568</x>
+     <x>558</x>
      <y>176</y>
-     <width>258</width>
+     <width>401</width>
      <height>51</height>
     </rect>
    </property>

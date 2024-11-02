@@ -1,3 +1,4 @@
+
 #include "transaction.h"
 #include <QDebug>
 
