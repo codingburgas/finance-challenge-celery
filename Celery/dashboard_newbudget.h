@@ -18,6 +18,10 @@ public:
 private slots:
     void on_doneButton_clicked();
 
+    void on_submitNewBudget_clicked();
+
+    void on_submitEditBudget_clicked();
+
 private:
     Ui::dashboard_newBudget *ui;
 };

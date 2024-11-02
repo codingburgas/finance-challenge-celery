@@ -23,8 +23,8 @@ public:
     string passHash;
     string email;
     int balance;
-    int budget;
     int saving;
+    int budget;
     int spending;
 
     vector<transaction> spendings;
