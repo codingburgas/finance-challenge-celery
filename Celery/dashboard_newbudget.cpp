@@ -61,16 +61,17 @@ void dashboard_newBudget::on_submitEditBudget_clicked()
         return;
     }
 
-    double amount=ui->writeHowMuchSpent->text().toDouble();
-    if(amount>0){
-        currentUser.budgetPlan[i].spent+=amount;
-        currentUser.balance-=amount;
-        transaction fromBudget(budgetName.toStdString(),-amount,0,"");
+    double amountSpent=ui->writeHowMuchSpent->text().toDouble();
+    double amountNew=ui->editCurrentBudget->text().toDouble();
+    if(amountSpent == 0){
+        currentUser.budgetPlan[i].planned=amountNew;
+    }
+    if(amountNew == 0){
+        currentUser.budgetPlan[i].spent+=amountSpent;
+        currentUser.balance-=amountSpent;
+        transaction fromBudget(budgetName.toStdString(),-amountSpent,0,"");
         currentUser.spendings.push_back(fromBudget);
     }
-    amount=ui->editCurrentBudget->text().toDouble();
-    if(amount>=0){
-        currentUser.budgetPlan[i].planned=amount;
-    }
+
 }
 

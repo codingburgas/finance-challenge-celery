@@ -19,26 +19,27 @@ dashboard_newBalance::~dashboard_newBalance()
 void dashboard_newBalance::on_doneButton_clicked()
 {
 
-
     int subtractAmount = ui->addOrSubAmount->text().toInt();
     QString purpose = ui->addOrSubPurpose->text();
-    if(ui->newBalanceEdit->text().toInt()==0){
+    if (ui->newBalanceEdit->text().toInt() == 0) {
         currentUser.balance += subtractAmount;
 
-        if(subtractAmount < 0){
-
+        if (subtractAmount < 0) {
             transaction temp;
             temp.name = purpose.toStdString();
             temp.spent = subtractAmount;
             currentUser.spendings.push_back(temp);
-
+            for (size_t i = 0; i < currentUser.budgetPlan.size(); ++i) {
+                if (currentUser.budgetPlan[i].name == temp.name) {
+                    currentUser.budgetPlan[i].spent -= temp.spent;
+                    break;
+                }
             }
-    }
-    else{
+
+        }
+    } else {
         currentUser.balance = ui->newBalanceEdit->text().toInt();
-
     }
-
 
     Dashboard *dashboardWindow = new Dashboard();
     dashboardWindow->show();

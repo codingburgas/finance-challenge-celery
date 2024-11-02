@@ -20,12 +20,14 @@ void Dashboard::budgetFunction(){
 
     double planned = currentUser.budgetPlan.rbegin()->planned;
     double spent = currentUser.budgetPlan.rbegin()->spent;
-    double percentageSpent = (planned > 0) ? spent / planned : 0.0;
+    double percentageRemaining = (planned > 0) ? (planned - spent) / planned : 0.0;  // Calculate the remaining percentage
 
-    int displayedHeight = static_cast<int>(celery.height() * (1.0 - percentageSpent));
-    QPixmap croppedCelery = celery.copy(0, displayedHeight, celery.width(), celery.height() - displayedHeight);
+    // Calculate displayedHeight based on percentage remaining
+    int displayedHeight = static_cast<int>(celery.height() * percentageRemaining);
+    QPixmap croppedCelery = celery.copy(0, celery.height() - displayedHeight, celery.width(), displayedHeight);
     QPixmap scaledCelery = croppedCelery.scaled(width, height, Qt::KeepAspectRatio, Qt::SmoothTransformation);
     ui->mainn->setPixmap(scaledCelery);
+
     ui->firstBudgetName->setText(QString::fromStdString(currentUser.budgetPlan.rbegin()->name));
     if (currentUser.budgetPlan.size() > 1) {
         ui->secondBudgetName->setText(QString::fromStdString(currentUser.budgetPlan[currentUser.budgetPlan.size() - 2].name));
