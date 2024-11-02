@@ -16,8 +16,8 @@
   <widget class="QLabel" name="question">
    <property name="geometry">
     <rect>
-     <x>499</x>
-     <y>221</y>
+     <x>270</x>
+     <y>310</y>
      <width>547</width>
      <height>74</height>
     </rect>
@@ -52,10 +52,10 @@
   <widget class="QLineEdit" name="answer">
    <property name="geometry">
     <rect>
-     <x>442</x>
-     <y>359</y>
+     <x>200</x>
+     <y>400</y>
      <width>573</width>
-     <height>82</height>
+     <height>71</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -72,8 +72,8 @@ font-weight: bold;
   <widget class="QPushButton" name="okButton">
    <property name="geometry">
     <rect>
-     <x>700</x>
-     <y>567</y>
+     <x>440</x>
+     <y>510</y>
      <width>64</width>
      <height>66</height>
     </rect>

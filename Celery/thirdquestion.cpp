@@ -8,7 +8,7 @@ thirdQuestion::thirdQuestion(QWidget *parent)
     , ui(new Ui::thirdQuestion)
 {
     ui->setupUi(this);
-    QPixmap pix("://questionnaire.png");
+    QPixmap pix(":/images/images/questions_background.png");
     ui->backgroundd->setPixmap(pix);
 }
 

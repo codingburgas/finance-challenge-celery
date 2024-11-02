@@ -8,7 +8,7 @@ firstQuestion::firstQuestion(QWidget *parent)
     , ui(new Ui::firstQuestion)
 {
     ui->setupUi(this);
-    QPixmap pix("://questionnaire.png");
+    QPixmap pix(":/images/images/questions_background.png");
     ui->backgroundd->setPixmap(pix);
 
 }

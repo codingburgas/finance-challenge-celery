@@ -52,19 +52,19 @@ and Grow.</string>
    <widget class="QPushButton" name="signIn">
     <property name="geometry">
      <rect>
-      <x>192</x>
-      <y>626</y>
+      <x>250</x>
+      <y>640</y>
       <width>131</width>
       <height>31</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(51, 51, 51);
-border-radius: 9px;
-color: rgb(111, 111, 111);</string>
+     <string notr="true">background-color:transparent;
+font-weight:bold;
+color: #B6FD33;</string>
     </property>
     <property name="text">
-     <string>Or Sign in</string>
+     <string>Sign in</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButtonn">
@@ -85,6 +85,23 @@ font-weight:bold;
     </property>
     <property name="text">
      <string>Start now</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>620</y>
+      <width>63</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(111, 111, 111);
+</string>
+    </property>
+    <property name="text">
+     <string>Or</string>
     </property>
    </widget>
   </widget>

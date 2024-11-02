@@ -69,5 +69,5 @@ RESOURCES += \
     dashboard_newbudget.qrc \
     images/dashboard.qrc \
     images/mainWindow.qrc \
-    images/questionnaire.qrc \
-    images/register.qrc
+    images/register.qrc \
+    questions_background.qrc
