@@ -63,6 +63,7 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 DISTFILES +=
 
 RESOURCES += \
+    celery.qrc \
     dashboard-balance.qrc \
     dashboard-spendings.qrc \
     dashboard_newbudget.qrc \

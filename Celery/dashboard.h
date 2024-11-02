@@ -19,18 +19,19 @@ public:
 
 private slots:
     void on_currentBalance_clicked();
-
     void on_budget_clicked();
-
     void on_spendings_clicked();
-
     void on_editDetails_clicked();
-
-
     void on_savingGoals_clicked();
+    void on_firstBudgetName_clicked();
+    void clearBudgetElements();
 
-    void on_secondBudgetName_linkActivated(const QString &link);
+    void on_secondBudgetName_clicked();
 
+    void on_thirdBudgetName_clicked();
+
+    void on_forthBudgetName_clicked();
+    void budgetFunction();
 private:
     Ui::Dashboard *ui;
 

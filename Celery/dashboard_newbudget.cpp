@@ -53,7 +53,8 @@ void dashboard_newBudget::on_submitEditBudget_clicked()
 {
     QString budgetName=ui->budgetName->text();
     int i=0;
-    while(budgetName!=currentUser.budgetPlan[i].name){
+    while (budgetName.toStdString() != currentUser.budgetPlan[i].name) {
+
         i++;
     }
     if(i==currentUser.budgetPlan.size()){

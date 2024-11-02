@@ -177,8 +177,8 @@ font-size: 36px;</string>
   <widget class="QLabel" name="mainn">
    <property name="geometry">
     <rect>
-     <x>570</x>
-     <y>220</y>
+     <x>640</x>
+     <y>240</y>
      <width>231</width>
      <height>191</height>
     </rect>
@@ -196,41 +196,43 @@ color:white;</string>
     <string/>
    </property>
   </widget>
-  <widget class="QLabel" name="firstBudgetName">
+  <widget class="QPushButton" name="clickedBudget">
    <property name="geometry">
     <rect>
-     <x>66</x>
-     <y>216</y>
-     <width>258</width>
-     <height>43</height>
+     <x>640</x>
+     <y>450</y>
+     <width>211</width>
+     <height>41</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">font-size: 30px;
-color:white;</string>
+    <string notr="true">color:white;
+font-size:30px;
+background-color:transparent;</string>
    </property>
    <property name="text">
     <string/>
    </property>
   </widget>
-  <widget class="QLabel" name="secondBudgetName">
+  <widget class="QPushButton" name="clickedBudgetAmount">
    <property name="geometry">
     <rect>
-     <x>66</x>
-     <y>278</y>
-     <width>258</width>
-     <height>43</height>
+     <x>640</x>
+     <y>490</y>
+     <width>211</width>
+     <height>41</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">font-size: 30px;
-color:white;</string>
+    <string notr="true">color:white;
+font-size:30px;
+background-color:transparent;</string>
    </property>
    <property name="text">
     <string/>
    </property>
   </widget>
-  <widget class="QLabel" name="thirdBudgetName">
+  <widget class="QPushButton" name="thirdBudgetName">
    <property name="geometry">
     <rect>
      <x>66</x>
@@ -240,14 +242,51 @@ color:white;</string>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">font-size: 30px;
-color:white;</string>
+    <string notr="true">color:white;
+font-size:30px;
+background-color:transparent;</string>
    </property>
    <property name="text">
     <string/>
    </property>
   </widget>
-  <widget class="QLabel" name="forthBudgetName">
+  <widget class="QPushButton" name="secondBudgetName">
+   <property name="geometry">
+    <rect>
+     <x>66</x>
+     <y>278</y>
+     <width>258</width>
+     <height>43</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:white;
+font-size:30px;
+background-color:transparent;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="firstBudgetName">
+   <property name="geometry">
+    <rect>
+     <x>66</x>
+     <y>216</y>
+     <width>258</width>
+     <height>43</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:white;
+font-size:30px;
+background-color:transparent;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="forthBudgetName">
    <property name="geometry">
     <rect>
      <x>66</x>
@@ -257,25 +296,14 @@ color:white;</string>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">font-size: 30px;
-color:white;</string>
+    <string notr="true">color:white;
+font-size:30px;
+background-color:transparent;</string>
    </property>
    <property name="text">
     <string/>
    </property>
   </widget>
-  <zorder>backgrounddd</zorder>
-  <zorder>editDetails</zorder>
-  <zorder>currentBalance</zorder>
-  <zorder>savingGoals</zorder>
-  <zorder>spendings</zorder>
-  <zorder>budget</zorder>
-  <zorder>label</zorder>
-  <zorder>mainn</zorder>
-  <zorder>forthBudgetName</zorder>
-  <zorder>firstBudgetName</zorder>
-  <zorder>thirdBudgetName</zorder>
-  <zorder>secondBudgetName</zorder>
  </widget>
  <resources/>
  <connections/>
