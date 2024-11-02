@@ -30,9 +30,9 @@
     </font>
    </property>
    <property name="styleSheet">
-    <string notr="true">color: rgb(255, 255, 255);
-font: bold;
-font-size: 30px;</string>
+    <string notr="true">color: rgb(182, 253, 51);
+font-size: 36px;
+weight: 500;</string>
    </property>
    <property name="text">
     <string>Spendings</string>

@@ -29,14 +29,14 @@
   <widget class="QLabel" name="newBudgetText">
    <property name="geometry">
     <rect>
-     <x>204</x>
-     <y>97</y>
+     <x>200</x>
+     <y>150</y>
      <width>291</width>
-     <height>43</height>
+     <height>51</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">color: rgb(255, 255, 255);
+    <string notr="true">color: rgb(182, 253, 51);
 font-size: 36px;
 weight: 500;
 </string>
@@ -52,7 +52,7 @@ weight: 500;
    <property name="geometry">
     <rect>
      <x>210</x>
-     <y>260</y>
+     <y>230</y>
      <width>75</width>
      <height>29</height>
     </rect>
@@ -71,7 +71,7 @@ weiht: 300;
    <property name="geometry">
     <rect>
      <x>210</x>
-     <y>370</y>
+     <y>350</y>
      <width>177</width>
      <height>29</height>
     </rect>
@@ -88,10 +88,10 @@ weight: 300;</string>
   <widget class="QLineEdit" name="writeName">
    <property name="geometry">
     <rect>
-     <x>210</x>
-     <y>300</y>
+     <x>200</x>
+     <y>270</y>
      <width>285</width>
-     <height>67</height>
+     <height>51</height>
     </rect>
    </property>
    <property name="font">
@@ -109,10 +109,10 @@ color:white;</string>
   <widget class="QLineEdit" name="writeAmount">
    <property name="geometry">
     <rect>
-     <x>210</x>
-     <y>400</y>
+     <x>200</x>
+     <y>390</y>
      <width>285</width>
-     <height>67</height>
+     <height>51</height>
     </rect>
    </property>
    <property name="font">
@@ -130,14 +130,14 @@ color:white;</string>
   <widget class="QLabel" name="label_4">
    <property name="geometry">
     <rect>
-     <x>610</x>
-     <y>90</y>
+     <x>620</x>
+     <y>100</y>
      <width>258</width>
      <height>51</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">color: rgb(255, 255, 255);
+    <string notr="true">color: rgb(182, 253, 51);
 font-size: 36px;
 weight: 500;</string>
    </property>
@@ -148,8 +148,8 @@ weight: 500;</string>
   <widget class="QLabel" name="currentBudgetText">
    <property name="geometry">
     <rect>
-     <x>610</x>
-     <y>250</y>
+     <x>630</x>
+     <y>280</y>
      <width>241</width>
      <height>36</height>
     </rect>
@@ -168,9 +168,9 @@ weight: 300;
    <property name="geometry">
     <rect>
      <x>610</x>
-     <y>290</y>
+     <y>320</y>
      <width>285</width>
-     <height>67</height>
+     <height>51</height>
     </rect>
    </property>
    <property name="font">
@@ -189,10 +189,10 @@ color:white;
   <widget class="QLabel" name="howmuchText">
    <property name="geometry">
     <rect>
-     <x>610</x>
-     <y>370</y>
+     <x>630</x>
+     <y>380</y>
      <width>291</width>
-     <height>29</height>
+     <height>41</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -208,9 +208,9 @@ weight: 300;</string>
    <property name="geometry">
     <rect>
      <x>610</x>
-     <y>400</y>
+     <y>420</y>
      <width>285</width>
-     <height>67</height>
+     <height>51</height>
     </rect>
    </property>
    <property name="font">
@@ -248,11 +248,17 @@ color: rgb(182, 253, 51);</string>
   <widget class="QPushButton" name="submitNewBudget">
    <property name="geometry">
     <rect>
-     <x>220</x>
+     <x>290</x>
      <y>480</y>
      <width>100</width>
      <height>32</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(182, 253, 51);
+background-color: transparent;
+weight: 600;
+font-size: 18px;</string>
    </property>
    <property name="text">
     <string>Submit</string>
@@ -261,11 +267,17 @@ color: rgb(182, 253, 51);</string>
   <widget class="QPushButton" name="submitEditBudget">
    <property name="geometry">
     <rect>
-     <x>610</x>
-     <y>490</y>
+     <x>700</x>
+     <y>500</y>
      <width>100</width>
      <height>32</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(182, 253, 51);
+background-color: transparent;
+weight: 600;
+font-size: 18px;</string>
    </property>
    <property name="text">
     <string>Submit</string>
@@ -275,25 +287,38 @@ color: rgb(182, 253, 51);</string>
    <property name="geometry">
     <rect>
      <x>610</x>
-     <y>180</y>
+     <y>220</y>
      <width>285</width>
-     <height>67</height>
+     <height>51</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: #2C2B2C;
+border-radius: 20px;
+padding: 0 20;
+color:white;
+</string>
    </property>
   </widget>
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>610</x>
-     <y>140</y>
+     <x>620</x>
+     <y>170</y>
      <width>241</width>
-     <height>36</height>
+     <height>41</height>
     </rect>
    </property>
    <property name="font">
     <font>
-     <pointsize>24</pointsize>
+     <pointsize>-1</pointsize>
     </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+font-size: 24px;
+weiht: 300;
+</string>
    </property>
    <property name="text">
     <string>Which budget</string>

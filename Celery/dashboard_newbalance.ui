@@ -29,14 +29,14 @@
   <widget class="QLabel" name="textNewBalance">
    <property name="geometry">
     <rect>
-     <x>590</x>
-     <y>110</y>
+     <x>610</x>
+     <y>90</y>
      <width>367</width>
      <height>43</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">color: rgb(255, 255, 255);
+    <string notr="true">color: rgb(182, 253, 51);
 font-size: 30px;
 weight: 400;</string>
    </property>
@@ -47,10 +47,10 @@ weight: 400;</string>
   <widget class="QLineEdit" name="newBalanceEdit">
    <property name="geometry">
     <rect>
-     <x>560</x>
-     <y>160</y>
-     <width>341</width>
-     <height>67</height>
+     <x>570</x>
+     <y>150</y>
+     <width>371</width>
+     <height>61</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -63,14 +63,14 @@ color:white;</string>
   <widget class="QLabel" name="textSubract">
    <property name="geometry">
     <rect>
-     <x>556</x>
-     <y>235</y>
+     <x>590</x>
+     <y>250</y>
      <width>388</width>
      <height>43</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">color: rgb(255, 255, 255);
+    <string notr="true">color: rgb(182, 253, 51);
 font-size: 30px;
 weight: 400;</string>
    </property>
@@ -81,8 +81,8 @@ weight: 400;</string>
   <widget class="QPushButton" name="doneButton">
    <property name="geometry">
     <rect>
-     <x>589</x>
-     <y>623</y>
+     <x>590</x>
+     <y>620</y>
      <width>322</width>
      <height>86</height>
     </rect>
@@ -100,10 +100,10 @@ color: rgb(182, 253, 51);</string>
   <widget class="QLineEdit" name="addOrSubPurpose">
    <property name="geometry">
     <rect>
-     <x>640</x>
-     <y>380</y>
+     <x>680</x>
+     <y>420</y>
      <width>268</width>
-     <height>67</height>
+     <height>61</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -116,8 +116,8 @@ color:white;</string>
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>540</x>
-     <y>400</y>
+     <x>570</x>
+     <y>440</y>
      <width>91</width>
      <height>20</height>
     </rect>
@@ -134,8 +134,8 @@ weight: 300;</string>
   <widget class="QLabel" name="label_2">
    <property name="geometry">
     <rect>
-     <x>540</x>
-     <y>310</y>
+     <x>580</x>
+     <y>340</y>
      <width>71</width>
      <height>20</height>
     </rect>
@@ -154,10 +154,10 @@ weight: 300;
   <widget class="QLineEdit" name="addOrSubAmount">
    <property name="geometry">
     <rect>
-     <x>640</x>
-     <y>290</y>
+     <x>680</x>
+     <y>320</y>
      <width>268</width>
-     <height>67</height>
+     <height>61</height>
     </rect>
    </property>
    <property name="styleSheet">
