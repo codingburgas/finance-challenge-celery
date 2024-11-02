@@ -44,7 +44,37 @@ void Dashboard::budgetFunction(){
     ui->clickedBudgetAmount->setText(QString::number(amountLeft) + " left");
 
 }
+void Dashboard::budgetDisplayCelery(double planned, double spent, double amountLeft){
+    ui->clickedBudgetAmount->setText(QString::number(amountLeft) + " left");
+    double percentageRemaining = (planned > 0) ? (planned - spent) / planned : 0.0;
+    QPixmap celery(":/images/images/celery.png");
+    int width = ui->mainn->width();
+    int height = ui->mainn->height();
 
+    int displayedHeight = static_cast<int>(celery.height() * percentageRemaining);
+    QPixmap croppedCelery = celery.copy(0, celery.height() - displayedHeight, celery.width(), displayedHeight);
+    QPixmap scaledCelery = croppedCelery.scaled(width, height, Qt::KeepAspectRatio, Qt::SmoothTransformation);
+    ui->mainn->setPixmap(scaledCelery);
+}
+
+void Dashboard::sidebarBudgetClicked(int num){
+
+    ui->clickedBudget->setText(QString::fromStdString(currentUser.budgetPlan[currentUser.budgetPlan.size() - num].name));
+    double planned = currentUser.budgetPlan[currentUser.budgetPlan.size() - num].planned;
+    double spent = currentUser.budgetPlan[currentUser.budgetPlan.size() - num].spent;
+    double amountLeft = planned - spent;
+    ui->clickedBudgetAmount->setText(QString::number(amountLeft) + " left");
+    budgetDisplayCelery( planned,  spent, amountLeft);
+}
+void Dashboard::sidebarSavingClicked(int num){
+
+    ui->clickedBudget->setText(QString::fromStdString(currentUser.savingGoals[currentUser.savingGoals.size() - num].name));
+    double req = currentUser.savingGoals[currentUser.savingGoals.size() - num].req;
+    double saved = currentUser.savingGoals[currentUser.savingGoals.size() - num].saved;
+    double amountLeft = req - saved;
+    ui->clickedBudgetAmount->setText(QString::number(amountLeft) + " left");
+    budgetDisplayCelery( req,  saved, amountLeft);
+}
 Dashboard::Dashboard( QWidget *parent)
     : QDialog(parent)
     , ui(new Ui::Dashboard)
@@ -137,8 +167,21 @@ void Dashboard::on_savingGoals_clicked()
     ui->currentBalance->setStyleSheet("text-decoration: none; color:white; background-color:transparent;");
     ui->budget->setStyleSheet("text-decoration: none; color:white; background-color:transparent;");
     ui->spendings->setStyleSheet("text-decoration: none; color:white; background-color:transparent;");
-
     ui->savingGoals->setStyleSheet("text-decoration: underlined; color:white; background-color:transparent;");
+    sidebarSavingClicked(1);
+    ui->firstBudgetName->setText(QString::fromStdString(currentUser.savingGoals.rbegin()->name));
+    if (currentUser.savingGoals.size() > 1) {
+        ui->secondBudgetName->setText(QString::fromStdString(currentUser.savingGoals[currentUser.savingGoals.size() - 2].name));
+    }
+    if (currentUser.savingGoals.size() > 2) {
+        ui->thirdBudgetName->setText(QString::fromStdString(currentUser.savingGoals[currentUser.savingGoals.size() - 3].name));
+    }
+    if (currentUser.savingGoals.size() > 3) {
+        ui->forthBudgetName->setText(QString::fromStdString(currentUser.savingGoals[currentUser.savingGoals.size() - 4].name));
+    }
+
+    sidebarSavingClicked(1);
+
 }
 
 
@@ -174,33 +217,23 @@ void Dashboard::on_editDetails_clicked()
 
 void Dashboard::on_firstBudgetName_clicked()
 {
-    ui->clickedBudget->setText(QString::fromStdString(currentUser.budgetPlan.rbegin()->name));
-    double amountLeft = currentUser.budgetPlan.rbegin()->planned - currentUser.budgetPlan.rbegin()->spent;
-    ui->clickedBudgetAmount->setText(QString::number(amountLeft) + " left");
-
+   sidebarBudgetClicked(1);
 }
 
 
 void Dashboard::on_secondBudgetName_clicked()
 {
-    ui->clickedBudget->setText(QString::fromStdString(currentUser.budgetPlan[currentUser.budgetPlan.size() - 2].name));
-    double amountLeft = currentUser.budgetPlan[currentUser.budgetPlan.size() - 2].planned - currentUser.budgetPlan[currentUser.budgetPlan.size() - 2].spent;
-    ui->clickedBudgetAmount->setText(QString::number(amountLeft) + " left");
-
+    sidebarBudgetClicked(2);
 }
 
 
 void Dashboard::on_thirdBudgetName_clicked()
 {
-    ui->clickedBudget->setText(QString::fromStdString(currentUser.budgetPlan[currentUser.budgetPlan.size() - 3].name));
-    double amountLeft = currentUser.budgetPlan[currentUser.budgetPlan.size() - 3].planned - currentUser.budgetPlan[currentUser.budgetPlan.size() - 3].spent;
-    ui->clickedBudgetAmount->setText(QString::number(amountLeft) + " left");
+    sidebarBudgetClicked(3);
 }
 
 
 void Dashboard::on_forthBudgetName_clicked()
 {
-    ui->clickedBudget->setText(QString::fromStdString(currentUser.budgetPlan[currentUser.budgetPlan.size() - 4].name));
-    double amountLeft = currentUser.budgetPlan[currentUser.budgetPlan.size() - 4].planned - currentUser.budgetPlan[currentUser.budgetPlan.size() - 4].spent;
-    ui->clickedBudgetAmount->setText(QString::number(amountLeft) + " left");
+    sidebarBudgetClicked(4);
 }

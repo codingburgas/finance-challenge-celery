@@ -32,6 +32,9 @@ private slots:
 
     void on_forthBudgetName_clicked();
     void budgetFunction();
+    void budgetDisplayCelery(double planned, double spent, double amountLeft);
+    void sidebarBudgetClicked(int num);
+    void sidebarSavingClicked(int num);
 private:
     Ui::Dashboard *ui;
 

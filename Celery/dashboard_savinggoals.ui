@@ -13,76 +13,47 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <widget class="QLabel" name="savingGoalsText">
+  <widget class="QLineEdit" name="editCurrentGoal">
    <property name="geometry">
     <rect>
-     <x>186</x>
-     <y>82</y>
-     <width>258</width>
-     <height>43</height>
+     <x>610</x>
+     <y>290</y>
+     <width>285</width>
+     <height>67</height>
     </rect>
    </property>
-   <property name="styleSheet">
-    <string notr="true">color: rgb(255, 255, 255);
-font-size: 36px;
-weight: 500;</string>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
    </property>
-   <property name="text">
-    <string>Saving goals</string>
+   <property name="styleSheet">
+    <string notr="true">background-color: #2C2B2C;
+border-radius: 20px;
+padding: 0 20;
+color:white;
+</string>
    </property>
   </widget>
-  <widget class="QLabel" name="recentActivitiesText">
+  <widget class="QLineEdit" name="writeName">
    <property name="geometry">
     <rect>
-     <x>194</x>
-     <y>154</y>
-     <width>273</width>
-     <height>44</height>
+     <x>210</x>
+     <y>300</y>
+     <width>285</width>
+     <height>67</height>
     </rect>
    </property>
-   <property name="styleSheet">
-    <string notr="true">color: rgb(255, 255, 255);
-font-size: 24px;
-weight: 300px;</string>
-   </property>
-   <property name="text">
-    <string>Recent activities:</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="for_saving">
-   <property name="geometry">
-    <rect>
-     <x>213</x>
-     <y>227</y>
-     <width>36</width>
-     <height>36</height>
-    </rect>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
    </property>
    <property name="styleSheet">
-    <string notr="true">color: rgb(207, 207, 207);
-font-size: 24px;
-weight: 300;</string>
-   </property>
-   <property name="text">
-    <string>For</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="amount_saving">
-   <property name="geometry">
-    <rect>
-     <x>412</x>
-     <y>227</y>
-     <width>95</width>
-     <height>36</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">color: rgb(207, 207, 207);
-font-size: 24px;
-weight: 300;</string>
-   </property>
-   <property name="text">
-    <string>Amount</string>
+    <string notr="true">background-color: rgb(32, 32, 32);
+border-radius: 20px;
+padding: 0 20;
+color:white;</string>
    </property>
   </widget>
   <widget class="QPushButton" name="doneButton">
@@ -96,19 +67,94 @@ weight: 300;</string>
    </property>
    <property name="styleSheet">
     <string notr="true">background-color: rgb(51, 51, 51);
-border-radius: 40px;
-font-size: 28px;
-font: bold;
+border-radius:  40px;
+font-size: 32px;
+weight: 700;
 color: rgb(182, 253, 51);</string>
    </property>
    <property name="text">
     <string>Done</string>
    </property>
   </widget>
+  <widget class="QLineEdit" name="goalName">
+   <property name="geometry">
+    <rect>
+     <x>610</x>
+     <y>180</y>
+     <width>285</width>
+     <height>67</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="writeHowMuchSpent">
+   <property name="geometry">
+    <rect>
+     <x>610</x>
+     <y>400</y>
+     <width>285</width>
+     <height>67</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: #2C2B2C;
+border-radius: 20px;
+padding: 0 20;
+color:white;</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="submitNewGoal">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>480</y>
+     <width>100</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Submit</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="submitEditGoal">
+   <property name="geometry">
+    <rect>
+     <x>610</x>
+     <y>490</y>
+     <width>100</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Submit</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="editGoalText">
+   <property name="geometry">
+    <rect>
+     <x>610</x>
+     <y>90</y>
+     <width>258</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+font-size: 36px;
+weight: 500;</string>
+   </property>
+   <property name="text">
+    <string>Edit goal</string>
+   </property>
+  </widget>
   <widget class="QLabel" name="backgroundd">
    <property name="geometry">
     <rect>
-     <x>10</x>
+     <x>0</x>
      <y>0</y>
      <width>1500</width>
      <height>775</height>
@@ -118,188 +164,157 @@ color: rgb(182, 253, 51);</string>
     <string>TextLabel</string>
    </property>
   </widget>
-  <widget class="QLabel" name="amountPerGiven">
+  <widget class="QLabel" name="currentGoalText">
    <property name="geometry">
     <rect>
-     <x>410</x>
-     <y>290</y>
-     <width>201</width>
-     <height>61</height>
+     <x>610</x>
+     <y>250</y>
+     <width>241</width>
+     <height>36</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+font-size: 24px;
+weight: 300;
+</string>
+   </property>
+   <property name="text">
+    <string>Set new amount</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="whichGoal">
+   <property name="geometry">
+    <rect>
+     <x>610</x>
+     <y>140</y>
+     <width>241</width>
+     <height>36</height>
     </rect>
    </property>
    <property name="font">
     <font>
-     <pointsize>16</pointsize>
+     <pointsize>24</pointsize>
     </font>
    </property>
-   <property name="styleSheet">
-    <string notr="true">color:white;</string>
-   </property>
    <property name="text">
-    <string/>
+    <string>Which goal</string>
    </property>
   </widget>
-  <widget class="QLabel" name="amountPerGiven_2">
-   <property name="geometry">
-    <rect>
-     <x>410</x>
-     <y>360</y>
-     <width>201</width>
-     <height>61</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>16</pointsize>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">color:white;</string>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-  </widget>
-  <widget class="QLabel" name="amountPerGiven_3">
-   <property name="geometry">
-    <rect>
-     <x>410</x>
-     <y>440</y>
-     <width>201</width>
-     <height>61</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>16</pointsize>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">color:white;</string>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-  </widget>
-  <widget class="QLabel" name="amountPerGiven_4">
-   <property name="geometry">
-    <rect>
-     <x>410</x>
-     <y>530</y>
-     <width>201</width>
-     <height>61</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>16</pointsize>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">color:white;</string>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-  </widget>
-  <widget class="QLabel" name="purposeOfAmount">
+  <widget class="QLineEdit" name="writeAmount">
    <property name="geometry">
     <rect>
      <x>210</x>
-     <y>280</y>
-     <width>171</width>
-     <height>61</height>
+     <y>400</y>
+     <width>285</width>
+     <height>67</height>
     </rect>
    </property>
    <property name="font">
     <font>
-     <pointsize>16</pointsize>
+     <pointsize>12</pointsize>
     </font>
    </property>
    <property name="styleSheet">
-    <string notr="true">color:white;</string>
-   </property>
-   <property name="text">
-    <string/>
+    <string notr="true">background-color: rgb(32, 32, 32);
+border-radius: 20px;
+padding: 0 20;
+color:white;</string>
    </property>
   </widget>
-  <widget class="QLabel" name="purposeOfAmount_2">
+  <widget class="QLabel" name="howmuchText">
    <property name="geometry">
     <rect>
-     <x>220</x>
-     <y>360</y>
-     <width>171</width>
-     <height>61</height>
+     <x>610</x>
+     <y>370</y>
+     <width>291</width>
+     <height>29</height>
     </rect>
    </property>
-   <property name="font">
-    <font>
-     <pointsize>16</pointsize>
-    </font>
-   </property>
    <property name="styleSheet">
-    <string notr="true">color:white;</string>
+    <string notr="true">color: rgb(255, 255, 255);
+font-size: 24px;
+weight: 300;</string>
    </property>
    <property name="text">
-    <string/>
+    <string>Set new spending</string>
    </property>
   </widget>
-  <widget class="QLabel" name="purposeOfAmount_3">
+  <widget class="QLabel" name="newGoalText">
+   <property name="geometry">
+    <rect>
+     <x>204</x>
+     <y>97</y>
+     <width>291</width>
+     <height>43</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+font-size: 36px;
+weight: 500;
+</string>
+   </property>
+   <property name="text">
+    <string>Set a new goal</string>
+   </property>
+   <property name="textFormat">
+    <enum>Qt::PlainText</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="amountText">
    <property name="geometry">
     <rect>
      <x>210</x>
-     <y>440</y>
-     <width>171</width>
-     <height>61</height>
+     <y>370</y>
+     <width>177</width>
+     <height>29</height>
     </rect>
    </property>
-   <property name="font">
-    <font>
-     <pointsize>16</pointsize>
-    </font>
-   </property>
    <property name="styleSheet">
-    <string notr="true">color:white;</string>
+    <string notr="true">color: rgb(255, 255, 255);
+font-size: 24px;
+weight: 300;</string>
    </property>
    <property name="text">
-    <string/>
+    <string>Set an amount</string>
    </property>
   </widget>
-  <widget class="QLabel" name="purposeOfAmount_4">
+  <widget class="QLabel" name="nameText">
    <property name="geometry">
     <rect>
-     <x>220</x>
-     <y>510</y>
-     <width>171</width>
-     <height>61</height>
+     <x>210</x>
+     <y>260</y>
+     <width>75</width>
+     <height>29</height>
     </rect>
    </property>
-   <property name="font">
-    <font>
-     <pointsize>16</pointsize>
-    </font>
-   </property>
    <property name="styleSheet">
-    <string notr="true">color:white;</string>
+    <string notr="true">color: rgb(255, 255, 255);
+font-size: 24px;
+weiht: 300;
+</string>
    </property>
    <property name="text">
-    <string/>
+    <string>Name</string>
    </property>
   </widget>
   <zorder>backgroundd</zorder>
-  <zorder>savingGoalsText</zorder>
-  <zorder>recentActivitiesText</zorder>
-  <zorder>for_saving</zorder>
-  <zorder>amount_saving</zorder>
+  <zorder>editCurrentGoal</zorder>
+  <zorder>writeName</zorder>
   <zorder>doneButton</zorder>
-  <zorder>amountPerGiven</zorder>
-  <zorder>amountPerGiven_2</zorder>
-  <zorder>amountPerGiven_3</zorder>
-  <zorder>amountPerGiven_4</zorder>
-  <zorder>purposeOfAmount</zorder>
-  <zorder>purposeOfAmount_2</zorder>
-  <zorder>purposeOfAmount_3</zorder>
-  <zorder>purposeOfAmount_4</zorder>
+  <zorder>goalName</zorder>
+  <zorder>writeHowMuchSpent</zorder>
+  <zorder>submitNewGoal</zorder>
+  <zorder>submitEditGoal</zorder>
+  <zorder>editGoalText</zorder>
+  <zorder>currentGoalText</zorder>
+  <zorder>whichGoal</zorder>
+  <zorder>writeAmount</zorder>
+  <zorder>howmuchText</zorder>
+  <zorder>newGoalText</zorder>
+  <zorder>amountText</zorder>
+  <zorder>nameText</zorder>
  </widget>
  <resources/>
  <connections/>

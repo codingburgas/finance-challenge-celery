@@ -1,6 +1,7 @@
 #ifndef DASHBOARD_SAVINGGOALS_H
 #define DASHBOARD_SAVINGGOALS_H
 #include "models/user.h"
+#include "models/savinggoal.h"
 #include <QDialog>
 
 namespace Ui {
@@ -21,6 +22,10 @@ private slots:
     void on_background_linkActivated(const QString &link);
 
     void on_editDetailsButton_clicked();
+
+    void on_submitEditGoal_clicked();
+
+    void on_submitNewGoal_clicked();
 
 private:
     Ui::dashboard_savingGoals *ui;

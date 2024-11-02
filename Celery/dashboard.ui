@@ -28,6 +28,9 @@
      <bold>true</bold>
     </font>
    </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
    <property name="styleSheet">
     <string notr="true">color: white;
 </string>
@@ -71,6 +74,9 @@ color: rgb(182, 253, 51);</string>
      <underline>true</underline>
     </font>
    </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
    <property name="styleSheet">
     <string notr="true">color:white;
 background-color:transparent;
@@ -95,6 +101,9 @@ text-decoration-color: rgb(182, 253, 51);</string>
      <pointsize>16</pointsize>
      <underline>true</underline>
     </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
    </property>
    <property name="styleSheet">
     <string notr="true">color:white;
@@ -145,6 +154,9 @@ text-decoration-color: rgb(182, 253, 51);</string>
      <pointsize>16</pointsize>
      <underline>true</underline>
     </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
    </property>
    <property name="styleSheet">
     <string notr="true">color:white;
@@ -241,6 +253,9 @@ background-color:transparent;</string>
      <height>43</height>
     </rect>
    </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
    <property name="styleSheet">
     <string notr="true">color:white;
 font-size:30px;
@@ -258,6 +273,9 @@ background-color:transparent;</string>
      <width>258</width>
      <height>43</height>
     </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
    </property>
    <property name="styleSheet">
     <string notr="true">color:white;
@@ -277,6 +295,9 @@ background-color:transparent;</string>
      <height>43</height>
     </rect>
    </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
    <property name="styleSheet">
     <string notr="true">color:white;
 font-size:30px;
@@ -294,6 +315,9 @@ background-color:transparent;</string>
      <width>258</width>
      <height>43</height>
     </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
    </property>
    <property name="styleSheet">
     <string notr="true">color:white;

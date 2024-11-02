@@ -46,7 +46,12 @@ void dashboard_newBudget::on_doneButton_clicked()
 
 void dashboard_newBudget::on_submitNewBudget_clicked()
 {
-
+    QString budgetName = ui->writeName->text();
+    QString budgetAmount = ui->writeAmount->text();
+    budgetItem newBudget;
+    newBudget.name = budgetName.toStdString();
+    newBudget.planned = budgetAmount.toDouble();
+    currentUser.budgetPlan.push_back(newBudget);
 }
 
 void dashboard_newBudget::on_submitEditBudget_clicked()
