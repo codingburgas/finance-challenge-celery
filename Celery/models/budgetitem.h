@@ -16,8 +16,8 @@ public:
 
     // Budget item properties
     string name;
-    double planned; // Planned budget
-    double spent;   // Amount spent
+    double planned=0; // Planned budget
+    double spent=0;   // Amount spent
 
     // Database methods
     bool saveToDatabase();

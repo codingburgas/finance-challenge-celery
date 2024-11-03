@@ -22,9 +22,8 @@ public:
     string username;
     string passHash;
     string email;
-    int balance;
+    double balance;
     int saving;
-    int budget;
     int spending;
 
     vector<transaction> spendings;

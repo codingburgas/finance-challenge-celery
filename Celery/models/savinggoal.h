@@ -16,8 +16,8 @@ public:
 
     // Saving goal properties
     string name;
-    double req;   // Required amount
-    double saved; // Amount already saved
+    double req=0;   // Required amount
+    double saved=0; // Amount already saved
 
     // Database methods
     bool saveToDatabase();

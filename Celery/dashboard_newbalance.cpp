@@ -21,7 +21,7 @@ void dashboard_newBalance::on_doneButton_clicked()
 
     int subtractAmount = ui->addOrSubAmount->text().toInt();
     QString purpose = ui->addOrSubPurpose->text();
-    if (ui->newBalanceEdit->text().toInt() == 0) {
+    if (subtractAmount!= 0) {
         currentUser.balance += subtractAmount;
 
         if (subtractAmount < 0) {
@@ -37,8 +37,11 @@ void dashboard_newBalance::on_doneButton_clicked()
             }
 
         }
-    } else {
-        currentUser.balance = ui->newBalanceEdit->text().toInt();
+    }
+    bool isDouble;
+    double newBalance=ui->newBalanceEdit->text().toDouble(&isDouble);
+    if(isDouble) {
+        currentUser.balance = qRound(newBalance * 100.0) / 100.0;
     }
 
     Dashboard *dashboardWindow = new Dashboard();

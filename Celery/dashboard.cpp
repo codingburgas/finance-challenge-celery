@@ -69,7 +69,8 @@ Dashboard::Dashboard(QWidget *parent)
     ui->setupUi(this);
     QPixmap pix(":/images/dashboard.png");
     ui->backgrounddd->setPixmap(pix);
-    budgetFunction();
+    //budgetFunction();
+    on_currentBalance_clicked();
 }
 
 Dashboard::~Dashboard() {
@@ -123,6 +124,7 @@ void Dashboard::on_savingGoals_clicked() {
     updateSidebarStyle("savingGoals");
     isSavingGoalsClicked = true;
     isBalanceClicked = isBudgetClicked = isSpendingsClicked = false;
+    ui->label->setText(QString::fromStdString(currentUser.username) + "'s Saving goals");
 
     if (!currentUser.savingGoals.empty()) {
         displaySavingDetails(1);
