@@ -197,7 +197,7 @@ font-size: 36px;</string>
    </property>
    <property name="font">
     <font>
-     <pointsize>26</pointsize>
+     <pointsize>48</pointsize>
     </font>
    </property>
    <property name="styleSheet">
@@ -205,7 +205,7 @@ font-size: 36px;</string>
 color:white;</string>
    </property>
    <property name="text">
-    <string/>
+    <string>0</string>
    </property>
   </widget>
   <widget class="QPushButton" name="clickedBudget">

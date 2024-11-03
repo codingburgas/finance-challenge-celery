@@ -85,6 +85,11 @@ color: rgb(182, 253, 51);</string>
      <height>51</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
    <property name="styleSheet">
     <string notr="true">background-color: #2C2B2C;
 border-radius: 20px;
@@ -283,7 +288,7 @@ weight: 500;
     <string>Set a new goal</string>
    </property>
    <property name="textFormat">
-    <enum>Qt::TextFormat::PlainText</enum>
+    <enum>Qt::PlainText</enum>
    </property>
   </widget>
   <widget class="QLabel" name="amountText">

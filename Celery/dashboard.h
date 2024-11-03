@@ -32,9 +32,10 @@ private slots:
 
     void on_forthBudgetName_clicked();
     void budgetFunction();
-    void budgetDisplayCelery(double planned, double spent, double amountLeft);
-    void sidebarBudgetClicked(int num);
-    void sidebarSavingClicked(int num);
+    void displayCeleryImage(double planned, double spent);
+    void displayBudgetDetails(int index);
+    void displaySavingDetails(int index);
+    void updateSidebarStyle(const QString &selected);
 private:
     Ui::Dashboard *ui;
 
