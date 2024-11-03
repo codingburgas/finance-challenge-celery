@@ -16,8 +16,8 @@
   <widget class="QLabel" name="backgroundd">
    <property name="geometry">
     <rect>
-     <x>0</x>
-     <y>0</y>
+     <x>10</x>
+     <y>-20</y>
      <width>1500</width>
      <height>775</height>
     </rect>
@@ -45,7 +45,7 @@ weight: 500;
     <string>Set a new budget</string>
    </property>
    <property name="textFormat">
-    <enum>Qt::PlainText</enum>
+    <enum>Qt::TextFormat::PlainText</enum>
    </property>
   </widget>
   <widget class="QLabel" name="nameText">
@@ -228,8 +228,8 @@ color:white;</string>
   <widget class="QPushButton" name="doneButton">
    <property name="geometry">
     <rect>
-     <x>589</x>
-     <y>623</y>
+     <x>600</x>
+     <y>600</y>
      <width>322</width>
      <height>86</height>
     </rect>
@@ -327,6 +327,138 @@ weiht: 300;
    </property>
    <property name="text">
     <string>Which budget</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="highbs">
+   <property name="geometry">
+    <rect>
+     <x>1030</x>
+     <y>180</y>
+     <width>201</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>24</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Highest budget set</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lowbs">
+   <property name="geometry">
+    <rect>
+     <x>1030</x>
+     <y>280</y>
+     <width>191</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>24</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Lowest budget set</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="mostspenton">
+   <property name="geometry">
+    <rect>
+     <x>1030</x>
+     <y>380</y>
+     <width>231</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>24</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Most amount spent on</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="hbsName">
+   <property name="geometry">
+    <rect>
+     <x>1030</x>
+     <y>240</y>
+     <width>81</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>name</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbsName">
+   <property name="geometry">
+    <rect>
+     <x>1030</x>
+     <y>330</y>
+     <width>71</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>name</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="masName">
+   <property name="geometry">
+    <rect>
+     <x>1030</x>
+     <y>430</y>
+     <width>71</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>name</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="hbsAmount">
+   <property name="geometry">
+    <rect>
+     <x>1140</x>
+     <y>230</y>
+     <width>91</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>0</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbsAmount">
+   <property name="geometry">
+    <rect>
+     <x>1140</x>
+     <y>320</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>0</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="masAmount">
+   <property name="geometry">
+    <rect>
+     <x>1140</x>
+     <y>430</y>
+     <width>121</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>0</string>
    </property>
   </widget>
  </widget>

@@ -29,6 +29,8 @@ private slots:
 
 private:
     Ui::dashboard_savingGoals *ui;
+
+    void updateTargetSummary();
 };
 
 #endif // DASHBOARD_SAVINGGOALS_H

@@ -12,6 +12,35 @@ dashboard_savingGoals::dashboard_savingGoals(QWidget *parent)
     ui->backgroundd->setPixmap(pix);
     void on_background_linkActivated(const QString &link);
 
+    updateTargetSummary();
+
+}
+
+void dashboard_savingGoals::updateTargetSummary(){
+    int maxTarget=currentUser.savingGoals[0].req, maxIndex=0;
+    int minTarget=currentUser.savingGoals[0].req, minIndex=0;
+
+    for (int i = 1; i < currentUser.savingGoals.size(); i++)
+    {
+        if (currentUser.savingGoals[i].req > maxTarget)
+        {
+            maxTarget = currentUser.savingGoals[i].req;
+            maxIndex=i;
+        }
+
+        if (currentUser.savingGoals[i].req < minTarget)
+        {
+            minTarget = currentUser.savingGoals[i].req;
+            minIndex=i;
+        }
+
+    }
+
+    ui->htName->setText(QString::fromStdString(currentUser.savingGoals[maxIndex].name));
+    ui->htAmount->setText(QString::number(currentUser.savingGoals[maxIndex].req));
+
+    ui->ltName->setText(QString::fromStdString(currentUser.savingGoals[minIndex].name));
+    ui->ltAmount->setText(QString::number(currentUser.savingGoals[minIndex].req));
 }
 
 dashboard_savingGoals::~dashboard_savingGoals()
@@ -61,6 +90,8 @@ void dashboard_savingGoals::on_submitEditGoal_clicked()
         transaction fromGoal(goalName.toStdString(),-amountSpent,0,"");
         currentUser.spendings.push_back(fromGoal);
     }
+
+    updateTargetSummary();
 }
 
 
@@ -72,5 +103,7 @@ void dashboard_savingGoals::on_submitNewGoal_clicked()
     newGoal.name = newGoalName.toStdString();
     newGoal.req = newGoalAmount.toDouble();
     currentUser.savingGoals.push_back(newGoal);
+
+    updateTargetSummary();
 }
 

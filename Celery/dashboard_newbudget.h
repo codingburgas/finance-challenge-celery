@@ -24,6 +24,8 @@ private slots:
 
 private:
     Ui::dashboard_newBudget *ui;
+
+    void updateBudgetSummary();
 };
 
 #endif // DASHBOARD_NEWBUDGET_H
