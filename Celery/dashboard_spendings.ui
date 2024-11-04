@@ -288,6 +288,9 @@ weight: 300;</string>
      <height>431</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">color:white;</string>
+   </property>
    <layout class="QVBoxLayout" name="verticalLayout"/>
   </widget>
   <widget class="QLabel" name="background">
@@ -311,6 +314,9 @@ weight: 300;</string>
      <width>471</width>
      <height>431</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:white;</string>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout_2"/>
   </widget>

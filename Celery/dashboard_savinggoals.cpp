@@ -19,7 +19,7 @@ dashboard_savingGoals::dashboard_savingGoals(QWidget *parent)
 void dashboard_savingGoals::updateTargetSummary(){
     int maxTarget=currentUser.savingGoals[0].req, maxIndex=0;
     int minTarget=currentUser.savingGoals[0].req, minIndex=0;
-
+    int maxSaved=currentUser.savingGoals[0].saved, maxSIndex=0;
     for (int i = 1; i < currentUser.savingGoals.size(); i++)
     {
         if (currentUser.savingGoals[i].req > maxTarget)
@@ -34,6 +34,12 @@ void dashboard_savingGoals::updateTargetSummary(){
             minIndex=i;
         }
 
+        if (currentUser.savingGoals[i].saved > maxSaved)
+        {
+            maxSaved = currentUser.savingGoals[i].saved;
+            maxSIndex=i;
+        }
+
     }
 
     ui->htName->setText(QString::fromStdString(currentUser.savingGoals[maxIndex].name));
@@ -41,6 +47,9 @@ void dashboard_savingGoals::updateTargetSummary(){
 
     ui->ltName->setText(QString::fromStdString(currentUser.savingGoals[minIndex].name));
     ui->ltAmount->setText(QString::number(currentUser.savingGoals[minIndex].req));
+
+    ui->masName->setText(QString::fromStdString(currentUser.savingGoals[maxSIndex].name));
+    ui->masAmount->setText(QString::number(currentUser.savingGoals[maxSIndex].saved));
 }
 
 dashboard_savingGoals::~dashboard_savingGoals()

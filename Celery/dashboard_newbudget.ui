@@ -334,14 +334,18 @@ weiht: 300;
     <rect>
      <x>1030</x>
      <y>180</y>
-     <width>201</width>
+     <width>231</width>
      <height>41</height>
     </rect>
    </property>
    <property name="font">
     <font>
-     <pointsize>24</pointsize>
+     <pointsize>18</pointsize>
+     <bold>true</bold>
     </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:white;</string>
    </property>
    <property name="text">
     <string>Highest budget set</string>
@@ -352,14 +356,18 @@ weiht: 300;
     <rect>
      <x>1030</x>
      <y>280</y>
-     <width>191</width>
+     <width>221</width>
      <height>41</height>
     </rect>
    </property>
    <property name="font">
     <font>
-     <pointsize>24</pointsize>
+     <pointsize>18</pointsize>
+     <bold>true</bold>
     </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:white;</string>
    </property>
    <property name="text">
     <string>Lowest budget set</string>
@@ -370,14 +378,18 @@ weiht: 300;
     <rect>
      <x>1030</x>
      <y>380</y>
-     <width>231</width>
+     <width>271</width>
      <height>31</height>
     </rect>
    </property>
    <property name="font">
     <font>
-     <pointsize>24</pointsize>
+     <pointsize>18</pointsize>
+     <bold>true</bold>
     </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:white;</string>
    </property>
    <property name="text">
     <string>Most amount spent on</string>
@@ -392,8 +404,16 @@ weiht: 300;
      <height>16</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:white;</string>
+   </property>
    <property name="text">
-    <string>name</string>
+    <string>-</string>
    </property>
   </widget>
   <widget class="QLabel" name="lbsName">
@@ -405,8 +425,16 @@ weiht: 300;
      <height>16</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:white;</string>
+   </property>
    <property name="text">
-    <string>name</string>
+    <string>-</string>
    </property>
   </widget>
   <widget class="QLabel" name="masName">
@@ -418,8 +446,16 @@ weiht: 300;
      <height>16</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:white;</string>
+   </property>
    <property name="text">
-    <string>name</string>
+    <string>-</string>
    </property>
   </widget>
   <widget class="QLabel" name="hbsAmount">
@@ -431,8 +467,16 @@ weiht: 300;
      <height>31</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:white;</string>
+   </property>
    <property name="text">
-    <string>0</string>
+    <string>-</string>
    </property>
   </widget>
   <widget class="QLabel" name="lbsAmount">
@@ -444,8 +488,16 @@ weiht: 300;
      <height>31</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:white;</string>
+   </property>
    <property name="text">
-    <string>0</string>
+    <string>-</string>
    </property>
   </widget>
   <widget class="QLabel" name="masAmount">
@@ -457,8 +509,16 @@ weiht: 300;
      <height>20</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:white;</string>
+   </property>
    <property name="text">
-    <string>0</string>
+    <string>-</string>
    </property>
   </widget>
  </widget>
