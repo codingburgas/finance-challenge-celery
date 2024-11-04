@@ -24,18 +24,19 @@ private slots:
     void on_editDetails_clicked();
     void on_savingGoals_clicked();
     void on_firstBudgetName_clicked();
-    void clearBudgetElements();
+    void ClearBudgetElements();
 
     void on_secondBudgetName_clicked();
 
     void on_thirdBudgetName_clicked();
 
     void on_forthBudgetName_clicked();
-    void budgetFunction();
-    void displayCeleryImage(double planned, double spent);
-    void displayBudgetDetails(int index);
-    void displaySavingDetails(int index);
-    void updateSidebarStyle(const QString &selected);
+    void BudgetFunction();
+    void DisplayCeleryImage(double planned, double spent);
+    void DisplayBudgetDetails(int index);
+    void DisplaySavingDetails(int index);
+    void UpdateSidebarStyle(const QString &selected);
+    void ChangeSpendings();
 private:
     Ui::Dashboard *ui;
 

@@ -117,19 +117,6 @@ font-size: 23px;</string>
     <string/>
    </property>
   </widget>
-  <widget class="QLabel" name="backgroundd">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>1500</width>
-     <height>775</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>TextLabel</string>
-   </property>
-  </widget>
   <widget class="QLabel" name="amount_spendings">
    <property name="geometry">
     <rect>
@@ -292,7 +279,42 @@ weight: 300;</string>
     <string>For</string>
    </property>
   </widget>
-  <zorder>backgroundd</zorder>
+  <widget class="QFrame" name="pieChartBudget">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>60</y>
+     <width>451</width>
+     <height>431</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout"/>
+  </widget>
+  <widget class="QLabel" name="background">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1500</width>
+     <height>775</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="pieChartGoals">
+   <property name="geometry">
+    <rect>
+     <x>760</x>
+     <y>60</y>
+     <width>471</width>
+     <height>431</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_2"/>
+  </widget>
+  <zorder>background</zorder>
   <zorder>spendingsText</zorder>
   <zorder>doneButton</zorder>
   <zorder>recent_activities</zorder>
@@ -306,6 +328,8 @@ weight: 300;</string>
   <zorder>amountPerGiven_3</zorder>
   <zorder>amountPerGiven_4</zorder>
   <zorder>for_spendings</zorder>
+  <zorder>pieChartBudget</zorder>
+  <zorder>pieChartGoals</zorder>
  </widget>
  <resources/>
  <connections/>

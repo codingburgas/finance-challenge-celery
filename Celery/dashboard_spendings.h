@@ -1,7 +1,10 @@
 #ifndef DASHBOARD_SPENDINGS_H
 #define DASHBOARD_SPENDINGS_H
 #include "models/user.h"
+#include "models/budgetitem.h"
+#include "models/savinggoal.h"
 #include <QDialog>
+
 
 namespace Ui {
 class Dashboard_spendings;
@@ -14,6 +17,7 @@ class Dashboard_spendings : public QDialog
 public:
     explicit Dashboard_spendings(QWidget *parent = nullptr);
     ~Dashboard_spendings();
+
 
 private slots:
     void on_doneButton_clicked();
