@@ -71,6 +71,7 @@ color: rgb(182, 253, 51);</string>
    <property name="font">
     <font>
      <pointsize>16</pointsize>
+     <bold>true</bold>
      <underline>true</underline>
     </font>
    </property>
@@ -99,6 +100,7 @@ text-decoration-color: rgb(182, 253, 51);</string>
    <property name="font">
     <font>
      <pointsize>16</pointsize>
+     <bold>true</bold>
      <underline>true</underline>
     </font>
    </property>
@@ -127,6 +129,7 @@ text-decoration-color: rgb(182, 253, 51);</string>
    <property name="font">
     <font>
      <pointsize>16</pointsize>
+     <bold>true</bold>
      <underline>true</underline>
     </font>
    </property>
@@ -152,6 +155,7 @@ text-decoration-color: rgb(182, 253, 51);</string>
    <property name="font">
     <font>
      <pointsize>16</pointsize>
+     <bold>true</bold>
      <underline>true</underline>
     </font>
    </property>
@@ -189,7 +193,7 @@ font-size: 36px;</string>
   <widget class="QLabel" name="mainn">
    <property name="geometry">
     <rect>
-     <x>640</x>
+     <x>623</x>
      <y>240</y>
      <width>231</width>
      <height>191</height>
@@ -198,6 +202,7 @@ font-size: 36px;</string>
    <property name="font">
     <font>
      <pointsize>48</pointsize>
+     <bold>true</bold>
     </font>
    </property>
    <property name="styleSheet">
@@ -216,6 +221,13 @@ color:white;</string>
      <width>211</width>
      <height>41</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>-1</pointsize>
+     <bold>true</bold>
+     <underline>true</underline>
+    </font>
    </property>
    <property name="styleSheet">
     <string notr="true">color:white;
@@ -253,6 +265,12 @@ background-color:transparent;</string>
      <height>43</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <pointsize>-1</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
    <property name="cursor">
     <cursorShape>PointingHandCursor</cursorShape>
    </property>
@@ -273,6 +291,12 @@ background-color:transparent;</string>
      <width>258</width>
      <height>43</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>-1</pointsize>
+     <bold>true</bold>
+    </font>
    </property>
    <property name="cursor">
     <cursorShape>PointingHandCursor</cursorShape>
@@ -295,6 +319,12 @@ background-color:transparent;</string>
      <height>43</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <pointsize>-1</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
    <property name="cursor">
     <cursorShape>PointingHandCursor</cursorShape>
    </property>
@@ -316,6 +346,12 @@ background-color:transparent;</string>
      <height>43</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <pointsize>-1</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
    <property name="cursor">
     <cursorShape>PointingHandCursor</cursorShape>
    </property>
@@ -323,6 +359,28 @@ background-color:transparent;</string>
     <string notr="true">color:white;
 font-size:30px;
 background-color:transparent;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="spendingsElement">
+   <property name="geometry">
+    <rect>
+     <x>629</x>
+     <y>390</y>
+     <width>231</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>36</pointsize>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:white;</string>
    </property>
    <property name="text">
     <string/>
