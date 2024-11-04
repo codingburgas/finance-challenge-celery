@@ -1,26 +1,24 @@
-<h1 align="center"><b>Celery</b></h1>
-</br>
+<h1 align="center" style="color:#2ecc71"><b>🥬 Team Celery</b></h1>
 
 <div align="center">
-    <p>🧩  Manage your budget  🧸  Create savings goals  💡  Visualization of monetary patterns</p>
+    <p>🧩 Manage your budget | 🧸 Set savings goals | 💡 Visualize your finances!</p>
 </div>
 
-</br>
-
+---
 
 # 📋 About
+Our app lets you manage your spending, set budgets, save for goals, and track your balance!  
 
-### In our app you can manage your spendings, set budget, set saving goals and add your current balance.
+# 🛠️ Installation
+1. 📥 Clone the project using the "Code" button or run:
+   ```bash
+   git clone https://github.com/codingburgas/finance-challenge-celery.git
+<br>
+2. 📂 Open Celery.pro in QT Creator. <br><br>
+3. ⚙️ Configure the project.
 
-## 🔧 Installation
-You can 📥 our project by using the green "Code" button.
 
-Or by pasting the following code in your CMD:
-```
-git clone https://github.com/codingburgas/finance-challenge-celery.git
-```
-
-# 💻 Languages-Frameworks-Tools
+# 🛠️💻 Languages, Frameworks, and Tools
 ## Design
 <br>
 <div align="left">
@@ -53,10 +51,10 @@ git clone https://github.com/codingburgas/finance-challenge-celery.git
 
 | Name | Role | Grade |
 | :---:   | :---: | :---: |
-|  <h3><a href = "https://github.com/AAVezirova22">Ani Vezirova</a></h3> | Scrum Trainer |🟦 9G |
-| <h3><a href = "https://github.com/NSStoyanova22">Nikol Stoyanova</a></h3> | Developer |🟦 9G |
-| <h3><a href = "https://github.com/niribareva22">Natali Ribareva</a></h3> |  Developer  |🟩 9V |
-| <h3><a href = "https://github.com/TDSkulieva22">Teodora Skulieva</a></h3> | Developer  |🟩 9V |
+|  <h3><a href = "https://github.com/AAVezirova22">Ani Vezirova</a></h3> | Scrum Trainer |🟦 10G |
+| <h3><a href = "https://github.com/NSStoyanova22">Nikol Stoyanova</a></h3> | Developer |🟦 10G |
+| <h3><a href = "https://github.com/niribareva22">Natali Ribareva</a></h3> |  Developer  |🟩 10V |
+| <h3><a href = "https://github.com/TDSkulieva22">Teodora Skulieva</a></h3> | Developer  |🟩 10V |
 
 <div align="center">
 <img src="https://cdn.discordapp.com/attachments/1296447709355708457/1303051603120750736/celery.gif?ex=672a58df&is=6729075f&hm=84fc0f39da9f16e3b079897af746912488b6ab4f62f23377a6fb208649d79635&" alt="Gif">
