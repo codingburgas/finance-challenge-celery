@@ -1,59 +1,66 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/u5k3noT3)
-<h1 align="center">Celery</h1>
+<h1 align="center"><b>Celery</b></h1>
+</br>
 
-<p align = "center">
-  <img src="" alt="Celery's Logo"/>
-</p>
+<div align="center">
+    <p>🧩  Manage your budget  🧸  Create savings goals  💡  Visualization of monetary patterns</p>
+</div>
 
+</br>
+
+
+# 📋 About
+
+### In our app you can manage your spendings, set budget, set saving goals and add your current balance.
+
+## 🔧 Installation
+You can 📥 our project by using the green "Code" button.
+
+Or by pasting the following code in your CMD:
+```
+git clone https://github.com/codingburgas/finance-challenge-celery.git
+```
+
+# 💻 Languages-Frameworks-Tools
+## Design
 <br>
+<div align="left">
+  <img width="40" height="40" src="https://cdn-icons-png.flaticon.com/256/5968/5968705.png" alt="Figma's logo">
+  <img width="40" height="40" src="https://img.icons8.com/?size=100&id=111021&format=png&color=000000" alt="Coolors's logo">
+</div>
 
+## Technologies for development
+<div align="left">
+  <img width="40" height="40" src="https://img.icons8.com/?size=100&id=25647&format=png&color=000000" alt="Qt">
+</div>
 
+## Programs for documents
+<div align="left">
+  <img width="40" height="40" src="https://img.icons8.com/?size=100&id=117563&format=png&color=000000" alt="Word logo">
+  <img width="40" height="40" src="https://img.icons8.com/?size=100&id=ifP93G7BXUhU&format=png&color=000000" alt="Power point logo">
+</div>
 
-## 📋 Description
-  In our app you can manage your spendings, set budget, saving goals and add your current balance.
-
-## 🚀 Languages 
-  <p align="left"> 
-  <a href="https://www.cplusplus.com/"><img src="https://img.icons8.com/color/48/000000/c-plus-plus-logo.png" alt="C++"/></a>
- 
-  </p>
-
-## 🔧 Tools 
-  <p align="left"> 
-  <a href="https://www.qt.io/download-dev-trial"><img src="https://img.icons8.com/?size=100&id=47039&format=png&color=000000" alt="Qt"/></a>
-    <a href="https://www.microsoft.com/en-ww/microsoft-365/word"><img src="https://img.icons8.com/fluency/48/000000/microsoft-word-2019.png" alt="MS Word logo" width=48px /></a>
-    <a href="https://www.microsoft.com/en-us/microsoft-365/powerpoint"><img src="https://img.icons8.com/fluency/48/000000/microsoft-powerpoint-2019.png" alt="MS PowerPoint logo" width=48px />
-    <a href="https://git-scm.com/"><img src="https://img.icons8.com/color/48/000000/git.png" alt="Git"/></a>
-    <a href="https://azure.microsoft.com/en-us"><img src="https://img.icons8.com/?size=100&id=81727&format=png&color=000000" width=48px height=48px alt="Azure">
-    <a href="https://discord.com/"><img src="https://img.icons8.com/?size=100&id=6Bc9ur2o7rfS&format=png&color=000000" width=48px height=48px alt="Discord">
-      <a href="https://git-scm.com/"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" heigh=48px width=48px/></a>
-    <a href="https://www.microsoft.com/bg-bg/microsoft-teams/log-in"><img src="https://img.icons8.com/?size=100&id=zQ92KI7XjZgR&format=png&color=000000" width=48px height=48px alt="Teams">
-    <a href="https://www.figma.com/"><img src="https://img.icons8.com/?size=100&id=W0YEwBDDfTeu&format=png&color=000000" width=48px height=48px alt="Figma">
-  </p> 
-  
-## 💼 Documents
-  <ul>
+# 📁 Documents
+<ul>
     <li><a href="documentation/CELERY-documentation.docx">Documentation</a></li>
     <li><a href="documentation/CELERY-presentation.pptx">Presentation</a></li>
    </ul>
 
-
-## 🔧 Installation
-
-```
-You can download our project by using the green "Code" button.
-
-Or by pasting the following code in your CMD:
-git clone https://github.com/codingburgas/finance-challenge-celery.git
-```
-
-## 🖥 Team Members
-* **Ani Vezirova** - *Scrum trainer* 
-* **Nikol Stoqnova** - *Back-end developer* 
-* **Teodora Skulieva** - *Back-end developer* 
-* **Natali Ribareva** - *Back-end developer*
+### Design
+  - [Application Design](https://www.figma.com/design/4HhbAdTB36ypvytgdMtVam/Celery)
 
 
- 
+# 👥 Team Members
 
- 
+| Name | Role | Grade |
+| :---:   | :---: | :---: |
+|  <h3><a href = "https://github.com/AAVezirova22">Ani Vezirova</a></h3> | Scrum Trainer |🟦 9G |
+| <h3><a href = "https://github.com/NSStoyanova22">Nikol Stoyanova</a></h3> | Developer |🟦 9G |
+| <h3><a href = "https://github.com/niribareva22">Natali Ribareva</a></h3> |  Developer  |🟩 9V |
+| <h3><a href = "https://github.com/TDSkulieva22">Teodora Skulieva</a></h3> | Developer  |🟩 9V |
+
+<div align="center">
+<img src="https://cdn.discordapp.com/attachments/1296447709355708457/1303051603120750736/celery.gif?ex=672a58df&is=6729075f&hm=84fc0f39da9f16e3b079897af746912488b6ab4f62f23377a6fb208649d79635&" alt="Gif">
+</div>
+<h2 align="center">
+ If you like the app, you can give a 🌟 to our repository!
+</h2>
