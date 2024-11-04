@@ -2,9 +2,7 @@
 #define TRANSACTION_H
 
 #include <string>
-#include <QtSql/QSqlDatabase>
-#include <QtSql/QSqlQuery>
-#include <QtSql/QSqlError>
+
 
 using namespace std;
 

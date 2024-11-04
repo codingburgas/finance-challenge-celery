@@ -2,28 +2,18 @@
 #define BUDGETITEM_H
 
 #include <string>
-#include <QtSql/QSqlDatabase>
-#include <QtSql/QSqlQuery>
-#include <QtSql/QSqlError>
-
 using namespace std;
 
-class budgetItem
-{
+class budgetItem {
 public:
-    budgetItem();
-    budgetItem(const string &name, double planned, double spent);
+    string name;            // Name of the budget item
+    double totalAmount = 0;  // Total amount allocated for this item
+    double spent = 0;        // Amount spent on this item
+    double planned = 0;      // Planned budget for this item
 
-    // Budget item properties
-    string name;
-    double planned=0; // Planned budget
-    double spent=0;   // Amount spent
-
-    // Database methods
-    bool saveToDatabase();
-    bool loadFromDatabase(const string &itemName);
-    bool updateInDatabase();
-    bool deleteFromDatabase();
+    // Default and parameterized constructors
+    budgetItem() = default;
+    budgetItem(const string &name, double totalAmount, double spent, double planned);
 };
 
 #endif // BUDGETITEM_H

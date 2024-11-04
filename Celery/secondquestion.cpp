@@ -19,13 +19,14 @@ secondQuestion::~secondQuestion()
 
 void secondQuestion::on_okButton_clicked()
 {
-
     QString savingGoalAmount = ui->targetInput->text();
     QString savingGoalName = ui->nameInpu->text();
     savingGoal goal;
     goal.name = savingGoalName.toStdString();
     goal.req = savingGoalAmount.toDouble();
     currentUser.savingGoals.push_back(goal);
+    currentUser.saveToDatabase(); // Save saving goals to the database
+
     thirdQuestion *questionWindow = new thirdQuestion();
     questionWindow->show();
     this->close();

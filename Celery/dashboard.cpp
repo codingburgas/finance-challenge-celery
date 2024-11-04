@@ -7,27 +7,98 @@
 #include <numeric>
 #include <QPixmap>
 
-void Dashboard::ChangeSpendings()
-{
-    if(isSpendingsClicked) {
+extern user currentUser;  // Access the current user object globally
+
+Dashboard::Dashboard(QWidget *parent)
+    : QDialog(parent), ui(new Ui::Dashboard),
+    isBalanceClicked(false), isBudgetClicked(true),
+    isSavingGoalsClicked(false), isSpendingsClicked(false) {
+    ui->setupUi(this);
+    QPixmap pix(":/images/dashboard.png");
+    ui->backgrounddd->setPixmap(pix);
+
+    // Display the initial balance from currentUser
+    on_currentBalance_clicked();
+}
+
+Dashboard::~Dashboard() {
+    delete ui;
+}
+
+// Display current balance from currentUser
+void Dashboard::on_currentBalance_clicked() {
+    ClearBudgetElements();
+    UpdateSidebarStyle("balance");
+    isBalanceClicked = true;
+    isBudgetClicked = isSavingGoalsClicked = isSpendingsClicked = false;
+    ChangeSpendings();
+
+    ui->label->setText(QString::fromStdString(currentUser.username) + "'s Current Balance");
+    ui->mainn->setText(QString::number(currentUser.balance, 'f', 2));  // Show balance with 2 decimal points
+    ui->mainn->setAlignment(Qt::AlignCenter);
+}
+
+// Display budget information from currentUser
+void Dashboard::on_budget_clicked() {
+    ClearBudgetElements();
+    UpdateSidebarStyle("budget");
+    isBudgetClicked = true;
+    isBalanceClicked = isSavingGoalsClicked = isSpendingsClicked = false;
+    ChangeSpendings();
+    BudgetFunction();
+}
+
+// Display total spendings from currentUser
+void Dashboard::on_spendings_clicked() {
+    ClearBudgetElements();
+    UpdateSidebarStyle("spendings");
+    isSpendingsClicked = true;
+    isBalanceClicked = isBudgetClicked = isSavingGoalsClicked = false;
+    ChangeSpendings();
+
+    double totalSpent = std::accumulate(currentUser.spendings.begin(), currentUser.spendings.end(), 0.0,[](double sum, const auto& transaction) { return sum + transaction.spent; });
+    ui->label->setText(QString::fromStdString(currentUser.username) + "'s Spendings");
+    ui->mainn->setText(QString::number(totalSpent, 'f', 2));  // Show total spent with 2 decimal points
+    ui->mainn->setAlignment(Qt::AlignCenter);
+}
+
+// Display saving goals information from currentUser
+void Dashboard::on_savingGoals_clicked() {
+    ClearBudgetElements();
+    UpdateSidebarStyle("savingGoals");
+    isSavingGoalsClicked = true;
+    isBalanceClicked = isBudgetClicked = isSpendingsClicked = false;
+    ChangeSpendings();
+
+    ui->label->setText(QString::fromStdString(currentUser.username) + "'s Saving Goals");
+
+    if (!currentUser.savingGoals.empty()) {
+        DisplaySavingDetails(1);
+        ui->firstBudgetName->setText(QString::fromStdString(currentUser.savingGoals.rbegin()->name));
+        if (currentUser.savingGoals.size() > 1) ui->secondBudgetName->setText(QString::fromStdString(currentUser.savingGoals[currentUser.savingGoals.size() - 2].name));
+        if (currentUser.savingGoals.size() > 2) ui->thirdBudgetName->setText(QString::fromStdString(currentUser.savingGoals[currentUser.savingGoals.size() - 3].name));
+        if (currentUser.savingGoals.size() > 3) ui->forthBudgetName->setText(QString::fromStdString(currentUser.savingGoals[currentUser.savingGoals.size() - 4].name));
+    }
+}
+
+// Helper function to toggle spending view
+void Dashboard::ChangeSpendings() {
+    if (isSpendingsClicked) {
         ui->editDetails->setText("View more");
         ui->spendingsElement->setText("spent");
         ui->spendingsElement->setAlignment(Qt::AlignCenter);
-    }
-    else if (isBalanceClicked){
+    } else if (isBalanceClicked) {
         ui->editDetails->setText("Edit details");
         ui->spendingsElement->setText("");
         ui->spendingsElement->setAlignment(Qt::AlignCenter);
-    }
-    else {
+    } else {
         ui->editDetails->setText("Edit details");
         ui->spendingsElement->setText("");
     }
 }
 
 // Helper function to clear budget labels
-void Dashboard::ClearBudgetElements()
-{
+void Dashboard::ClearBudgetElements() {
     ui->firstBudgetName->setText("");
     ui->secondBudgetName->setText("");
     ui->thirdBudgetName->setText("");
@@ -37,8 +108,7 @@ void Dashboard::ClearBudgetElements()
 }
 
 // Helper function to set style for selected and non-selected sidebar items
-void Dashboard::UpdateSidebarStyle(const QString &selected)
-{
+void Dashboard::UpdateSidebarStyle(const QString &selected) {
     QString defaultStyle = "text-decoration: none; color:white; background-color:transparent;";
     ui->currentBalance->setStyleSheet(defaultStyle);
     ui->spendings->setStyleSheet(defaultStyle);
@@ -82,21 +152,7 @@ void Dashboard::DisplaySavingDetails(int index) {
     DisplayCeleryImage(goal.req, goal.saved);
 }
 
-Dashboard::Dashboard(QWidget *parent)
-    : QDialog(parent), ui(new Ui::Dashboard),
-    isBalanceClicked(false), isBudgetClicked(true),
-    isSavingGoalsClicked(false), isSpendingsClicked(false) {
-    ui->setupUi(this);
-    QPixmap pix(":/images/dashboard.png");
-    ui->backgrounddd->setPixmap(pix);
-    //budgetFunction();
-    on_currentBalance_clicked();
-}
-
-Dashboard::~Dashboard() {
-    delete ui;
-}
-
+// Function for setting up budget view
 void Dashboard::BudgetFunction() {
     ClearBudgetElements();
     ui->label->setText(QString::fromStdString(currentUser.username) + "'s Budget");
@@ -110,58 +166,7 @@ void Dashboard::BudgetFunction() {
     }
 }
 
-void Dashboard::on_currentBalance_clicked() {
-    ClearBudgetElements();
-    UpdateSidebarStyle("balance");
-    isBalanceClicked = true;
-    isBudgetClicked = isSavingGoalsClicked = isSpendingsClicked = false;
-    ChangeSpendings();
-    ui->label->setText(QString::fromStdString(currentUser.username) + "'s Current Balance");
-    ui->mainn->setText(QString::number(currentUser.balance));
-    ui->mainn->setAlignment(Qt::AlignCenter);
-}
-
-void Dashboard::on_budget_clicked()
-{
-    ClearBudgetElements();
-    UpdateSidebarStyle("budget");
-    isBudgetClicked = true;
-    isBalanceClicked = isSavingGoalsClicked = isSpendingsClicked = false;
-    ChangeSpendings();
-    BudgetFunction();
-}
-
-void Dashboard::on_spendings_clicked()
-{
-    ClearBudgetElements();
-    UpdateSidebarStyle("spendings");
-    isSpendingsClicked = true;
-    isBalanceClicked = isBudgetClicked = isSavingGoalsClicked = false;
-    ChangeSpendings();
-    double totalSpent = std::accumulate(currentUser.spendings.begin(), currentUser.spendings.end(), 0.0, [](double sum, const auto& transaction) { return sum + transaction.spent; });
-    ui->label->setText(QString::fromStdString(currentUser.username) + "'s Spendings");
-    ui->mainn->setText(QString::number(totalSpent));
-    ui->mainn->setAlignment(Qt::AlignCenter);
-}
-
-void Dashboard::on_savingGoals_clicked()
-{
-    ClearBudgetElements();
-    UpdateSidebarStyle("savingGoals");
-    isSavingGoalsClicked = true;
-    isBalanceClicked = isBudgetClicked = isSpendingsClicked = false;
-    ChangeSpendings();
-    ui->label->setText(QString::fromStdString(currentUser.username) + "'s Saving goals");
-
-    if (!currentUser.savingGoals.empty()) {
-        DisplaySavingDetails(1);
-        ui->firstBudgetName->setText(QString::fromStdString(currentUser.savingGoals.rbegin()->name));
-        if (currentUser.savingGoals.size() > 1) ui->secondBudgetName->setText(QString::fromStdString(currentUser.savingGoals[currentUser.savingGoals.size() - 2].name));
-        if (currentUser.savingGoals.size() > 2) ui->thirdBudgetName->setText(QString::fromStdString(currentUser.savingGoals[currentUser.savingGoals.size() - 3].name));
-        if (currentUser.savingGoals.size() > 3) ui->forthBudgetName->setText(QString::fromStdString(currentUser.savingGoals[currentUser.savingGoals.size() - 4].name));
-    }
-}
-
+// Edit details button logic for each section
 void Dashboard::on_editDetails_clicked() {
     if (isBudgetClicked) {
         dashboard_newBudget *newBudget = new dashboard_newBudget();
@@ -179,6 +184,7 @@ void Dashboard::on_editDetails_clicked() {
     close();
 }
 
+// Budget name click events
 void Dashboard::on_firstBudgetName_clicked() {
     if (isBudgetClicked) DisplayBudgetDetails(1);
     else DisplaySavingDetails(1);

@@ -2,28 +2,17 @@
 #define SAVINGGOAL_H
 
 #include <string>
-#include <QtSql/QSqlDatabase>
-#include <QtSql/QSqlQuery>
-#include <QtSql/QSqlError>
-
 using namespace std;
 
-class savingGoal
-{
+class savingGoal {
 public:
-    savingGoal();
-    savingGoal(const string &name, double req, double saved);
+    string name;       // Name of the saving goal
+    double req = 0;   // Required/target amount for the goal
+    double saved = 0;      // Amount already saved
 
-    // Saving goal properties
-    string name;
-    double req=0;   // Required amount
-    double saved=0; // Amount already saved
-
-    // Database methods
-    bool saveToDatabase();
-    bool loadFromDatabase(const string &goalName);
-    bool updateInDatabase();
-    bool deleteFromDatabase();
+    savingGoal() = default;
+    savingGoal(const string &name, double target, double savedAmount)
+        : name(name), req(target), saved(savedAmount) {}
 };
 
 #endif // SAVINGGOAL_H

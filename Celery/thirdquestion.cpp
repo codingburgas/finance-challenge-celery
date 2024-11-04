@@ -1,7 +1,6 @@
 #include "thirdquestion.h"
 #include "ui_thirdquestion.h"
 #include "dashboard.h"
-#include "ui_dashboard.h"
 #include <QDebug>
 thirdQuestion::thirdQuestion(QWidget *parent)
     : QDialog(parent)
@@ -19,14 +18,16 @@ thirdQuestion::~thirdQuestion()
 
 void thirdQuestion::on_okButton_clicked()
 {
-
     QString budgetName = ui->nameAnswerr->text();
     QString budgetAmount = ui->amountAnswer->text();
     budgetItem firstItem;
     firstItem.name = budgetName.toStdString();
-    firstItem.planned = budgetAmount.toDouble();
+    firstItem.totalAmount = budgetAmount.toDouble();
     currentUser.budgetPlan.push_back(firstItem);
-    qDebug()<<firstItem.name;
+
+    // Save all data after the final question
+    currentUser.saveToDatabase();
+
     Dashboard *dashboardWindow = new Dashboard();
     dashboardWindow->show();
     this->close();

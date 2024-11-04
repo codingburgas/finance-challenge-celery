@@ -21,6 +21,7 @@ firstQuestion::~firstQuestion()
 void firstQuestion::on_okButton_clicked()
 {
     currentUser.balance = ui->answer->text().toInt();
+    currentUser.saveToDatabase(); // Save balance to the database
 
     secondQuestion *questionWindow = new secondQuestion();
     questionWindow->show();
