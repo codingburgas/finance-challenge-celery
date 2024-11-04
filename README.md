@@ -41,8 +41,8 @@ git clone https://github.com/codingburgas/finance-challenge-celery.git
 
 # 📁 Documents
 <ul>
-    <li><a href="documentation/CELERY-documentation.docx">Documentation</a></li>
-    <li><a href="documentation/CELERY-presentation.pptx">Presentation</a></li>
+    <li><a href="https://codingburgas-my.sharepoint.com/:w:/g/personal/aavezirova22_codingburgas_bg/ETBz7_qx9rJGmjzz9xMqqlEBq15JidGqR1wIOAkiqNFM2g?e=w7Q0Lf">Documentation</a></li>
+    <li><a href="https://codingburgas-my.sharepoint.com/:p:/g/personal/nsstoyanova22_codingburgas_bg/EWzYzi6RYzlIl68zDAJVfoAB5t-F8K4zY2gk3IBFBKoHjA?e=6mOMzs">Presentation</a></li>
    </ul>
 
 ### Design
