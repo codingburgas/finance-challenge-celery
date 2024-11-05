@@ -18,9 +18,10 @@ dashboard_newBalance::~dashboard_newBalance()
 
 void dashboard_newBalance::on_doneButton_clicked()
 {
+
     int subtractAmount = ui->addOrSubAmount->text().toInt();
     QString purpose = ui->addOrSubPurpose->text();
-    if (subtractAmount != 0) {
+    if (subtractAmount!= 0) {
         currentUser.balance += subtractAmount;
 
         if (subtractAmount < 0) {
@@ -34,20 +35,13 @@ void dashboard_newBalance::on_doneButton_clicked()
                     break;
                 }
             }
+
         }
     }
-
     bool isDouble;
-    double newBalance = ui->newBalanceEdit->text().toDouble(&isDouble);
-    if (isDouble) {
+    double newBalance=ui->newBalanceEdit->text().toDouble(&isDouble);
+    if(isDouble) {
         currentUser.balance = qRound(newBalance * 100.0) / 100.0;
-    }
-
-    // Save the updated balance to the database
-    if (currentUser.saveUpdatesToDatabase()) {
-        qDebug() << "Balance updated in the database successfully.";
-    } else {
-        qDebug() << "Failed to update balance in the database.";
     }
 
     Dashboard *dashboardWindow = new Dashboard();

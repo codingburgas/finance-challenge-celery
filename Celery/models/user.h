@@ -32,20 +32,12 @@ public:
 
     // Database methods
     bool saveToDatabase();
-    bool loadFromDatabase(const string& username, const string& password);
+    bool loadFromDatabase(const string& username);
     bool updatePassword(const string& newPassHash);
 
-    bool addTransaction(double amount, const string& category);
-
-    bool saveUpdatesToDatabase();
-
     // Hashing method
-    static std::string hashPassword(const std::string& password);
+    static string hashPassword(const string& password);
 };
-
-bool initializeDatabase();
-bool setupDatabaseSchema();
-bool loadFromDatabase(const string& username, const string& password);
 
 #endif // USER_H
 extern user currentUser;
